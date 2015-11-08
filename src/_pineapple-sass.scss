@@ -1,98 +1,77 @@
 //
 //   pineapple-sass v0.1.0
 //   Copyright (c) 2015 Arun Michael Dsouza (amdsouza92@gmail.com)
-//  Licence: MIT
+//   Licence: MIT
 //
 
 // Transition mixin
 // Add CSS transition to any element
 @mixin transition($type, $duration, $easing) {
-	-webkit-transition: $type $duration $easing;
-	-moz-transition: $type $duration $easing;
-	-o-transition: $type $duration $easing;
-	-ms-transition: $type $duration $easing;
-	transition: $type $duration $easing;
+    -webkit-transition: $type $duration $easing;
+    -moz-transition: $type $duration $easing;
+    -o-transition: $type $duration $easing;
+    -ms-transition: $type $duration $easing;
+    transition: $type $duration $easing;
 }
 
 // Box shadow mixin
 // Add box shadow to any element
 @mixin boxShadow($x, $y, $blur, $color) {
-	-webkit-box-shadow: $x $y $blur $color;
-	-moz-box-shadow: $x $y $blur $color;
-	box-shadow: $x $y $blur $color;
+    -webkit-box-shadow: $x $y $blur $color;
+    -moz-box-shadow: $x $y $blur $color;
+    box-shadow: $x $y $blur $color;
 }
 
 // Inset box shadow mixin 
 // Add inset box shadow to any element
 @mixin insetBoxShadow($x, $y, $blur, $color) {
-	-webkit-box-shadow: inset $x $y $blur $color;
-	-moz-box-shadow: inset $x $y $blur $color;
-	box-shadow: inset $x $y $blur $color;
+    -webkit-box-shadow: inset $x $y $blur $color;
+    -moz-box-shadow: inset $x $y $blur $color;
+    box-shadow: inset $x $y $blur $color;
 }
 
 // Edge border radius mixin 
-// Add border radius to specifix edge of element
-@mixin addBorderRadiusEdge($edge, $radius) {
-	@if $edge == 'right' {
-		border-top-right-radius: $radius;
-		border-bottom-right-radius: $radius;
-	}
-	@else {
-		border-top-left-radius: $radius;
-		border-bottom-left-radius: $radius;
-	}
+// Add border radius to specifix edge(left/right) of element
+@mixin borderRadiusEdge($edge, $radius) {
+    @if $edge == 'right' {
+        border-top-right-radius: $radius;
+        border-bottom-right-radius: $radius;
+    }
+    @else if $edge == 'left' {
+        border-top-left-radius: $radius;
+        border-bottom-left-radius: $radius;
+    }
 }
 
 // Border + Radius mixin
-// Add border and a radius to a any side of an element
-@mixin addBorderAndRadius($side, $width, $type, $color, $radius: 0) {
-		@if $side == 'top' {
-			border-top: $width $type $color;
-			border-bottom: none;
-			border-left: none;
-			border-right: none;
-			border-radius: $radius;
-		}
-		@else if $side == 'right' {
-			border-right: $width $type $color;
-			border-bottom: none;
-			border-left: none;
-			border-top: none;
-			border-radius: $radius;
-		}
-		@else if $side == 'bottom' {
-			border-bottom: $width $type $color;
-			border-left: none;
-			border-top: none;
-			border-right: none;
-			border-radius: $radius;
-		}
-		@else {
-			border-left: $width $type $color;
-			border-top: none;
-			border-right: none;
-			border-bottom: none;
-			border-radius: $radius;
-		}
+// Add border and a radius to a any side(top/bottom/left/right) of an element
+@mixin sideBorderAndRadius($side, $width, $type, $color, $radius: 0) {
+    @if $side == 'top' {
+        border-top: $width $type $color;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+        border-radius: $radius;
+    }
+    @else if $side == 'right' {
+        border-right: $width $type $color;
+        border-bottom: none;
+        border-left: none;
+        border-top: none;
+        border-radius: $radius;
+    }
+    @else if $side == 'bottom' {
+        border-bottom: $width $type $color;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        border-radius: $radius;
+    }
+    @else if $side == 'left' {
+        border-left: $width $type $color;
+        border-top: none;
+        border-right: none;
+        border-bottom: none;
+        border-radius: $radius;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

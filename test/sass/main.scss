@@ -1,16 +1,29 @@
 // Test sass script for pineapple-sass 
 
 @import "../../build/pineapple-sass";
-
 .transition {
-	@include transition(opacity, .20s, ease-in);
+    @include transition(opacity, .20s, ease-in);
 }
 
 .box-shadow {
-	@include boxShadow(0, 0, 3px, #000);
+    @include boxShadow(0, 0, 3px, #000);
 }
 
 .inset-box-shadow {
-	@include insetBoxShadow(0, 0, 4px, #aaa);
+    @include insetBoxShadow(0, 0, 4px, #aaa);
+}
+
+.border-radius-edge {
+    @include borderRadiusEdge(left, 4px);
+}
+
+// Without radius (default : 0)
+.side-border-and-radius {
+	@include sideBorderAndRadius(top, 2px, solid, #333);
+}
+
+// With radius
+.side-border-and-radius2 {
+	@include sideBorderAndRadius(left, 2px, solid, #333, 50%);
 }
 
