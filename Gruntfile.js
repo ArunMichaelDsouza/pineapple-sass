@@ -5,7 +5,7 @@ module.exports = function(grunt) {
                 files: ['src/_pineapple-sass.scss'],
                 tasks: ['copy'],
                 options: {
-                    spawn: false,
+                    spawn: false
                 },
             },
             test: {
@@ -24,6 +24,9 @@ module.exports = function(grunt) {
             }
         },
         sass: {
+            options: {
+                outputStyle: 'expanded'
+            },
             dist: {
                 files: {
                     'test/css/main.css': 'test/sass/main.scss'

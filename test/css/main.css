@@ -1,0 +1,19 @@
+.transition {
+  -webkit-transition: opacity 0.2s ease-in;
+  -moz-transition: opacity 0.2s ease-in;
+  -o-transition: opacity 0.2s ease-in;
+  -ms-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0 0 3px #000;
+  -moz-box-shadow: 0 0 3px #000;
+  box-shadow: 0 0 3px #000;
+}
+
+.inset-box-shadow {
+  -webkit-box-shadow: inset 0 0 4px #aaa;
+  -moz-box-shadow: inset 0 0 4px #aaa;
+  box-shadow: inset 0 0 4px #aaa;
+}

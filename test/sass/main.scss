@@ -2,4 +2,15 @@
 
 @import "../../build/pineapple-sass";
 
+.transition {
+	@include transition(opacity, .20s, ease-in);
+}
+
+.box-shadow {
+	@include boxShadow(0, 0, 3px, #000);
+}
+
+.inset-box-shadow {
+	@include insetBoxShadow(0, 0, 4px, #aaa);
+}
 
