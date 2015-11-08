@@ -1,0 +1,33 @@
+{
+  "name": "pineapple-sass",
+  "version": "0.1.0",
+  "description": "Easy to use Sass mixin library for all your Sassy needs",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArunMichaelDsouza/pineapple-sass.git"
+  },
+  "keywords": [
+    "Sass",
+    "mixin",
+    "library"
+  ],
+  "author": "Arun Michael Dsouza <amdsouza92@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArunMichaelDsouza/pineapple-sass/issues"
+  },
+  "homepage": "https://github.com/ArunMichaelDsouza/pineapple-sass#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^1.1.0"
+  }
+}
