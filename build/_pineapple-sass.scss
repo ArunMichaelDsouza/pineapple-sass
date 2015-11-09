@@ -75,3 +75,33 @@
         border-radius: $radius;
     }
 }
+
+// Clearfix hack mixin
+@mixin clearfix {
+    &:before,
+    &:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

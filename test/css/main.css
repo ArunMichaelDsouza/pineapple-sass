@@ -38,3 +38,9 @@
   border-bottom: none;
   border-radius: 50%;
 }
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}

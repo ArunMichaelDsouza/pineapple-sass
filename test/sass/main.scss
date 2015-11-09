@@ -27,3 +27,8 @@
 	@include sideBorderAndRadius(left, 2px, solid, #333, 50%);
 }
 
+// Clearfix
+.clearfix {
+	@include clearfix;
+}
+
