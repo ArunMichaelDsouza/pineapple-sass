@@ -1,0 +1,15 @@
+//
+//   pineapple-sass v0.1.0
+//   Copyright (c) 2015 Arun Michael Dsouza (amdsouza92@gmail.com)
+//   Licence: MIT
+//
+
+// Transition mixin
+// Add CSS transition to any element
+@mixin transition($type, $duration, $easing) {
+    -webkit-transition: $type $duration $easing;
+    -moz-transition: $type $duration $easing;
+    -o-transition: $type $duration $easing;
+    -ms-transition: $type $duration $easing;
+    transition: $type $duration $easing;
+}

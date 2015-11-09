@@ -1,35 +1,3 @@
-//
-//   pineapple-sass v0.1.0
-//   Copyright (c) 2015 Arun Michael Dsouza (amdsouza92@gmail.com)
-//   Licence: MIT
-//
-
-// Transition mixin
-// Add CSS transition to any element
-@mixin transition($type, $duration, $easing) {
-    -webkit-transition: $type $duration $easing;
-    -moz-transition: $type $duration $easing;
-    -o-transition: $type $duration $easing;
-    -ms-transition: $type $duration $easing;
-    transition: $type $duration $easing;
-}
-
-// Box shadow mixin
-// Add box shadow to any element
-@mixin boxShadow($x, $y, $blur, $color) {
-    -webkit-box-shadow: $x $y $blur $color;
-    -moz-box-shadow: $x $y $blur $color;
-    box-shadow: $x $y $blur $color;
-}
-
-// Inset box shadow mixin 
-// Add inset box shadow to any element
-@mixin insetBoxShadow($x, $y, $blur, $color) {
-    -webkit-box-shadow: inset $x $y $blur $color;
-    -moz-box-shadow: inset $x $y $blur $color;
-    box-shadow: inset $x $y $blur $color;
-}
-
 // Edge border radius mixin 
 // Add border radius to specifix edge(left/right) of element
 @mixin borderRadiusEdge($edge, $radius) {
@@ -75,33 +43,3 @@
         border-radius: $radius;
     }
 }
-
-// Clearfix hack mixin
-@mixin clearfix {
-    &:before,
-    &:after {
-        content: "";
-        clear: both;
-        display: table;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

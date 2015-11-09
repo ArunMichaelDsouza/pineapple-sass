@@ -2,8 +2,8 @@ module.exports = function(grunt) {
     grunt.initConfig({
         watch: {
             sass: {
-                files: ['src/_pineapple-sass.scss'],
-                tasks: ['copy'],
+                files: ['src/_animations.scss', 'src/_shadows.scss', 'src/_borders.scss', 'src/_floats.scss'],
+                tasks: ['concat'],
                 options: {
                     spawn: false
                 },
@@ -16,12 +16,11 @@ module.exports = function(grunt) {
                 },
             }
         },
-        copy: {
-            main: {
-                files: [
-                    {expand: true, cwd: 'src/', src: ['**'], dest: 'build/'}
-                ]
-            }
+        concat: {
+            dist: {
+                src: ['src/_animations.scss', 'src/_shadows.scss', 'src/_borders.scss', 'src/_floats.scss'],
+                dest: 'build/_pineapple-sass.scss',
+            },
         },
         sass: {
             options: {
@@ -36,6 +35,6 @@ module.exports = function(grunt) {
     });
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-sass');
-    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.registerTask('default', ['watch']);
 };

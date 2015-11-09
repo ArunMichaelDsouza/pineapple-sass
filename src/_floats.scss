@@ -1,0 +1,11 @@
+// Clearfix hack mixin
+// To contain floats within containers
+@mixin clearfix {
+    &:before,
+    &:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
