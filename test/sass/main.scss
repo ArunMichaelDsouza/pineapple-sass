@@ -32,3 +32,7 @@
 	@include clearfix;
 }
 
+// Background opacity
+.bg-opacity {
+	@include backgroundOpacity(#50a4e2, .5);
+}

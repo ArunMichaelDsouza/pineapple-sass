@@ -44,3 +44,7 @@
   clear: both;
   display: table;
 }
+
+.bg-opacity {
+  background-color: rgba(80, 164, 226, 0.5);
+}

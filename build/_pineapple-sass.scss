@@ -30,6 +30,7 @@
     box-shadow: inset $x $y $blur $color;
 }
 
+
 // Edge border radius mixin 
 // Add border radius to specifix edge(left/right) of element
 @mixin borderRadiusEdge($edge, $radius) {
@@ -85,5 +86,12 @@
         clear: both;
         display: table;
     }
+}
+
+
+// Background Opacity mixin
+// Add opacity filter to a background color for any element
+@mixin backgroundOpacity($color, $opacity) {
+    background-color: rgba($color, $opacity);
 }
 
