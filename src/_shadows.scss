@@ -13,3 +13,7 @@
     -moz-box-shadow: inset $x $y $blur $color;
     box-shadow: inset $x $y $blur $color;
 }
+
+@mixin background-opacity($color, $opacity) {
+    background-color: rgba($color, $opacity);
+}
