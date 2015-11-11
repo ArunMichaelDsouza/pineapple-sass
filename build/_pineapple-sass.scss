@@ -31,6 +31,14 @@
 }
 
 
+// Border radius mixin
+// Add border radius to an element
+@mixin borderRadius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
 // Edge border radius mixin 
 // Add border radius to specifix edge(left/right) of element
 @mixin borderRadiusEdge($edge, $radius) {
@@ -52,28 +60,28 @@
         border-bottom: none;
         border-left: none;
         border-right: none;
-        border-radius: $radius;
+        @include borderRadius($radius);
     }
     @else if $side == 'right' {
         border-right: $width $type $color;
         border-bottom: none;
         border-left: none;
         border-top: none;
-        border-radius: $radius;
+        @include borderRadius($radius);
     }
     @else if $side == 'bottom' {
         border-bottom: $width $type $color;
         border-left: none;
         border-top: none;
         border-right: none;
-        border-radius: $radius;
+        @include borderRadius($radius);
     }
     @else if $side == 'left' {
         border-left: $width $type $color;
         border-top: none;
         border-right: none;
         border-bottom: none;
-        border-radius: $radius;
+        @include borderRadius($radius);
     }
 }
 
@@ -111,5 +119,3 @@
 		background-size: $width $height;
 	}
 }
-
-

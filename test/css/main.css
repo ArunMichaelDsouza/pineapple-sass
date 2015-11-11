@@ -28,6 +28,8 @@
   border-bottom: none;
   border-left: none;
   border-right: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
   border-radius: 0;
 }
 
@@ -36,6 +38,8 @@
   border-top: none;
   border-right: none;
   border-bottom: none;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
 }
 
@@ -50,10 +54,10 @@
 }
 
 .bg-size {
-  -webkit-background-size: 30px 30px;
-  -moz-background-size: 30px 30px;
-  -o-background-size: 30px 30px;
-  background-size: 30px 30px;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
 }
 
 .bg-size2 {

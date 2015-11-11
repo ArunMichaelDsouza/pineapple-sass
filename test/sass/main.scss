@@ -39,11 +39,16 @@
 
 // Background size 
 .bg-size {
-	@include backgroundSize(30px, 30px);
+	@include backgroundSize(100%);
 }
 
 .bg-size2 {
 	@include backgroundSize(contain);
 }
+
+
+
+
+
 
 
