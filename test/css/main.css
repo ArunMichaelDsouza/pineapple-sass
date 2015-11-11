@@ -48,3 +48,17 @@
 .bg-opacity {
   background-color: rgba(80, 164, 226, 0.5);
 }
+
+.bg-size {
+  -webkit-background-size: 30px 30px;
+  -moz-background-size: 30px 30px;
+  -o-background-size: 30px 30px;
+  background-size: 30px 30px;
+}
+
+.bg-size2 {
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}

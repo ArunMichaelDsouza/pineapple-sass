@@ -36,3 +36,14 @@
 .bg-opacity {
 	@include backgroundOpacity(#50a4e2, .5);
 }
+
+// Background size 
+.bg-size {
+	@include backgroundSize(30px, 30px);
+}
+
+.bg-size2 {
+	@include backgroundSize(contain);
+}
+
+
