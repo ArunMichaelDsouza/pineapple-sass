@@ -90,3 +90,20 @@
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+.skew {
+  -webkit-transform: skew(20deg, 40deg);
+  -moz-transform: skew(20deg, 40deg);
+  -o-transform: skew(20deg, 40deg);
+  -ms-transform: skew(20deg, 40deg);
+  transform: skew(20deg, 40deg);
+}
+
+.flip {
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}

@@ -61,6 +61,17 @@
 	@include rotate(45);
 }
 
+// Skew
+.skew {
+	@include skew(20, 40);
+}
+
+// Flip 
+.flip {
+	@include flip;
+}
+
+
 
 
 
