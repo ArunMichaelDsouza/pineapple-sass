@@ -66,3 +66,27 @@
   -o-background-size: contain;
   background-size: contain;
 }
+
+.scale {
+  -webkit-transform: scale(2, 2);
+  -moz-transform: scale(2, 2);
+  -o-transform: scale(2, 2);
+  -ms-transform: scale(2, 2);
+  transform: scale(2, 2);
+}
+
+.move {
+  -webkit-transform: translate(10px, 30px);
+  -moz-transform: translate(10px, 30px);
+  -o-transform: translate(10px, 30px);
+  -ms-transform: translate(10px, 30px);
+  transform: translate(10px, 30px);
+}
+
+.rotate {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

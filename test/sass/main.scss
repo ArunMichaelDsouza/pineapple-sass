@@ -46,7 +46,20 @@
 	@include backgroundSize(contain);
 }
 
+// Scale
+.scale {
+	@include scale(2, 2);
+}
 
+// Translate
+.move {
+	@include translate(10px, 30px)
+}
+
+// Rotate
+.rotate {
+	@include rotate(45);
+}
 
 
 
