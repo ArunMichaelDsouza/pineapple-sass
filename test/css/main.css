@@ -107,3 +107,11 @@
   filter: FlipH;
   -ms-filter: "FlipH";
 }
+
+.serif {
+  font-family: times, serif;
+}
+
+.sans-serif {
+  font-family: helvetica, serif;
+}

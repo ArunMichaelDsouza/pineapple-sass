@@ -71,6 +71,34 @@
 	@include flip;
 }
 
+// Fonts
+.serif {
+	@include fontFace(Times);
+}
+
+.sans-serif {
+	@include fontFace(Helvetica);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

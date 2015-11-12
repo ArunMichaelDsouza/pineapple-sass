@@ -2,7 +2,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         watch: {
             sass: {
-                files: ['src/_animations.scss', 'src/_shadows.scss', 'src/_borders.scss', 'src/_floats.scss', 'src/_backgrounds.scss', 'src/_transforms.scss'],
+                files: ['src/_animations.scss', 'src/_shadows.scss', 'src/_borders.scss', 'src/_floats.scss', 'src/_backgrounds.scss', 'src/_transforms.scss', 'src/_fonts.scss'],
                 tasks: ['concat'],
                 options: {
                     spawn: false
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
         },
         concat: {
             dist: {
-                src: ['src/_animations.scss', 'src/_shadows.scss', 'src/_borders.scss', 'src/_floats.scss', 'src/_backgrounds.scss', 'src/_transforms.scss'],
+                src: ['src/_animations.scss', 'src/_shadows.scss', 'src/_borders.scss', 'src/_floats.scss', 'src/_backgrounds.scss', 'src/_transforms.scss', 'src/_fonts.scss'],
                 dest: 'build/_pineapple-sass.scss',
             },
         },

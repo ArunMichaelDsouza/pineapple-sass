@@ -95,8 +95,6 @@
         display: table;
     }
 }
-
-
 // Background Opacity mixin
 // Add opacity filter to a background color
 @mixin backgroundOpacity($color, $opacity) {
@@ -182,3 +180,17 @@
 
 
 
+
+// Load Font face mixin
+// Load a font family through a URL
+@mixin fontFace($font) {
+	$font: to-lower-case($font);
+	// Web safe serif fonts
+	@if $font == georgia or $font == palatino or $font == times New Roman or $font == times {
+		font-family: $font, serif;
+	}
+	// Web safe sans-serif fonts
+	@else if $font == arial or $font == helvetica or $font == gill sans or $font == impact or $font == lucida grande or $font == tahoma or $font == geneva or $font == verdana {
+		font-family: $font, serif;
+	}
+}
