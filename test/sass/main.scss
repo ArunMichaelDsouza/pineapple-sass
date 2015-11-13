@@ -97,6 +97,26 @@
 	@include border(1px, outset, #000);
 }
 
+// Border image
+.border-image {
+	@include borderImage(10px, "https://mdn.mozillademos.org/files/4127/border.png", round, 30);
+}
+
+.border-image2 {
+	@include borderImage(10px, "https://mdn.mozillademos.org/files/4127/border.png", round, 30, 40, 30);
+}
+
+.border-image3 {
+	@include borderImage(10px, "https://mdn.mozillademos.org/files/4127/border.png", round, 30, 40);
+}
+
+.border-image4 {
+	@include borderImage(10px, "https://mdn.mozillademos.org/files/4127/border.png", round, 30, 40, 50, 60);
+}
+
+
+
+
 
 
 
