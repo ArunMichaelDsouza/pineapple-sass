@@ -121,3 +121,14 @@
   display: -ms-flexbox;
   display: flex;
 }
+
+.border {
+  border: 1px solid #000;
+  border: 1px dotted #000;
+  border: 1px dashed #000;
+  border: 1px double #000;
+  border: 1px groove #000;
+  border: 1px ridge #000;
+  border: 1px inset #000;
+  border: 1px outset #000;
+}

@@ -85,6 +85,17 @@
 	@include displayFlex;  
 }
 
+// Add border
+.border {
+	@include border(1px, solid, #000);
+	@include border(1px, dotted, #000);
+	@include border(1px, dashed, #000);
+	@include border(1px, double, #000);
+	@include border(1px, groove, #000);
+	@include border(1px, ridge, #000);
+	@include border(1px, inset, #000);
+	@include border(1px, outset, #000);
+}
 
 
 
