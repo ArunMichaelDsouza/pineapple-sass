@@ -115,3 +115,9 @@
 .sans-serif {
   font-family: helvetica, serif;
 }
+
+.flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

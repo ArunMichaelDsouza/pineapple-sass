@@ -95,6 +95,16 @@
         display: table;
     }
 }
+
+// Display flex mixin
+// Add flex display property to any element
+@mixin displayFlex() {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+} 
+
+
 // Background Opacity mixin
 // Add opacity filter to a background color
 @mixin backgroundOpacity($color, $opacity) {

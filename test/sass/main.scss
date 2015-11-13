@@ -80,8 +80,10 @@
 	@include fontFace(Helvetica);
 }
 
-
-
+// Display flex
+.flexbox {
+	@include displayFlex;  
+}
 
 
 
