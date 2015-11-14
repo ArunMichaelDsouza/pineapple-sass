@@ -164,3 +164,15 @@
   -o-border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 40 50 60 round;
   border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 40 50 60 round;
 }
+
+.no-marg {
+  margin: 0;
+}
+
+.no-pad {
+  padding: 0;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}

@@ -114,6 +114,18 @@
 	@include borderImage(10px, "https://mdn.mozillademos.org/files/4127/border.png", round, 30, 40, 50, 60);
 }
 
+// Utilities
+.no-marg {
+	@include noMargin;
+}
+
+.no-pad {
+	@include noPadding;
+}
+
+.pointer {
+	@include cursorPointer;
+}
 
 
 

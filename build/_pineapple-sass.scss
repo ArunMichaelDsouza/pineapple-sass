@@ -30,7 +30,6 @@
     box-shadow: inset $x $y $blur $color;
 }
 
-
 // Border radius mixin
 // Add border radius to an element
 @mixin borderRadius($radius) {
@@ -121,25 +120,6 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Clearfix hack mixin
 // To contain floats within containers
 @mixin clearfix {
@@ -158,7 +138,6 @@
 	display: -ms-flexbox;
 	display: flex;
 } 
-
 
 // Background Opacity mixin
 // Add opacity filter to a background color
@@ -234,18 +213,6 @@
    -ms-filter: "FlipH";
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 // Load Font face mixin
 // Load a font family through a URL
 @mixin fontFace($font) {
@@ -257,5 +224,24 @@
 	// Web safe sans-serif fonts
 	@else if $font == arial or $font == helvetica or $font == gill sans or $font == impact or $font == lucida grande or $font == tahoma or $font == geneva or $font == verdana {
 		font-family: $font, serif;
+	}
+}
+// No margin mixin 
+// Add zero margin to an element
+@mixin noMargin {
+	margin: 0;
+}
+
+// No padding mixin 
+// Add zero padding to an element
+@mixin noPadding {
+	padding: 0;
+}
+
+// Cursor pointer mixin
+// Add a pointer cursor to the hover state of an element
+@mixin cursorPointer {
+	&:hover {
+		cursor: pointer;
 	}
 }
