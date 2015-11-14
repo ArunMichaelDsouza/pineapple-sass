@@ -9,12 +9,16 @@
 .box-shadow {
   -webkit-box-shadow: 0 0 3px #000;
   -moz-box-shadow: 0 0 3px #000;
+  -o-box-shadow: 0 0 3px #000;
+  -ms-box-shadow: 0 0 3px #000;
   box-shadow: 0 0 3px #000;
 }
 
 .inset-box-shadow {
   -webkit-box-shadow: inset 0 0 4px #aaa;
   -moz-box-shadow: inset 0 0 4px #aaa;
+  -o-box-shadow: inset 0 0 4px #aaa;
+  -ms-box-shadow: inset 0 0 4px #aaa;
   box-shadow: inset 0 0 4px #aaa;
 }
 
@@ -30,6 +34,8 @@
   border-right: none;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
   border-radius: 0;
 }
 
@@ -40,6 +46,8 @@
   border-bottom: none;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
   border-radius: 50%;
 }
 
@@ -138,6 +146,7 @@
   -webkit-border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 round;
   -moz-border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 round;
   -o-border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 round;
+  -ms-border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 round;
   border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 round;
 }
 
@@ -146,6 +155,7 @@
   -webkit-border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 40 30 round;
   -moz-border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 40 30 round;
   -o-border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 40 30 round;
+  -ms-border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 40 30 round;
   border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 40 30 round;
 }
 
@@ -154,6 +164,7 @@
   -webkit-border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 40 round;
   -moz-border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 40 round;
   -o-border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 40 round;
+  -ms-border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 40 round;
   border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 40 round;
 }
 
@@ -162,6 +173,7 @@
   -webkit-border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 40 50 60 round;
   -moz-border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 40 50 60 round;
   -o-border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 40 50 60 round;
+  -ms-border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 40 50 60 round;
   border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 40 50 60 round;
 }
 
@@ -173,4 +185,12 @@
   outline: none;
   box-shadow: none;
   border: none;
+}
+
+.box-sizing {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
 }
