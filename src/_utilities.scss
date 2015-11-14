@@ -1,15 +1,3 @@
-// No margin mixin 
-// Add zero margin to an element
-@mixin noMargin {
-	margin: 0;
-}
-
-// No padding mixin 
-// Add zero padding to an element
-@mixin noPadding {
-	padding: 0;
-}
-
 // Cursor pointer mixin
 // Add a pointer cursor to the hover state of an element
 @mixin cursorPointer {

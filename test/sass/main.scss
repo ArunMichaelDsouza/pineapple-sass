@@ -115,14 +115,6 @@
 }
 
 // Utilities
-.no-marg {
-	@include noMargin;
-}
-
-.no-pad {
-	@include noPadding;
-}
-
 .pointer {
 	@include cursorPointer;
 }
