@@ -168,3 +168,9 @@
 .pointer:hover {
   cursor: pointer;
 }
+
+.no-focus:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}

@@ -119,6 +119,10 @@
 	@include cursorPointer;
 }
 
+.no-focus {
+	@include noFocus;
+}
+
 
 
 

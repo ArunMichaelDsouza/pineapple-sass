@@ -233,3 +233,13 @@
 		cursor: pointer;
 	}
 }
+
+// No focus mixin
+// Remove focus from a button or input field while in focused state
+@mixin noFocus {
+	&:focus {
+		outline: none;
+		box-shadow: none;
+		border: none;
+	}
+}
