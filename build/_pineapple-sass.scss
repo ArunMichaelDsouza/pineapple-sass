@@ -22,6 +22,7 @@
 	-o-animation: $animation $duration $delay $iteration;
 	animation: $animation $duration $delay $iteration;
 }
+
 // Box shadow mixin
 // Add box shadow to any element
 @mixin boxShadow($shadows...) {
@@ -155,6 +156,7 @@
 	-moz-box-sizing: $sizing;
 	box-sizing: $sizing;
 }
+
 // Background Opacity mixin
 // Add opacity filter to a background color
 @mixin backgroundOpacity($color, $opacity) {
@@ -229,7 +231,6 @@
 		background: repeating-linear-gradient(to top, $colors);
 	}
 }
-
 
 // Scale transform mixin
 // Scale an element
@@ -322,6 +323,7 @@
 		border: none;
 	}
 }
+
 // User select mixin
 // Set user select property for an element
 @mixin userSelect($value) {
