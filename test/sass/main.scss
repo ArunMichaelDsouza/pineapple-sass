@@ -151,6 +151,16 @@
 	@include linearGradient(left, red 5%, blue, yellow, orange);
 }
 
+// Repeating gradient
+.repeating {
+	@include repeatingLinearGradient(left, red, blue, yellow 5%);
+}
+
+
+
+
+
+
 
 
 

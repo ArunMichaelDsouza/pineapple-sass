@@ -206,3 +206,10 @@
   background: -o-linear-gradient(left, red 5%, blue, yellow, orange);
   background: linear-gradient(to right, red 5%, blue, yellow, orange);
 }
+
+.repeating {
+  background: -webkit-repeating-linear-gradient(left, red, blue, yellow 5%);
+  background: -moz-repeating-linear-gradient(left, red, blue, yellow 5%);
+  background: -o-repeating-linear-gradient(left, red, blue, yellow 5%);
+  background: repeating-linear-gradient(to right, red, blue, yellow 5%);
+}
