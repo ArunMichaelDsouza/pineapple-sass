@@ -1,16 +1,25 @@
 // Scale transform mixin
 // Scale an element
-@mixin scale($x, $y) {
-	-webkit-transform: scale($x, $y);
-	-moz-transform: scale($x, $y);
-	-o-transform: scale($x, $y);
-	-ms-transform: scale($x, $y);
-	transform: scale($x, $y);
+@mixin scale($x, $y: 0) {
+	@if $y != 0 {
+	 	-webkit-transform: scale($x, $y);
+		-moz-transform: scale($x, $y);
+		-o-transform: scale($x, $y);
+		-ms-transform: scale($x, $y);
+		transform: scale($x, $y);
+	}
+	@else {
+		-webkit-transform: scale($x, $x);
+		-moz-transform: scale($x, $x);
+		-o-transform: scale($x, $x);
+		-ms-transform: scale($x, $x);
+		transform: scale($x, $x);
+	}
 }
 
 // Translate transform mixin
 // Translate an element
-@mixin translate($x, $y) {
+@mixin translate($x, $y: 0) {
 	-webkit-transform: translate($x, $y);
 	-moz-transform: translate($x, $y);
 	-o-transform: translate($x, $y);
@@ -30,7 +39,7 @@
 
 // Skew transform mixin
 // Skew an element
-@mixin skew($x, $y) {
+@mixin skew($x, $y: 0) {
 	-webkit-transform: skew($x+deg, $y+deg);
 	-moz-transform: skew($x+deg, $y+deg);
 	-o-transform: skew($x+deg, $y+deg);

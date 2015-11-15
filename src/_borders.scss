@@ -3,8 +3,6 @@
 @mixin borderRadius($radius) {
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;
-    -o-border-radius: $radius;
-    -ms-border-radius: $radius;
     border-radius: $radius;
 }
 
@@ -68,28 +66,24 @@
         -webkit-border-image: url($url) $sliceTop $sliceRight $sliceBottom $sliceLeft $mode;
         -moz-border-image: url($url) $sliceTop $sliceRight $sliceBottom $sliceLeft $mode;
         -o-border-image: url($url) $sliceTop $sliceRight $sliceBottom $sliceLeft $mode;
-        -ms-border-image: url($url) $sliceTop $sliceRight $sliceBottom $sliceLeft $mode;
         border-image: url($url) $sliceTop $sliceRight $sliceBottom $sliceLeft $mode;
     }
     @else if $sliceRight == 0 and $sliceBottom == 0 and $sliceLeft == 0 {
         -webkit-border-image: url($url) $sliceTop $mode;
         -moz-border-image: url($url) $sliceTop $mode;
         -o-border-image: url($url) $sliceTop $mode;
-        -ms-border-image: url($url) $sliceTop $mode;
         border-image: url($url) $sliceTop $mode;
     }
     @else if $sliceRight != 0 and $sliceBottom != 0 and $sliceLeft == 0 {
         -webkit-border-image: url($url) $sliceTop $sliceRight $sliceBottom $mode;
         -moz-border-image: url($url) $sliceTop $sliceRight $sliceBottom $mode;
         -o-border-image: url($url) $sliceTop $sliceRight $sliceBottom $mode;
-        -ms-border-image: url($url) $sliceTop $sliceRight $sliceBottom $mode;
         border-image: url($url) $sliceTop $sliceRight $sliceBottom $mode;
     }
     @else if $sliceRight != 0 and $sliceBottom == 0 and $sliceLeft == 0 {
         -webkit-border-image: url($url) $sliceTop $sliceRight $mode;   
         -moz-border-image: url($url) $sliceTop $sliceRight $mode;   
         -o-border-image: url($url) $sliceTop $sliceRight $mode; 
-        -ms-border-image: url($url) $sliceTop $sliceRight $mode;   
         border-image: url($url) $sliceTop $sliceRight $mode;   
     }
 }

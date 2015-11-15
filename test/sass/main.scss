@@ -48,7 +48,7 @@
 
 // Scale
 .scale {
-	@include scale(2, 2);
+	@include scale(2, 3);
 }
 
 // Translate
@@ -63,7 +63,7 @@
 
 // Skew
 .skew {
-	@include skew(20, 40);
+	@include skew(20);
 }
 
 // Flip 

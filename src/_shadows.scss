@@ -3,8 +3,6 @@
 @mixin boxShadow($x, $y, $blur, $color) {
     -webkit-box-shadow: $x $y $blur $color;
     -moz-box-shadow: $x $y $blur $color;
-    -o-box-shadow: $x $y $blur $color;
-    -ms-box-shadow: $x $y $blur $color;
     box-shadow: $x $y $blur $color;
 }
 
@@ -13,7 +11,5 @@
 @mixin insetBoxShadow($x, $y, $blur, $color) {
     -webkit-box-shadow: inset $x $y $blur $color;
     -moz-box-shadow: inset $x $y $blur $color;
-    -o-box-shadow: inset $x $y $blur $color;
-    -ms-box-shadow: inset $x $y $blur $color;
     box-shadow: inset $x $y $blur $color;
 }
