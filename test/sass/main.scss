@@ -146,6 +146,14 @@
 	}
 }
 
+// Linear gradient
+.linear {
+	@include linearGradient(left, red 5%, blue, yellow, orange);
+}
+
+
+
+
 
 
 

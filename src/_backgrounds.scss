@@ -20,3 +20,29 @@
 		background-size: $width $height;
 	}
 }
+
+// Background linear gradient mixin
+// Add a linear gradient to any element's background
+@mixin gradientPrefixes($dir, $colors...) {
+	background: -webkit-linear-gradient($dir, $colors);
+	background: -moz-linear-gradient($dir, $colors);
+	background: -o-linear-gradient($dir, $colors);
+}
+@mixin linearGradient($dir, $colors...) {
+	@if $dir == left {
+		@include gradientPrefixes($dir, $colors);
+		background: linear-gradient(to right, $colors);
+	}
+	@else if $dir == right {
+		@include gradientPrefixes($dir, $colors);
+		background: linear-gradient(to left, $colors);
+	}
+	@else if $dir == top {
+		@include gradientPrefixes($dir, $colors);
+		background: linear-gradient(to bottom, $colors);
+	}
+	@else if $dir == bottom {
+		@include gradientPrefixes($dir, $colors);
+		background: linear-gradient(to top, $colors);
+	}
+}

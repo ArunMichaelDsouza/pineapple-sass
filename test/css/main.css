@@ -199,3 +199,10 @@
   color: #343434;
   background-color: #a0a0a0;
 }
+
+.linear {
+  background: -webkit-linear-gradient(left, red 5%, blue, yellow, orange);
+  background: -moz-linear-gradient(left, red 5%, blue, yellow, orange);
+  background: -o-linear-gradient(left, red 5%, blue, yellow, orange);
+  background: linear-gradient(to right, red 5%, blue, yellow, orange);
+}
