@@ -13,3 +13,12 @@
     -ms-transition: $type $duration $easing;
     transition: $type $duration $easing;
 }
+
+// Animation mixin
+// Animate an element
+@mixin animation($animation, $duration, $iteration, $delay: 0) {
+	-webkit-animation: $animation $duration $delay $iteration;
+	-moz-animation: $animation $duration $delay $iteration;
+	-o-animation: $animation $duration $delay $iteration;
+	animation: $animation $duration $delay $iteration;
+}

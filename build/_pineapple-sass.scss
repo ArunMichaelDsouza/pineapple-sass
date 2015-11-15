@@ -14,6 +14,14 @@
     transition: $type $duration $easing;
 }
 
+// Animation mixin
+// Animate an element
+@mixin animation($animation, $duration, $iteration, $delay: 0) {
+	-webkit-animation: $animation $duration $delay $iteration;
+	-moz-animation: $animation $duration $delay $iteration;
+	-o-animation: $animation $duration $delay $iteration;
+	animation: $animation $duration $delay $iteration;
+}
 // Box shadow mixin
 // Add box shadow to any element
 @mixin boxShadow($x, $y, $blur, $color) {
@@ -136,6 +144,7 @@
 @mixin displayFlex {
 	display: -webkit-box;
 	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 } 
 

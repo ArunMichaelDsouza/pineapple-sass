@@ -119,6 +119,7 @@
 .flexbox {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 
@@ -179,4 +180,11 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.animate {
+  -webkit-animation: test 3s 2s infinte;
+  -moz-animation: test 3s 2s infinte;
+  -o-animation: test 3s 2s infinte;
+  animation: test 3s 2s infinte;
 }

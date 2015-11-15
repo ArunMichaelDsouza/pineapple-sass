@@ -128,6 +128,11 @@
 	@include boxSizing(border-box);
 }
 
+// Animate
+.animate {
+	@include animation(test, 3s, infinte, 2s);
+}
+
 
 
 
