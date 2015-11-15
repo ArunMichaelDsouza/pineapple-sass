@@ -276,3 +276,12 @@
 	-moz-user-select: $value;
 	-ms-user-select: $value;
 } 
+
+// Text select mixin
+// Modify css for text selection
+@mixin textSelection {
+	&::selection,
+	&::-moz-selection {
+		@content;
+	}
+}

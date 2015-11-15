@@ -194,3 +194,8 @@
   -moz-user-select: none;
   -ms-user-select: none;
 }
+
+.text-select::selection, .text-select::-moz-selection {
+  color: #343434;
+  background-color: #a0a0a0;
+}

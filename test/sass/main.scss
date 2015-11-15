@@ -138,6 +138,16 @@
 	@include userSelect(none);
 }
 
+// Text selection
+.text-select {
+	@include textSelection {
+		color: #343434;
+		background-color: #a0a0a0;
+	}
+}
+
+
+
 
 
 
