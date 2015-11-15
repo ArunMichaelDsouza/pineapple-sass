@@ -24,10 +24,10 @@
 }
 // Box shadow mixin
 // Add box shadow to any element
-@mixin boxShadow($x, $y, $blur, $color) {
-    -webkit-box-shadow: $x $y $blur $color;
-    -moz-box-shadow: $x $y $blur $color;
-    box-shadow: $x $y $blur $color;
+@mixin boxShadow($shadows...) {
+    -webkit-box-shadow: $shadows;
+    -moz-box-shadow: $shadows;
+    box-shadow: $shadows;
 }
 
 // Inset box shadow mixin 

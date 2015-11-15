@@ -6,7 +6,7 @@
 }
 
 .box-shadow {
-    @include boxShadow(0, 0, 3px, #000);
+    @include boxShadow(0px 4px 5px #666, 2px 6px 10px #999);
 }
 
 .inset-box-shadow {
@@ -137,6 +137,7 @@
 .select {
 	@include userSelect(none);
 }
+
 
 
 
