@@ -1,0 +1,7 @@
+// User select mixin
+// Set user select property for an element
+@mixin userSelect($value) {
+	-webkit-user-select: $value;
+	-moz-user-select: $value;
+	-ms-user-select: $value;
+} 

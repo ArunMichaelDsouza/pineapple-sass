@@ -133,6 +133,11 @@
 	@include animation(test, 3s, infinte, 2s);
 }
 
+// User select
+.select {
+	@include userSelect(none);
+}
+
 
 
 

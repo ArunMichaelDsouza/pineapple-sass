@@ -188,3 +188,9 @@
   -o-animation: test 3s 2s infinte;
   animation: test 3s 2s infinte;
 }
+
+.select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
