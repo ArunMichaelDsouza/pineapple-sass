@@ -15,6 +15,8 @@ $smallMobile: 320px;
 	}
 }
 
+// Medium screen media query mixin
+// Detect medium screens and apply css
 @mixin media-m-screen {
 	@media screen and (max-width: $mediumScreen) {
 		& {
@@ -23,6 +25,8 @@ $smallMobile: 320px;
 	}
 }
 
+// Small screen media query mixin
+// Detect small screens and apply css
 @mixin media-s-screen {
 	@media screen and (max-width: $smallScreen) {
 		& {
@@ -31,6 +35,8 @@ $smallMobile: 320px;
 	}
 }
 
+// X-small screen media query mixin
+// Detect x-small screens and apply css
 @mixin media-xs-screen {
 	@media screen and (max-width: $extraSmallScreen) {
 		& {
@@ -39,6 +45,8 @@ $smallMobile: 320px;
 	}
 }
 
+// Small mobile screen media query mixin
+// Detect small mobile screens and apply css
 @mixin media-s-mobile {
 	@media screen and (max-width: $smallMobile) {
 		& {
