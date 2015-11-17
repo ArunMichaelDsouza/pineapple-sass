@@ -194,8 +194,11 @@
 	}
 }
 
-
-
+.retina {
+	@include media-retina {
+		background-color: #50a4e2;
+	}
+}
 
 
 
