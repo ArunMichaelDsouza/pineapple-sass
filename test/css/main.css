@@ -213,3 +213,19 @@
   background: -o-repeating-linear-gradient(left, red, blue, yellow 5%);
   background: repeating-linear-gradient(to right, red, blue, yellow 5%);
 }
+
+.placeholder::-webkit-input-placeholder {
+  color: #8a8a8a;
+}
+
+.placeholder:-moz-placeholder {
+  color: #8a8a8a;
+}
+
+.placeholder::-moz-placeholder {
+  color: #8a8a8a;
+}
+
+.placeholder:-ms-input-placeholder {
+  color: #8a8a8a;
+}

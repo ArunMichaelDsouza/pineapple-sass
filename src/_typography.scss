@@ -14,3 +14,20 @@
 		@content;
 	}
 }
+
+// Placeholder mixin
+// Style placeholders within input fields
+@mixin placeholder {
+	&::-webkit-input-placeholder {
+		@content;
+	}	
+	&:-moz-placeholder {
+		@content;
+	}
+	&::-moz-placeholder {
+		@content;
+	}
+	&:-ms-input-placeholder {
+		@content;
+	}
+} 

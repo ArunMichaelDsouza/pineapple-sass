@@ -156,6 +156,16 @@
 	@include repeatingLinearGradient(left, red, blue, yellow 5%);
 }
 
+// Placeholder 
+.placeholder {
+	@include placeholder {
+		color: #8a8a8a;
+	}
+}
+
+
+
+
 
 
 
