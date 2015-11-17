@@ -229,3 +229,33 @@
 .placeholder:-ms-input-placeholder {
   color: #8a8a8a;
 }
+
+@media screen and (max-width: 1200px) {
+  .large {
+    background-color: #eee;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .medium {
+    background-color: #ddd;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .small {
+    background-color: #ccc;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .xs {
+    background-color: #bbb;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .mobile {
+    background-color: #aaa;
+  }
+}

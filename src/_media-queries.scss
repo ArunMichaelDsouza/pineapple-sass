@@ -1,0 +1,48 @@
+// Media query breakpoint values
+$largeScreen: 1200px;
+$mediumScreen: 992px;
+$smallScreen: 768px;
+$extraSmallScreen: 480px;
+$smallMobile: 320px;
+
+// Large screen media query mixin
+// Detect large screens and apply css
+@mixin media-l-screen {
+	@media screen and (max-width: $largeScreen) {
+		& {
+			@content
+		}
+	}
+}
+
+@mixin media-m-screen {
+	@media screen and (max-width: $mediumScreen) {
+		& {
+			@content
+		}
+	}
+}
+
+@mixin media-s-screen {
+	@media screen and (max-width: $smallScreen) {
+		& {
+			@content
+		}
+	}
+}
+
+@mixin media-xs-screen {
+	@media screen and (max-width: $extraSmallScreen) {
+		& {
+			@content
+		}
+	}
+}
+
+@mixin media-s-mobile {
+	@media screen and (max-width: $smallMobile) {
+		& {
+			@content
+		}
+	}
+}

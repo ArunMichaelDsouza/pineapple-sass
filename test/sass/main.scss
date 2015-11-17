@@ -163,9 +163,36 @@
 	}
 }
 
+// Media queries
+.large {
+	@include media-l-screen {
+		background-color: #eee;
+	}
+}
 
+.medium {
+	@include media-m-screen {
+		background-color: #ddd;
+	}
+}
 
+.small {
+	@include media-s-screen {
+		background-color: #ccc;
+	}
+}
 
+.xs {
+	@include media-xs-screen {
+		background-color: #bbb;
+	}
+}
+
+.mobile {
+	@include media-s-mobile {
+		background-color: #aaa;
+	}
+}
 
 
 
