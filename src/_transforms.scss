@@ -35,6 +35,7 @@
 	-o-transform: rotate($deg+deg);
 	-ms-transform: rotate($deg+deg);
 	transform: rotate($deg+deg);
+	-webkit-backface-visibility: hidden;
 }
 
 // Skew transform mixin
@@ -45,6 +46,7 @@
 	-o-transform: skew($x+deg, $y+deg);
 	-ms-transform: skew($x+deg, $y+deg);
 	transform: skew($x+deg, $y+deg);
+	-webkit-backface-visibility: hidden;
 }
 
 // Flip transform mixin 
