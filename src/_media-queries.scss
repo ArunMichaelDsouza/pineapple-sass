@@ -66,3 +66,13 @@ $smallMobile: 320px;
 			@content;
 	}
 }
+
+// Image retinize mixin
+// Retinize an image
+@mixin retinize($file, $file-2x, $type, $width, $height, $location: "") {
+	background-image: url($location+$file+"."+$type);
+	@include media-retina {
+		background-image: url($location+$file+"-"+$file-2x+"."+$type);
+		@include backgroundSize($width, $height);
+	}
+}

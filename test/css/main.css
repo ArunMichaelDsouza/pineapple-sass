@@ -89,6 +89,7 @@
   -o-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+  -webkit-backface-visibility: hidden;
 }
 
 .skew {
@@ -97,6 +98,7 @@
   -o-transform: skew(20deg, 0deg);
   -ms-transform: skew(20deg, 0deg);
   transform: skew(20deg, 0deg);
+  -webkit-backface-visibility: hidden;
 }
 
 .flip {
@@ -263,5 +265,21 @@
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .retina {
     background-color: #50a4e2;
+  }
+}
+
+.ret {
+  background-image: url("../../test.png");
+  background-repeat: no-repeat;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .ret {
+    background-image: url("../../test-2x.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: 200px 200px;
+    -moz-background-size: 200px 200px;
+    -o-background-size: 200px 200px;
+    background-size: 200px 200px;
   }
 }

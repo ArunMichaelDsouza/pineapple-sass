@@ -269,6 +269,7 @@
 	-o-transform: rotate($deg+deg);
 	-ms-transform: rotate($deg+deg);
 	transform: rotate($deg+deg);
+	-webkit-backface-visibility: hidden;
 }
 
 // Skew transform mixin
@@ -279,6 +280,7 @@
 	-o-transform: skew($x+deg, $y+deg);
 	-ms-transform: skew($x+deg, $y+deg);
 	transform: skew($x+deg, $y+deg);
+	-webkit-backface-visibility: hidden;
 }
 
 // Flip transform mixin 
@@ -424,5 +426,15 @@ $smallMobile: 320px;
 		(min-device-pixel-ratio: 1.5),
 		(min-resolution: 1.5dppx) {
 			@content;
+	}
+}
+
+// Image retinize mixin
+// Retinize an image
+@mixin retinize($file, $file-2x, $type, $width, $height, $location: "") {
+	background-image: url($location+$file+"."+$type);
+	@include media-retina {
+		background-image: url($location+$file+"-"+$file-2x+"."+$type);
+		@include backgroundSize($width, $height);
 	}
 }
