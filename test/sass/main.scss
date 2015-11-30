@@ -202,10 +202,8 @@
 
 // Image retinize
 .ret {
-	@include retinizeBackground("test", "2x", "png", 200px, 200px, "../../")
+	@include retinizeBackground("test", "-2x", "png", 200px, 200px, "../../")
 }
-
-
 
 
 
