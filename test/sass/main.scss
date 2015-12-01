@@ -216,6 +216,65 @@
 	@include repeatingRadialGradient(red, yellow, orange);
 }
 
+// Blur 
+.blur {
+	@include blur(20px);
+}
+
+// Grayscale
+.gray {
+	@include grayscale(80%);
+}
+
+// Sepia
+.sepia {
+	@include sepia(80%);
+}
+
+// Saturate
+.saturate {
+	@include saturate(80);
+}
+
+// Hue rotate
+.hue {
+	@include hueRotate(80deg);
+}
+
+// Invert
+.invert {
+	@include invert(80%);
+}
+
+// Opacity
+.op {
+	@include opacity(80%);
+}
+
+// Brightness
+.bright {
+	@include brightness(80%);
+}
+
+// Contrast
+.cont {
+	@include contrast(80%);
+}
+
+// Drop shadow
+.drop-sh {
+	@include dropShadow(1px 2px 3px rgba(0,0,0,.45));
+}
+
+// URL
+.url {
+	@include url(#svg-blur);
+}
+
+
+
+
+
 
 
 

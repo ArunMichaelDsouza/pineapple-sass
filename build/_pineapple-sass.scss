@@ -458,3 +458,100 @@ $smallMobile: 320px;
 		@include backgroundSize($width, $height);
 	}
 }
+
+// Blur filter mixin
+// Blur an element
+@mixin blur($value) { 
+	-webkit-filter: blur($value); // Add value in px
+	filter: blur($value);
+}
+
+// Grayscale filter mixin
+// Make an element grayscale
+@mixin grayscale($value) {
+	-webkit-filter: grayscale($value); // Add value in %
+	filter: grayscale($value);
+}
+
+// Sepia filter mixin
+// Make an element sepia
+@mixin sepia($value) {
+	-webkit-filter: sepia($value); // Add value in %
+	filter: sepia($value);
+}
+
+// Saturate filter mixin
+// Make an element saturated
+@mixin saturate($value) { 
+	-webkit-filter: saturate($value); //Add value in % or whole number
+	filter: saturate($value);
+}
+
+// Hue rotate filter mixin
+// Rotate hue of an element
+@mixin hueRotate($value) { 
+	-webkit-filter: hue-rotate($value); //Add value in deg
+	filter: hue-rotate($value);
+}
+
+// Invert filter mixin
+// Invert colors of an element
+@mixin invert($value) { 
+	-webkit-filter: invert($value); //Add value in %
+	filter: invert($value);
+}
+
+// Opacity filter mixin
+// Set opacity of an element
+@mixin opacity($value) { 
+	-webkit-filter: opacity($value); //Add value in %
+	filter: opacity($value);
+}
+
+// Brightness filter mixin
+// Set brightness of an element
+@mixin brightness($value) { 
+	-webkit-filter: brightness($value); //Add value in %
+	filter: brightness($value);
+}
+
+// Contrast filter mixin
+// Set contrast of an element
+@mixin contrast($value) { 
+	-webkit-filter: contrast($value); //Add value in %
+	filter: contrast($value);
+}
+
+// Drop shadow filter mixin
+// Add drop shadow to an element
+@mixin dropShadow($value) { 
+	-webkit-filter: drop-shadow($value); 
+	filter: drop-shadow($value);
+}
+
+// URL filter mixin
+// Add an SVG filter via URL
+@mixin url($value) {
+	-webkit-filter: url($value); 
+	filter: url($value);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
