@@ -232,7 +232,6 @@
 	}
 }
 
-
 // Background radial gradient mixin
 // Add a radial gradient to any element's background
 @mixin radialGradient($gradientValues...) {
@@ -535,23 +534,3 @@ $smallMobile: 320px;
 	-webkit-filter: url($value); 
 	filter: url($value);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
