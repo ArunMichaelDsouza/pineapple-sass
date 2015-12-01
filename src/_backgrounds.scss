@@ -72,3 +72,22 @@
 		background: repeating-linear-gradient(to top, $colors);
 	}
 }
+
+
+// Background radial gradient mixin
+// Add a radial gradient to any element's background
+@mixin radialGradient($gradientValues...) {
+	background: -webkit-radial-gradient($gradientValues);
+	background: -o-radial-gradient($gradientValues);
+	background: -moz-radial-gradient($gradientValues);
+	background: radial-gradient($gradientValues);
+}
+
+// Background repeating radial gradient mixin
+// Add a repeating radial gradient to any element's background
+@mixin repeatingRadialGradient($gradientValues...) {
+	background: -webkit-repeating-radial-gradient($gradientValues);
+	background: -o-repeating-radial-gradient($gradientValues);
+	background: -moz-repeating-radial-gradient($gradientValues);
+	background: repeating-radial-gradient($gradientValues);
+}

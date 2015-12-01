@@ -206,6 +206,16 @@
 	@include retinizeBackground("test", "-2x", "png", 200px, 200px, "../../")
 }
 
+// Radial gradient 
+.rad {
+	@include radialGradient(red, green, blue);
+}
+
+// Repeating radial gradient
+.rad-repeat {
+	@include repeatingRadialGradient(red, yellow, orange);
+}
+
 
 
 

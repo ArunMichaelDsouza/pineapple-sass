@@ -285,3 +285,17 @@
     background-size: 200px 200px;
   }
 }
+
+.rad {
+  background: -webkit-radial-gradient(red, green, blue);
+  background: -o-radial-gradient(red, green, blue);
+  background: -moz-radial-gradient(red, green, blue);
+  background: radial-gradient(red, green, blue);
+}
+
+.rad-repeat {
+  background: -webkit-repeating-radial-gradient(red, yellow, orange);
+  background: -o-repeating-radial-gradient(red, yellow, orange);
+  background: -moz-repeating-radial-gradient(red, yellow, orange);
+  background: repeating-radial-gradient(red, yellow, orange);
+}
