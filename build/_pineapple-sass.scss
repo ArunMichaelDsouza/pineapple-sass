@@ -182,7 +182,7 @@
 
 // Background linear gradient mixin
 // Add a linear gradient to any element's background
-@mixin gradientPrefixesLinear($dir, $colors...) {
+@mixin gradientPrefixesLinear($dir, $colors) {
 	background: -webkit-linear-gradient($dir, $colors);
 	background: -moz-linear-gradient($dir, $colors);
 	background: -o-linear-gradient($dir, $colors);
@@ -208,7 +208,7 @@
 
 // Background repeating linear gradient mixin
 // Add a repeating linear gradient to any element's background
-@mixin gradientPrefixesRepeating($dir, $colors...) {
+@mixin gradientPrefixesRepeating($dir, $colors) {
 	background: -webkit-repeating-linear-gradient($dir, $colors);
 	background: -moz-repeating-linear-gradient($dir, $colors);
 	background: -o-repeating-linear-gradient($dir, $colors);
@@ -429,7 +429,7 @@ $smallMobile: 320px;
 	}
 }
 
-// Image retinize mixin
+// Background Image retinize mixin
 // Retinize a background image
 @mixin retinizeBackground($file, $postfix, $type, $width, $height, $location:'') {
 	background-image: $location+$file+"."+$type;

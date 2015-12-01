@@ -67,7 +67,7 @@ $smallMobile: 320px;
 	}
 }
 
-// Image retinize mixin
+// Background Image retinize mixin
 // Retinize a background image
 @mixin retinizeBackground($file, $postfix, $type, $width, $height, $location:'') {
 	background-image: $location+$file+"."+$type;
