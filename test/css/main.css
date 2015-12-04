@@ -354,3 +354,9 @@
   -webkit-filter: url(#svg-blur);
   filter: url(#svg-blur);
 }
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

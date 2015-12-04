@@ -25,3 +25,11 @@
 	-moz-box-sizing: $sizing;
 	box-sizing: $sizing;
 }
+
+// Truncate mixin
+// Truncate single line text
+@mixin truncate {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

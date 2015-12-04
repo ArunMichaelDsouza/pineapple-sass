@@ -271,6 +271,10 @@
 	@include url(#svg-blur);
 }
 
+// Truncate
+.truncate {
+	@include truncate;
+}
 
 
 

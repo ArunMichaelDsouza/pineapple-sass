@@ -157,6 +157,14 @@
 	box-sizing: $sizing;
 }
 
+// Truncate mixin
+// Truncate single line text
+@mixin truncate {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
 // Background Opacity mixin
 // Add opacity filter to a background color
 @mixin backgroundOpacity($color, $opacity) {
