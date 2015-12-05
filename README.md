@@ -46,6 +46,22 @@ Example
 		@include transition(all, .20s, ease-in-out);
 	}
 ```
+#### animation
+> Animate an element
+
+Syntax
+```html
+	@include animation($animation, $duration, $iteration, $delay);
+```
+
+By default the delay is set to 0.
+
+Example
+```html
+	.element {
+		@include animation(test, 3s, infinte, 2s);
+	}
+```
 
 
 
