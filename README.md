@@ -43,7 +43,16 @@ Syntax
 Example
 ```html
 	.element {
-		@include transition(all, .20s, ease-in-out);
+		@include transition(opacity, .20s, ease-in);
+	}
+
+	Output CSS - 
+	.element {
+	  -webkit-transition: opacity 0.2s ease-in;
+	  -moz-transition: opacity 0.2s ease-in;
+	  -o-transition: opacity 0.2s ease-in;
+	  -ms-transition: opacity 0.2s ease-in;
+	  transition: opacity 0.2s ease-in;
 	}
 ```
 #### animation
@@ -61,10 +70,36 @@ Example
 	.element {
 		@include animation(test, 3s, infinte, 2s);
 	}
+
+	Output CSS - 
+	.element {
+		-webkit-animation: test 3s 2s infinte;
+  		-moz-animation: test 3s 2s infinte;
+  		-o-animation: test 3s 2s infinte;
+ 		animation: test 3s 2s infinte;
+	}
+```
+### Background mixins
+
+#### backgroundOpacity
+> Add opacity to a background color. Converts a HEX value into its rgba() equivalent
+
+Syntax
+```html
+	@include backgroundOpacity($color, $opacity);
 ```
 
+Example
+```html
+	.element {
+		@include backgroundOpacity(#50a4e2, .5);
+	}
 
-
+	Output CSS - 
+	.element {
+		background-color: rgba(80, 164, 226, 0.5);
+	}
+```
 
 
 
