@@ -1,3 +1,9 @@
+// Border mixin
+// Add a border to any element 
+@mixin border($width, $style, $color) {
+    border: $width $style $color;
+}
+
 // Border radius mixin
 // Add border radius to an element
 @mixin borderRadius($radius) {
@@ -7,7 +13,7 @@
 }
 
 // Edge border radius mixin 
-// Add border radius to specifix edge(left/right) of element
+// Add border radius to a specifix edge(left/right) of an element
 @mixin borderRadiusEdge($edge, $radius) {
     @if $edge == 'right' {
         border-top-right-radius: $radius;
@@ -20,7 +26,7 @@
 }
 
 // Border + Radius mixin
-// Add border and a radius to a any side(top/bottom/left/right) of an element
+// Add border and a radius to any side(top/bottom/left/right) of an element
 @mixin sideBorderAndRadius($side, $width, $type, $color, $radius: 0) {
     @if $side == 'top' {
         border-top: $width $type $color;
@@ -52,14 +58,8 @@
     }
 }
 
-// Border mixin
-// Add a border to any element 
-@mixin border($width, $style, $color) {
-    border: $width $style $color;
-}
-
 // Border image mixin
-// Add border image to any element
+// Add a border image to any element
 @mixin borderImage($borderWidth, $url, $mode, $sliceTop, $sliceRight: 0, $sliceBottom: 0, $sliceLeft: 0) {
     border-width: $borderWidth;
     @if $sliceRight != 0 and $sliceBottom != 0 and $sliceLeft != 0 {

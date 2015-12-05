@@ -14,6 +14,10 @@
     @include insetBoxShadow(0, 0, 4px, #aaa);
 }
 
+.border-radius {
+	@include borderRadius(5px);
+}
+
 .border-radius-edge {
     @include borderRadiusEdge(left, 4px);
 }
