@@ -35,6 +35,12 @@ You can also use the individual mixin components present in the ``src`` folder -
 #### transition
 > Add CSS transition to any element
 
+Syntax
+```html
+	@include transition($type, $duration, $easing);
+```
+
+Example
 ```html
 	.element {
 		@include transition(all, .20s, ease-in-out);
