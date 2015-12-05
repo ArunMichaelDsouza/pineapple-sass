@@ -100,6 +100,39 @@ Example
 		background-color: rgba(80, 164, 226, 0.5);
 	}
 ```
+#### backgroundSize
+> Set background size for a background image
+
+Syntax
+```html
+	backgroundSize($size);
+```
+
+Example
+```html
+	.element1 {
+		@include backgroundSize(100%);
+	}
+
+	.element2 {
+		@include backgroundSize(contain);
+	}
+
+	Output CSS - 
+	.element1 {
+		-webkit-background-size: 100% auto;
+  		-moz-background-size: 100% auto;
+  		-o-background-size: 100% auto;
+  		background-size: 100% auto;
+	}
+
+	.element2 {
+		-webkit-background-size: contain;
+  		-moz-background-size: contain;
+  		-o-background-size: contain;
+  		background-size: contain;
+	}
+```
 
 
 
