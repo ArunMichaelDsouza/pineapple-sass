@@ -421,3 +421,35 @@ footer {
     color:#444;
   }
 }
+
+/* Custom Styles */
+body {
+  padding-top: 0;
+  padding-right: 0;
+}
+
+header {
+  margin-top: 0;
+  border-radius: 0;
+  height: 100%;
+  margin-right: 0;
+}
+
+@media print, screen and (max-width: 960px) {
+  header ul {
+      top: 180px;
+  }
+}
+
+.user {
+  font-size: .65em;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .user {
+    display: block;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
