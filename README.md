@@ -1272,6 +1272,7 @@ Example
 	}
 ```
 
+<br/>
 ## License
 
 MIT Licensed
