@@ -2,300 +2,39 @@
 
 @import "../../build/pineapple-sass";
 
+// Animations
 .transition {
-    @include transition(opacity, .20s, ease-in);
+	@include transition(opacity, .2s, ease-in);
 }
 
-.box-shadow {
-    @include boxShadow(0px 4px 5px #666, 2px 6px 10px #999);
+.animation {
+	@include animation(test, 3s, infinite, 2s);
 }
 
-.inset-box-shadow {
-    @include insetBoxShadow(0, 0, 4px, #aaa);
-}
-
-.border-radius {
-	@include borderRadius(5px);
-}
-
-.border-radius-edge {
-    @include borderRadiusEdge(left, 4px);
-}
-
-// Without radius (default : 0)
-.side-border-and-radius {
-	@include sideBorderAndRadius(top, 2px, solid, #333);
-}
-
-// With radius
-.side-border-and-radius2 {
-	@include sideBorderAndRadius(left, 2px, solid, #333, 50%);
-}
-
-// Clearfix
-.clearfix {
-	@include clearfix;
-}
-
-// Background opacity
+// Backgrounds
 .bg-opacity {
 	@include backgroundOpacity(#50a4e2, .5);
 }
 
-// Background size 
 .bg-size {
-	@include backgroundSize(100%);
+	@include backgroundSize(cover);
 }
 
-.bg-size2 {
-	@include backgroundSize(contain);
+.linear-gradient {
+	@include linearGradient(left, #00a0e3 5%, #50a4e2, #0a6da7);
 }
 
-// Scale
-.scale {
-	@include scale(2, 3);
+.repeat-linear {
+	@include repeatingLinearGradient(left, #00a0e3, #50a4e2, #0a6da7);
 }
 
-// Translate
-.move {
-	@include translate(10px, 30px);
+.radial-gradient {
+	 @include radialGradient(#50a4e2, #0a6da7, #00a0e3);
 }
 
-// Rotate
-.rotate {
-	@include rotate(45);
+.repeat-radial {
+	@include repeatingRadialGradient(#50a4e2, #00a0e3, #0a6da7);
 }
-
-// Skew
-.skew {
-	@include skew(20);
-}
-
-// Flip 
-.flip {
-	@include flip;
-}
-
-// Fonts
-.serif {
-	@include fontFace(Times);
-}
-
-.sans-serif {
-	@include fontFace(Helvetica);
-}
-
-// Display flex
-.flexbox {
-	@include displayFlex;  
-}
-
-// Add border
-.border {
-	@include border(1px, solid, #000);
-	@include border(1px, dotted, #000);
-	@include border(1px, dashed, #000);
-	@include border(1px, double, #000);
-	@include border(1px, groove, #000);
-	@include border(1px, ridge, #000);
-	@include border(1px, inset, #000);
-	@include border(1px, outset, #000);
-}
-
-// Border image
-.border-image {
-	@include borderImage(10px, "https://mdn.mozillademos.org/files/4127/border.png", round, 30);
-}
-
-.border-image2 {
-	@include borderImage(10px, "https://mdn.mozillademos.org/files/4127/border.png", round, 30, 40, 30);
-}
-
-.border-image3 {
-	@include borderImage(10px, "https://mdn.mozillademos.org/files/4127/border.png", round, 30, 40);
-}
-
-.border-image4 {
-	@include borderImage(10px, "https://mdn.mozillademos.org/files/4127/border.png", round, 30, 40, 50, 60);
-}
-
-// Utilities
-.pointer {
-	@include cursorPointer;
-}
-
-.no-focus {
-	@include noFocus;
-}
-
-// Box sizing
-.box-sizing {
-	@include boxSizing(border-box);
-}
-
-// Animate
-.animate {
-	@include animation(test, 3s, infinte, 2s);
-}
-
-// User select
-.select {
-	@include userSelect(none);
-}
-
-// Text selection
-.text-select {
-	@include textSelection {
-		color: #343434;
-		background-color: #a0a0a0;
-	}
-}
-
-// Linear gradient
-.linear {
-	@include linearGradient(left, red 5%, blue, yellow, orange);
-}
-
-// Repeating gradient
-.repeating {
-	@include repeatingLinearGradient(left, red, blue, yellow 5%);
-}
-
-
-// Placeholder 
-.placeholder {
-	@include placeholder {
-		color: #8a8a8a;
-	}
-}
-
-// Media queries
-.large {
-	@include media-l-screen {
-		background-color: #eee;
-	}
-}
-
-.medium {
-	@include media-m-screen {
-		background-color: #ddd;
-	}
-}
-
-.small {
-	@include media-s-screen {
-		background-color: #ccc;
-	}
-}
-
-.xs {
-	@include media-xs-screen {
-		background-color: #bbb;
-	}
-}
-
-.mobile {
-	@include media-s-mobile {
-		background-color: #aaa;
-	}
-}
-
-.retina {
-	@include media-retina {
-		background-color: #50a4e2;
-	}
-}
-
-// Image retinize
-.ret {
-	@include retinizeBackground("test", "-2x", "png", 200px, 200px, "../../")
-}
-
-// Radial gradient 
-.rad {
-	@include radialGradient(red, green, blue);
-}
-
-// Repeating radial gradient
-.rad-repeat {
-	@include repeatingRadialGradient(red, yellow, orange);
-}
-
-// Blur 
-.blur {
-	@include blur(20px);
-}
-
-// Grayscale
-.gray {
-	@include grayscale(80%);
-}
-
-// Sepia
-.sepia {
-	@include sepia(80%);
-}
-
-// Saturate
-.saturate {
-	@include saturate(80);
-}
-
-// Hue rotate
-.hue {
-	@include hueRotate(80deg);
-}
-
-// Invert
-.invert {
-	@include invert(80%);
-}
-
-// Opacity
-.op {
-	@include opacity(80%);
-}
-
-// Brightness
-.bright {
-	@include brightness(80%);
-}
-
-// Contrast
-.cont {
-	@include contrast(80%);
-}
-
-// Drop shadow
-.drop-sh {
-	@include dropShadow(1px 2px 3px rgba(0,0,0,.45));
-}
-
-// URL
-.url {
-	@include url(#svg-blur);
-}
-
-// Truncate
-.truncate {
-	@include truncate;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

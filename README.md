@@ -121,7 +121,7 @@ Example
 	}
 
 	.element2 {
-		@include backgroundSize(contain);
+		@include backgroundSize(cover);
 	}
 
 	Output CSS - 
@@ -133,10 +133,10 @@ Example
 	}
 
 	.element2 {
-		-webkit-background-size: contain;
-  		-moz-background-size: contain;
-  		-o-background-size: contain;
-  		background-size: contain;
+		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+  		background-size: cover;
 	}
 ```
 
@@ -151,15 +151,15 @@ Syntax
 Example
 ```html
 	.element {
-		@include linearGradient(left, red 5%, blue, yellow, orange);
+		@include linearGradient(left, #00a0e3 5%, #50a4e2, #0a6da7);
 	}
 
 	Output CSS - 
 	.element {
-		background: -webkit-linear-gradient(left, red 5%, blue, yellow, orange);
-  		background: -moz-linear-gradient(left, red 5%, blue, yellow, orange);
-  		background: -o-linear-gradient(left, red 5%, blue, yellow, orange);
-  		background: linear-gradient(to right, red 5%, blue, yellow, orange);
+		background: -webkit-linear-gradient(left, #00a0e3 5%, #50a4e2, #0a6da7);
+  		background: -moz-linear-gradient(left, #00a0e3 5%, #50a4e2, #0a6da7);
+  		background: -o-linear-gradient(left, #00a0e3 5%, #50a4e2, #0a6da7);
+  		background: linear-gradient(to right, #00a0e3 5%, #50a4e2, #0a6da7);
 	}
 ```
 
@@ -174,15 +174,15 @@ Syntax
 Example
 ```html
 	.element {
-		@include repeatingLinearGradient(left, red, blue, yellow 5%);
+		@include repeatingLinearGradient(left, #00a0e3, #50a4e2, #0a6da7);
 	}
 
 	Output CSS - 
 	.element {
-		background: -webkit-repeating-linear-gradient(left, red, blue, yellow 5%);
-  		background: -moz-repeating-linear-gradient(left, red, blue, yellow 5%);
-  		background: -o-repeating-linear-gradient(left, red, blue, yellow 5%);
-  		background: repeating-linear-gradient(to right, red, blue, yellow 5%);
+		background: -webkit-repeating-linear-gradient(left, #00a0e3, #50a4e2, #0a6da7);
+  		background: -moz-repeating-linear-gradient(left, #00a0e3, #50a4e2, #0a6da7);
+  		background: -o-repeating-linear-gradient(left, #00a0e3, #50a4e2, #0a6da7);
+  		background: repeating-linear-gradient(to right, #00a0e3, #50a4e2, #0a6da7);
 	}
 ```
 
@@ -197,15 +197,15 @@ Syntax
 Example
 ```html
 	.element {
-		@include radialGradient(red, green, blue);
+		@include radialGradient(#50a4e2, #0a6da7, #00a0e3);
 	}
 
 	Output CSS - 
 	.element {
-		background: -webkit-radial-gradient(red, green, blue);
-  		background: -o-radial-gradient(red, green, blue);
-  		background: -moz-radial-gradient(red, green, blue);
-  		background: radial-gradient(red, green, blue);
+		background: -webkit-radial-gradient(#50a4e2, #0a6da7, #00a0e3);
+  		background: -o-radial-gradient(#50a4e2, #0a6da7, #00a0e3);
+  		background: -moz-radial-gradient(#50a4e2, #0a6da7, #00a0e3);
+  		background: radial-gradient(#50a4e2, #0a6da7, #00a0e3);
 	}
 ```
 
@@ -220,15 +220,15 @@ Syntax
 Example
 ```html
 	.element {
-		@include repeatingRadialGradient(red, yellow, orange);
+		@include repeatingRadialGradient(#50a4e2, #00a0e3, #0a6da7);
 	}
 
 	Output CSS - 
 	.element {
-		background: -webkit-repeating-radial-gradient(red, yellow, orange);
-  		background: -o-repeating-radial-gradient(red, yellow, orange);
-  		background: -moz-repeating-radial-gradient(red, yellow, orange);
-  		background: repeating-radial-gradient(red, yellow, orange);
+		background: -webkit-repeating-radial-gradient(#50a4e2, #00a0e3, #0a6da7);
+  		background: -o-repeating-radial-gradient(#50a4e2, #00a0e3, #0a6da7);
+  		background: -moz-repeating-radial-gradient(#50a4e2, #00a0e3, #0a6da7);
+  		background: repeating-radial-gradient(#50a4e2, #00a0e3, #0a6da7);
 	}
 ```
 
