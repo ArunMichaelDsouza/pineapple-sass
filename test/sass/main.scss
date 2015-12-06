@@ -192,8 +192,35 @@
     }
 }
 
+// Transforms 
+.scale {
+	@include scale(2, 3);
+}
 
+.translate {
+	@include translate(10px, 30px);
+}
 
+.rotate {
+	@include rotate(45);
+}
+
+.skew {
+	@include skew(20);
+}
+
+.flip {
+	@include flip;
+}
+
+// Utilities 
+.cursor {
+	@include cursorPointer;
+}
+
+.nofocus {
+	@include noFocus;
+}
 
 
 
