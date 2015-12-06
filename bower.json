@@ -1,0 +1,15 @@
+{
+  "name": "pineapple-sass",
+  "version": "1.11.7",
+  "homepage": "https://github.com/ArunMichaelDsouza/pineapple-sass",
+  "authors": [
+    "Arun Michael Dsouza <amdsouza92@gmail.com>"
+  ],
+  "description": "A must-have Sass mixin library for all your Sassy needs",
+  "keywords": [
+    "Sass",
+    "mixin",
+    "library"
+  ],
+  "license": "MIT"
+}
