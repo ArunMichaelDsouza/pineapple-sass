@@ -10,6 +10,7 @@ A must-have Sass mixin library for all your Sassy needs
 * Support for CSS3 filters
 * Bundled with media query mixins
 
+<br/>
 ## Usage
 
 The [_pineapple-sass.scss](https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/build/_pineapple-sass.scss) build script is a Sass partial that can be included in your sass project. All pineapple sass mixins will be then readily avaialble for your use.
@@ -28,6 +29,7 @@ You can also use the individual mixin components present in the ``src`` folder -
 * [Transforms component](https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/src/_transforms.scss)
 * [Utilities component](https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/src/_utilities.scss)
 
+<br/>
 ## Mixins
 
 ### Animations
@@ -81,6 +83,7 @@ Example
 	}
 ```
 
+<br/>
 ### Backgrounds
 
 #### backgroundOpacity
@@ -229,6 +232,7 @@ Example
 	}
 ```
 
+<br/>
 ### Borders
 
 #### border
@@ -361,6 +365,7 @@ Example
 	}
 ```
 
+<br/>
 ### Display
 
 #### clearfix
@@ -452,6 +457,7 @@ Example
 	}
 ```
 
+<br/>
 ### Filters
 
 #### blur
@@ -703,6 +709,7 @@ Example
 	}
 ```
 
+<br/>
 ### Fonts
 
 #### fontFace
@@ -733,6 +740,7 @@ Example
 	}
 ```
 
+<br/>
 ### Media Queries
 
 Pineapple Sass has 5 inbuilt breakpoint variables - 
@@ -951,6 +959,7 @@ Example
 	}
 ```
 
+<br/>
 ### Shadows
 
 #### boxShadow
@@ -997,6 +1006,7 @@ Example
 	}
 ```
 
+<br/>
 ### Text
 
 #### userSelect
@@ -1084,6 +1094,7 @@ Example
 	}
 ```
 
+<br/>
 ### Transforms
 
 #### scale
@@ -1216,6 +1227,7 @@ Example
 	}
 ```
 
+<br/>
 ### Utilities
 
 #### cursorPointer
@@ -1271,29 +1283,5 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
