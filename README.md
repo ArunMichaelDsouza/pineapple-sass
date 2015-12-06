@@ -1,6 +1,8 @@
 # pineapple-sass
 A must-have Sass mixin library for all your Sassy needs
 
+[http://arunmichaeldsouza.github.io/pineapple-sass/](http://arunmichaeldsouza.github.io/pineapple-sass/ )
+
 <img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/pineapple-sass.png" width="160" height="auto" />
 
 * Easy to use
