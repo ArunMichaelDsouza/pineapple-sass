@@ -30,7 +30,7 @@ You can also use the individual mixin components present in the ``src`` folder -
 
 ## Mixins
 
-### Animation mixins
+### Animations
 
 #### transition
 > Add CSS transition to any element
@@ -81,7 +81,7 @@ Example
 	}
 ```
 
-### Background mixins
+### Backgrounds
 
 #### backgroundOpacity
 > Add opacity to a background color. Converts a HEX value into its rgba() equivalent
@@ -229,7 +229,7 @@ Example
 	}
 ```
 
-### Border mixins
+### Borders
 
 #### border
 > Add a border to any element
@@ -360,5 +360,927 @@ Example
   		border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 round;
 	}
 ```
+
+### Display
+
+#### clearfix
+> Add clearfix hack - to contain floats within containers
+
+Syntax
+```html
+	@include clearfix;
+```
+
+Example
+```html
+	.element {
+		@include clearfix;
+	}
+
+	Output CSS - 
+	.element:before, .element:after {
+	 	content: "";
+	  	clear: both;
+	  	display: table;
+	}
+```
+
+#### displayFlex
+> Add flex display property to any element
+
+Syntax
+```html
+	@include displayFlex;
+```
+
+Example
+```html
+	.element {
+		@include displayFlex;
+	}
+
+	Output CSS - 
+	.element {
+	 	display: -webkit-box;
+  		display: -ms-flexbox;
+  		display: -webkit-flex;
+  		display: flex;
+	}
+```
+
+#### boxSizing
+> Set box sizing for an element
+
+Syntax
+```html
+	@include boxSizing($sizing);
+```
+
+Example
+```html
+	.element {
+		@include boxSizing(border-box);
+	}
+
+	Output CSS - 
+	.element {
+	 	-webkit-box-sizing: border-box;
+  		-moz-box-sizing: border-box;
+  		box-sizing: border-box;
+	}
+```
+
+#### truncate
+> Truncate single line text
+
+Syntax
+```html
+	@include truncate;
+```
+
+Example
+```html
+	.element {
+		@include truncate;
+	}
+
+	Output CSS - 
+	.element {
+	 	white-space: nowrap;
+  		overflow: hidden;
+  		text-overflow: ellipsis;
+	}
+```
+
+### Filters
+
+#### blur
+> Blur an element
+
+Syntax
+```html
+	@include blur($value);
+```
+
+Where value is in px.
+
+Example
+```html
+	.element {
+		@include blur(20px);
+	}
+
+	Output CSS - 
+	.element {
+		-webkit-filter: blur(20px);
+  		filter: blur(20px);
+	}
+```
+
+#### grayscale
+> Add grayscale filter to an element
+
+Syntax
+```html
+	@include grayscale($value);
+```
+
+Where value is in %.
+
+Example
+```html
+	.element {
+		@include grayscale(80%);
+	}
+
+	Output CSS - 
+	.element {
+		-webkit-filter: grayscale(80%);
+  		filter: grayscale(80%);
+	}
+```
+
+#### sepia
+> Add sepia filter to an element
+
+Syntax
+```html
+	@include sepia($value);
+```
+
+Where value is in %.
+
+Example
+```html
+	.element {
+		@include sepia(80%);
+	}
+
+	Output CSS - 
+	.element {
+		-webkit-filter: sepia(80%);
+  		filter: sepia(80%);
+	}
+```
+
+#### saturate
+> Add saturation filter to an element
+
+Syntax
+```html
+	@include saturate($value);
+```
+
+Where value is in % or is a number.
+
+Example
+```html
+	.element {
+		@include saturate(80);
+	}
+
+	Output CSS - 
+	.element {
+		-webkit-filter: saturate(80);
+  		filter: saturate(80);
+	}
+```
+
+#### hueRotate
+> Rotate hue of an element
+
+Syntax
+```html
+	@include hueRotate($value);
+```
+
+Where value is in degrees.
+
+Example
+```html
+	.element {
+		@include hueRotate(80deg);
+	}
+
+	Output CSS - 
+	.element {
+		-webkit-filter: hue-rotate(80deg);
+  		filter: hue-rotate(80deg);
+	}
+```
+
+#### invert
+> Invert colors of an element
+
+Syntax
+```html
+	@include invert($value);
+```
+
+Where value is in %.
+
+Example
+```html
+	.element {
+		@include invert(80%);
+	}
+
+	Output CSS - 
+	.element {
+		-webkit-filter: invert(80%);
+  		filter: invert(80%);
+	}
+```
+
+#### opacity
+> Set opacity of an element
+
+Syntax
+```html
+	@include opacity($value);
+```
+
+Where value is in %.
+
+Example
+```html
+	.element {
+		@include opacity(80%);
+	}
+
+	Output CSS - 
+	.element {
+		-webkit-filter: opacity(80%);
+  		filter: opacity(80%);
+	}
+```
+
+#### brightness
+> Set brightness of an element
+
+Syntax
+```html
+	@include brightness($value);
+```
+
+Where value is in %.
+
+Example
+```html
+	.element {
+		@include brightness(80%);
+	}
+
+	Output CSS - 
+	.element {
+		 -webkit-filter: brightness(80%);
+  		filter: brightness(80%);
+	}
+```
+
+#### contrast
+> Set contrast of an element
+
+Syntax
+```html
+	@include contrast($value);
+```
+
+Where value is in %.
+
+Example
+```html
+	.element {
+		@include contrast(80%);
+	}
+
+	Output CSS - 
+	.element {
+		-webkit-filter: contrast(80%);
+  		filter: contrast(80%);
+	}
+```
+
+#### dropShadow
+> Add drop shadow filter to an element
+
+Syntax
+```html
+	@include dropShadow($value);
+```
+
+Example
+```html
+	.element {
+		@include dropShadow(1px 2px 3px rgba(0,0,0,.45));
+	}
+
+	Output CSS - 
+	.element {
+		-webkit-filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.45));
+  		filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.45));
+	}
+```
+
+#### url
+> Add an SVG filter via URL
+
+Syntax
+```html
+	@include url($value);
+```
+
+Example
+```html
+	.element {
+		@include url(#svg-blur);
+	}
+
+	Output CSS - 
+	.element {
+		-webkit-filter: url(#svg-blur);
+  		filter: url(#svg-blur);
+	}
+```
+
+### Fonts
+
+#### fontFace
+> Load a web-safe font with fallbacks
+
+Syntax
+```html
+	@include fontFace($font);
+```
+
+Example
+```html
+	.element1 {
+		@include fontFace(Times);
+	}
+
+	.element2 {
+		@include fontFace(Helvetica);
+	}
+
+	Output CSS - 
+	.element1 {
+		font-family: times, serif;
+	}
+
+	.element2 {
+		font-family: helvetica, sans-serif;
+	}
+```
+
+### Media Queries
+
+Pineapple Sass has 5 inbuilt breakpoint variables - 
+
+```html
+	$largeScreen: 1200px;
+	$mediumScreen: 992px;
+	$smallScreen: 768px;
+	$extraSmallScreen: 480px;
+	$smallMobile: 320px;
+```
+
+These breakpoint variables are used with the media query mixins.  
+
+#### media-l-screen
+> Detect large screens and apply css
+
+Syntax
+```html
+	@include media-l-screen {
+		...
+	}
+```
+
+Example
+```html
+	.element {
+		@include media-l-screen {
+			background-color: #eee;
+		}
+	}
+
+	Output CSS - 
+	@media screen and (max-width: 1200px) {
+	 	.element {
+	    	background-color: #eee;
+	  	}
+	}
+```
+
+#### media-m-screen 
+> Detect medium screens and apply css
+
+Syntax
+```html
+	@include media-m-screen {
+		...
+	}
+```
+
+Example
+```html
+	.element {
+		@include media-m-screen {
+			background-color: #ddd;
+		}
+	}
+
+	Output CSS - 
+	@media screen and (max-width: 992px) {
+	 	.element {
+	    	background-color: #ddd;
+	  	}
+	}
+```
+
+#### media-s-screen 
+> Detect small screens and apply css
+
+Syntax
+```html
+	@include media-s-screen {
+		...
+	}
+```
+
+Example
+```html
+	.element {
+		@include media-s-screen {
+			background-color: #ccc;
+		}
+	}
+
+	Output CSS - 
+	@media screen and (max-width: 768px) {
+  		.element {
+    		background-color: #ccc;
+  		}
+	}
+```
+
+#### media-xs-screen
+> Detect x-small screens and apply css
+
+Syntax
+```html
+	@include media-xs-screen {
+		...
+	}
+```
+
+Example
+```html
+	.element {
+		@include media-xs-screen {
+			background-color: #bbb;
+		}
+	}
+
+	Output CSS - 
+	@media screen and (max-width: 480px) {
+  		.element {
+    		background-color: #bbb;
+  		}
+	}
+```
+
+#### media-s-mobile
+> Detect small mobile screens and apply css
+
+Syntax
+```html
+	@include media-s-mobile {
+		...
+	}
+```
+
+Example
+```html
+	.element {
+		@include media-s-mobile {
+			background-color: #aaa;
+		}
+	}
+
+	Output CSS - 
+	@media screen and (max-width: 320px) {
+  		.element {
+   			background-color: #aaa;
+  		}
+	}
+```
+
+#### media-retina
+> Detect retina screen and apply css
+
+Syntax
+```html
+	@include media-retina {
+		...
+	}
+```
+
+Example
+```html
+	.element {
+		@include media-retina {
+			background-color: #50a4e2;
+		}
+	}
+
+	Output CSS - 
+	@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  		.element {
+    		background-color: #50a4e2;
+  		}
+	}
+```
+
+#### retinizeBackground
+> Retinize a background image
+
+Syntax
+```html
+	retinizeBackground($file, $postfix, $type, $width, $height, $location);
+```
+
+Where,
+
+``$file`` is the file name
+
+``$postfix`` is the high-res image postfix. Eg - If you have ``image.png`` as your primary image, and ``image-2x.png`` as your postfixed high-res image (which will be used on retina screens), then ``-2x`` is the postfix.
+
+``$type`` is the file type of image
+
+``$width`` is the width of image
+
+``$height`` is the height of image
+
+``$location`` is the location of the files. By default it is set to empty string.
+
+Example
+```html
+	.element {
+		@include retinizeBackground("image", "-2x", "png", 200px, 200px, "../../");
+	}
+
+	Output CSS - 
+	.element {
+  		background-image: "../../image.png";
+	    -webkit-background-size: 200px 200px;
+	    -moz-background-size: 200px 200px;
+	    -o-background-size: 200px 200px;
+	    background-size: 200px 200px;
+	}
+
+	@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  		.element {
+    		background-image: "../../image-2x.png";
+            -webkit-background-size: 200px 200px;
+            -moz-background-size: 200px 200px;
+            -o-background-size: 200px 200px;
+    		background-size: 200px 200px;
+  		}
+	}
+```
+
+### Shadows
+
+#### boxShadow
+> Add box shadow to any element
+
+Syntax
+```html
+	@include boxShadow($shadows...);
+```
+
+Example
+```html
+	.element {
+		@include boxShadow(0px 4px 5px #666, 2px 6px 10px #999);
+	}
+
+	Output CSS - 
+	.element {
+	 	-webkit-box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
+        -moz-box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
+  		box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
+	}
+```
+
+#### insetBoxShadow
+> Add inset box shadow to any element
+
+Syntax
+```html
+	@include insetBoxShadow($x, $y, $blur, $color);
+```
+
+Example
+```html
+	.element {
+		@include insetBoxShadow(0, 0, 4px, #aaa);
+	}
+
+	Output CSS - 
+	.element {
+	 	-webkit-box-shadow: inset 0 0 4px #aaa;
+        -moz-box-shadow: inset 0 0 4px #aaa;
+  		box-shadow: inset 0 0 4px #aaa;
+	}
+```
+
+### Text
+
+#### userSelect
+> Set user select property for an element
+
+Syntax
+```html
+	@include userSelect($value);
+```
+
+Example
+```html
+	.element {
+		@include userSelect(none);
+	}
+
+	Output CSS - 
+	.element {
+	 	-webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+	}
+```
+
+#### textSelection
+> Modify css for text selection
+
+Syntax
+```html
+	@include textSelection {
+		...
+	}
+```
+
+Example
+```html
+	.element {
+		@include textSelection {
+			color: #343434;
+			background-color: #a0a0a0;
+		}
+	}
+
+	Output CSS - 
+	.element::selection, 
+	.element::-moz-selection {
+		color: #343434;
+	  	background-color: #a0a0a0;
+	}
+```
+
+#### placeholder
+> Style placeholders within input fields
+
+Syntax
+```html
+	@include placeholder {
+		...
+	}
+```
+
+Example
+```html
+	.element {
+		@include placeholder {
+			color: #8a8a8a;
+		}
+	}
+
+	Output CSS - 
+	.element::-webkit-input-placeholder {
+	 	color: #8a8a8a;
+	}
+
+	.element:-moz-placeholder {
+	  	color: #8a8a8a;
+	}
+
+	.element::-moz-placeholder {
+	  	color: #8a8a8a;
+	}
+
+	.element:-ms-input-placeholder {
+	  	color: #8a8a8a;
+	}
+```
+
+### Transforms
+
+#### scale
+> Scale an element
+
+Syntax
+```html
+	@include scale($x, $y);
+```
+
+By default $y is set to 0.
+
+Example
+```html
+	.element {
+		@include scale(2, 3);
+	}
+
+	Output CSS - 
+	.element {
+	 	-webkit-transform: scale(2, 3);
+        -moz-transform: scale(2, 3);
+        -o-transform: scale(2, 3);
+        -ms-transform: scale(2, 3);
+  		transform: scale(2, 3);
+	}
+```
+
+#### translate
+> Translate an element
+
+Syntax
+```html
+	@include translate($x, $y);
+```
+
+By default $y is set to 0.
+
+Example
+```html
+	.element {
+		@include translate(10px, 30px);
+	}
+
+	Output CSS - 
+	.element {
+	 	-webkit-transform: translate(10px, 30px);
+        -moz-transform: translate(10px, 30px);
+        -o-transform: translate(10px, 30px);
+        -ms-transform: translate(10px, 30px);
+  		transform: translate(10px, 30px);
+	}
+```
+
+#### rotate
+> Rotate an element
+
+Syntax
+```html
+	@include rotate($deg);
+```
+
+Where $deg is a number.
+
+Example
+```html
+	.element {
+		@include rotate(45);
+	}
+
+	Output CSS - 
+	.element {
+	 	-webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+  		transform: rotate(45deg);
+        -webkit-backface-visibility: hidden;
+	}
+```
+
+#### skew
+> Skew an element
+
+Syntax
+```html
+	@include skew($x, $y);
+```
+Where $x and $y are numbers. By default $y is set to 0.
+
+Example
+```html
+	.element {
+		@include skew(20);
+	}
+
+	Output CSS - 
+	.element {
+	 	-webkit-transform: skew(20deg, 0deg);
+        -moz-transform: skew(20deg, 0deg);
+        -o-transform: skew(20deg, 0deg);
+        -ms-transform: skew(20deg, 0deg);
+  		transform: skew(20deg, 0deg);
+        -webkit-backface-visibility: hidden;
+	}
+```
+
+#### flip
+> Flip / mirror an element
+
+Syntax
+```html
+	@include flip;
+```
+
+Example
+```html
+	.element {
+		@include flip;
+	}
+
+	Output CSS - 
+	.element {
+	    -webkit-transform: scaleX(-1);
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+	}
+```
+
+### Utilities
+
+#### cursorPointer
+> Add a pointer cursor to the hover state of an element
+
+Syntax
+```html
+	@include cursorPointer;
+```
+
+Example
+```html
+	.element {
+		@include cursorPointer;
+	}
+
+	Output CSS - 
+	.element:hover {
+  		cursor: pointer;
+	}
+```
+
+#### noFocus
+> Remove focus from a button or input field while in focused state
+
+Syntax
+```html
+	@include noFocus;
+```
+
+Example
+```html
+	.element {
+		@include noFocus;
+	}
+
+	Output CSS - 
+	.element:focus {
+  		outline: none;
+  		box-shadow: none;
+  		border: none;
+	}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

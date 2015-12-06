@@ -1,5 +1,5 @@
 // Clearfix hack mixin
-// To contain floats within containers
+// Add clearfix hack - to contain floats within containers
 @mixin clearfix {
     &:before,
     &:after {

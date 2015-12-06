@@ -6,21 +6,21 @@
 }
 
 // Grayscale filter mixin
-// Make an element grayscale
+// Add grayscale filter to an element
 @mixin grayscale($value) {
 	-webkit-filter: grayscale($value); // Add value in %
 	filter: grayscale($value);
 }
 
 // Sepia filter mixin
-// Make an element sepia
+// Add sepia filter to an element
 @mixin sepia($value) {
 	-webkit-filter: sepia($value); // Add value in %
 	filter: sepia($value);
 }
 
 // Saturate filter mixin
-// Make an element saturated
+// Add saturation filter to an element
 @mixin saturate($value) { 
 	-webkit-filter: saturate($value); //Add value in % or whole number
 	filter: saturate($value);
@@ -62,7 +62,7 @@
 }
 
 // Drop shadow filter mixin
-// Add drop shadow to an element
+// Add drop shadow filter to an element
 @mixin dropShadow($value) { 
 	-webkit-filter: drop-shadow($value); 
 	filter: drop-shadow($value);

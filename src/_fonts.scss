@@ -1,5 +1,5 @@
 // Load Font face mixin
-// Load a font family through a URL
+// Load a web-safe font with fallbacks
 @mixin fontFace($font) {
 	$font: to-lower-case($font);
 	// Web safe serif fonts
@@ -8,6 +8,6 @@
 	}
 	// Web safe sans-serif fonts
 	@else if $font == arial or $font == helvetica or $font == gill sans or $font == impact or $font == lucida grande or $font == tahoma or $font == geneva or $font == verdana {
-		font-family: $font, serif;
+		font-family: $font, sans-serif;
 	}
 }

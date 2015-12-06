@@ -58,7 +58,7 @@
 
 // Translate
 .move {
-	@include translate(10px, 30px)
+	@include translate(10px, 30px);
 }
 
 // Rotate
