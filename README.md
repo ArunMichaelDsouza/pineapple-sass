@@ -1268,7 +1268,6 @@ Example
 	.element:focus {
   		outline: none;
   		box-shadow: none;
-  		border: none;
 	}
 ```
 
