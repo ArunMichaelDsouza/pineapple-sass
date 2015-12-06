@@ -27,7 +27,9 @@
 
        <!--  <p class="header">This project is maintained by <a class="header name" href="https://github.com/ArunMichaelDsouza">ArunMichaelDsouza</a></p> -->
 
-       <h1 class="header">Mixins</h1>
+       <h1 class="header mixin-text">Mixins</h1>
+       <h1 class="header mixin-text-mobile"><span id="showMobile">Click</span> to view Mixin list</h1>
+       <h1 class="header mixin-text-mobile mob2"><span id="showMobile2">Close</span></h1>
        <ul class="mixin-list">
            <li>
                 <h2>Animations</h2>
@@ -1763,6 +1765,36 @@
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
-
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+          <script>
+              $('document').ready(function() {
+                $('#showMobile').click(function() {
+                    $('.wrapper').animate({
+                        left: "180px"
+                    }, 200);
+                    $('.mixin-text-mobile').animate({
+                        left: "180px"
+                    }, 200);
+                    $('.mixin-list').animate({
+                        left: "0"
+                    }, 200); 
+                    $('.mixin-text-mobile').hide();
+                    $('.mob2').show();
+                });
+                $('#showMobile2').click(function() {
+                    $('.wrapper').animate({
+                        left: "0px"
+                    }, 200);
+                    $('.mixin-text-mobile').animate({
+                        left: "0px"
+                    }, 200);
+                    $('.mixin-list').animate({
+                        left: "-180px"
+                    }, 200); 
+                    $('.mixin-text-mobile').show();
+                    $('.mob2').hide();
+                });
+              });
+          </script>
   </body>
 </html>
