@@ -130,7 +130,7 @@
 }
 
 // Clearfix hack mixin
-// To contain floats within containers
+// Add clearfix hack - to contain floats within containers
 @mixin clearfix {
     &:before,
     &:after {
@@ -321,7 +321,7 @@
 }
 
 // Load Font face mixin
-// Load a font family through a URL
+// Load a web-safe font with fallbacks
 @mixin fontFace($font) {
 	$font: to-lower-case($font);
 	// Web safe serif fonts
@@ -330,7 +330,7 @@
 	}
 	// Web safe sans-serif fonts
 	@else if $font == arial or $font == helvetica or $font == gill sans or $font == impact or $font == lucida grande or $font == tahoma or $font == geneva or $font == verdana {
-		font-family: $font, serif;
+		font-family: $font, sans-serif;
 	}
 }
 
@@ -474,21 +474,21 @@ $smallMobile: 320px;
 }
 
 // Grayscale filter mixin
-// Make an element grayscale
+// Add grayscale filter to an element
 @mixin grayscale($value) {
 	-webkit-filter: grayscale($value); // Add value in %
 	filter: grayscale($value);
 }
 
 // Sepia filter mixin
-// Make an element sepia
+// Add sepia filter to an element
 @mixin sepia($value) {
 	-webkit-filter: sepia($value); // Add value in %
 	filter: sepia($value);
 }
 
 // Saturate filter mixin
-// Make an element saturated
+// Add saturation filter to an element
 @mixin saturate($value) { 
 	-webkit-filter: saturate($value); //Add value in % or whole number
 	filter: saturate($value);
@@ -530,7 +530,7 @@ $smallMobile: 320px;
 }
 
 // Drop shadow filter mixin
-// Add drop shadow to an element
+// Add drop shadow filter to an element
 @mixin dropShadow($value) { 
 	-webkit-filter: drop-shadow($value); 
 	filter: drop-shadow($value);
