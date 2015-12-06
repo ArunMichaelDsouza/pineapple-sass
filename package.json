@@ -1,6 +1,6 @@
 {
   "name": "pineapple-sass",
-  "version": "0.1.0",
+  "version": "1.11.7",
   "description": "Easy to use Sass mixin library for all your Sassy needs",
   "main": "Gruntfile.js",
   "directories": {

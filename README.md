@@ -11,6 +11,25 @@ A must-have Sass mixin library for all your Sassy needs
 * Bundled with media query mixins
 
 <br/>
+## Installation
+
+#### via bower
+
+You can install the package using bower. Make sure you have bower installed, then run : 
+
+```html
+bower install pineapple-sass
+```
+
+#### via npm
+
+```html
+npm install pineapple-sass
+```
+
+Or [download](https://github.com/ArunMichaelDsouza/pineapple-sass/releases) the latest release. 
+
+<br/>
 ## Usage
 
 The [_pineapple-sass.scss](https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/build/_pineapple-sass.scss) build script is a Sass partial that can be included in your sass project. All pineapple sass mixins will be then readily avaialble for your use.
