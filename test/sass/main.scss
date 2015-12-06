@@ -36,12 +36,161 @@
 	@include repeatingRadialGradient(#50a4e2, #00a0e3, #0a6da7);
 }
 
+// Borders 
+.border {
+	@include border(1px, dotted, #000);
+}
 
+.border-radius {
+	@include borderRadius(20px);
+}
 
+.border-radius-edge {
+	@include borderRadiusEdge(left, 20px);
+}
 
+.side-border-radius {
+	@include sideBorderAndRadius(bottom, 2px, solid, #3FCA5C, 10px);
+}
 
+.border-image {
+	@include borderImage(10px, "https://mdn.mozillademos.org/files/4127/border.png", round, 30);
+}
 
+// Display 
+.clearfix {
+	@include clearfix;
+}
 
+.flex {
+	@include displayFlex;
+}
+
+.box-sizing {
+	@include boxSizing(border-box);
+}
+
+.truncate {
+	@include truncate;
+}
+
+// Filters
+.blur {
+	@include blur(5px);
+}
+
+.grayscale {
+	@include grayscale(80%);
+}
+
+.sepia {
+	@include sepia(80%);
+}
+
+.saturate {
+	 @include saturate(80);
+}
+
+.hue {
+	@include hueRotate(80deg);
+}
+
+.invert {
+	@include invert(80%);
+}
+
+.opacity {
+	@include opacity(30%);
+}
+
+.brightness {
+	@include brightness(80%);
+}
+
+.contrast {
+	@include contrast(150%);
+}
+
+.dropShadow {
+	@include dropShadow(1px 2px 3px rgba(0,0,0,.45));
+}
+
+// Fonts
+.font-serif {
+	@include fontFace(times);
+}
+
+.font-sans {
+	@include fontFace(helvetica);
+}
+
+// Media queries
+.large {
+	@include media-l-screen {
+    	background-color: #eee;
+    }
+}
+
+.medium {
+	@include media-m-screen {
+        background-color: #ddd;
+    }
+}
+
+.small {
+	@include media-s-screen {
+        background-color: #ccc;
+    }
+}
+
+.xs {
+	@include media-xs-screen {
+    	background-color: #bbb;
+    }
+}
+
+.s-mobile {
+	@include media-s-mobile {
+        background-color: #aaa;
+    }
+}
+
+.retina {
+	@include media-retina {
+    	background-color: #50a4e2;
+    }
+}
+
+.retinize {
+	@include retinizeBackground("image", "-2x", "png", 200px, 200px, "../img/");
+}
+
+// Shadows
+.box {
+	@include boxShadow(0px 4px 5px #666, 2px 6px 10px #999);
+}
+
+.box-in {
+	@include insetBoxShadow(0, 2px, 10px, #444);
+}
+
+// Text 
+.select {
+	@include userSelect(none);
+}
+
+.selection {
+	@include textSelection {
+        color: #343434;
+        background-color: #a0a0a0;
+    }
+}
+
+.placeholder {
+	@include placeholder {
+        color: #E4204D;
+    }
+}
 
 
 

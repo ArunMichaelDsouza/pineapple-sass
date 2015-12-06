@@ -9,7 +9,9 @@
 // Text select mixin
 // Modify css for text selection
 @mixin textSelection {
-	&::selection,
+	&::selection {
+		@content;
+	}
 	&::-moz-selection {
 		@content;
 	}

@@ -51,3 +51,217 @@
   background: -moz-repeating-radial-gradient(#50a4e2, #00a0e3, #0a6da7);
   background: repeating-radial-gradient(#50a4e2, #00a0e3, #0a6da7);
 }
+
+.border {
+  border: 1px dotted #000;
+}
+
+.border-radius {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.border-radius-edge {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.side-border-radius {
+  border-bottom: 2px solid #3FCA5C;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.border-image {
+  border-width: 10px;
+  -webkit-border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 round;
+  -moz-border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 round;
+  -o-border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 round;
+  border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 round;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.box-sizing {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.blur {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.grayscale {
+  -webkit-filter: grayscale(80%);
+  filter: grayscale(80%);
+}
+
+.sepia {
+  -webkit-filter: sepia(80%);
+  filter: sepia(80%);
+}
+
+.saturate {
+  -webkit-filter: saturate(80);
+  filter: saturate(80);
+}
+
+.hue {
+  -webkit-filter: hue-rotate(80deg);
+  filter: hue-rotate(80deg);
+}
+
+.invert {
+  -webkit-filter: invert(80%);
+  filter: invert(80%);
+}
+
+.opacity {
+  -webkit-filter: opacity(30%);
+  filter: opacity(30%);
+}
+
+.brightness {
+  -webkit-filter: brightness(80%);
+  filter: brightness(80%);
+}
+
+.contrast {
+  -webkit-filter: contrast(150%);
+  filter: contrast(150%);
+}
+
+.dropShadow {
+  -webkit-filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.45));
+  filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.45));
+}
+
+.font-serif {
+  font-family: times, serif;
+}
+
+.font-sans {
+  font-family: helvetica, serif;
+}
+
+@media screen and (max-width: 1200px) {
+  .large {
+    background-color: #eee;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .medium {
+    background-color: #ddd;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .small {
+    background-color: #ccc;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .xs {
+    background-color: #bbb;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .s-mobile {
+    background-color: #aaa;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .retina {
+    background-color: #50a4e2;
+  }
+}
+
+.retinize {
+  background-image: url("../img/image.png");
+  -webkit-background-size: 200px 200px;
+  -moz-background-size: 200px 200px;
+  -o-background-size: 200px 200px;
+  background-size: 200px 200px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .retinize {
+    background-image: url("../img/image-2x.png");
+    -webkit-background-size: 200px 200px;
+    -moz-background-size: 200px 200px;
+    -o-background-size: 200px 200px;
+    background-size: 200px 200px;
+  }
+}
+
+.box {
+  -webkit-box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
+  -moz-box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
+  box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
+}
+
+.box-in {
+  -webkit-box-shadow: inset 0 2px 10px #444;
+  -moz-box-shadow: inset 0 2px 10px #444;
+  box-shadow: inset 0 2px 10px #444;
+}
+
+.select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.selection::selection {
+  color: #343434;
+  background-color: #a0a0a0;
+}
+
+.selection::-moz-selection {
+  color: #343434;
+  background-color: #a0a0a0;
+}
+
+.placeholder::-webkit-input-placeholder {
+  color: #E4204D;
+}
+
+.placeholder:-moz-placeholder {
+  color: #E4204D;
+}
+
+.placeholder::-moz-placeholder {
+  color: #E4204D;
+}
+
+.placeholder:-ms-input-placeholder {
+  color: #E4204D;
+}

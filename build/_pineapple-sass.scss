@@ -363,7 +363,9 @@
 // Text select mixin
 // Modify css for text selection
 @mixin textSelection {
-	&::selection,
+	&::selection {
+		@content;
+	}
 	&::-moz-selection {
 		@content;
 	}
@@ -458,10 +460,10 @@ $smallMobile: 320px;
 // Background Image retinize mixin
 // Retinize a background image
 @mixin retinizeBackground($file, $postfix, $type, $width, $height, $location:'') {
-	background-image: $location+$file+"."+$type;
+	background-image: url($location+$file+"."+$type);
 	@include backgroundSize($width, $height);
 	@include media-retina {
-		background-image: $location+$file+$postfix+"."+$type;
+		background-image: url($location+$file+$postfix+"."+$type);
 		@include backgroundSize($width, $height);
 	}
 }

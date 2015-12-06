@@ -288,13 +288,13 @@ Syntax
 Example
 ```html
 	.element {
-		@include borderRadiusEdge(left, 4px);
+		@include borderRadiusEdge(left, 20px);
 	}
 
 	Output CSS - 
 	.element {
-		border-top-left-radius: 4px;
-  		border-bottom-left-radius: 4px;
+		border-top-left-radius: 20px;
+  		border-bottom-left-radius: 20px;
 	}
 ```
 
@@ -314,7 +314,7 @@ Example
 		@include sideBorderAndRadius(top, 2px, solid, #333);
 	}
 	.element2 {
-		@include sideBorderAndRadius(left, 2px, solid, #333, 50%);
+		@include sideBorderAndRadius(bottom, 2px, solid, #3FCA5C, 10px);
 	}
 
 	Output CSS - 
@@ -329,13 +329,13 @@ Example
 	}
 
 	.element2 {
-		border-left: 2px solid #333;
-  		border-top: none;
-  		border-right: none;
-  		border-bottom: none;
-  		-webkit-border-radius: 50%;
-  		-moz-border-radius: 50%;
-  		border-radius: 50%;
+		border-bottom: 2px solid #3FCA5C;
+  		border-left: none;
+	  	border-top: none;
+	  	border-right: none;
+	    -webkit-border-radius: 10px;
+	    -moz-border-radius: 10px;
+	  	border-radius: 10px;
 	}
 ```
 
@@ -473,13 +473,13 @@ Where value is in px.
 Example
 ```html
 	.element {
-		@include blur(20px);
+		@include blur(5px);
 	}
 
 	Output CSS - 
 	.element {
-		-webkit-filter: blur(20px);
-  		filter: blur(20px);
+		-webkit-filter: blur(5px);
+  		filter: blur(5px);
 	}
 ```
 
@@ -611,13 +611,13 @@ Where value is in %.
 Example
 ```html
 	.element {
-		@include opacity(80%);
+		@include opacity(30%);
 	}
 
 	Output CSS - 
 	.element {
-		-webkit-filter: opacity(80%);
-  		filter: opacity(80%);
+		-webkit-filter: opacity(30%);
+  		filter: opacity(30%);
 	}
 ```
 
@@ -657,13 +657,13 @@ Where value is in %.
 Example
 ```html
 	.element {
-		@include contrast(80%);
+		@include contrast(150%);
 	}
 
 	Output CSS - 
 	.element {
-		-webkit-filter: contrast(80%);
-  		filter: contrast(80%);
+		-webkit-filter: contrast(150%);
+  		filter: contrast(150%);
 	}
 ```
 
@@ -936,12 +936,12 @@ Where,
 Example
 ```html
 	.element {
-		@include retinizeBackground("image", "-2x", "png", 200px, 200px, "../../");
+		@include retinizeBackground("image", "-2x", "png", 200px, 200px, "../img/");
 	}
 
 	Output CSS - 
 	.element {
-  		background-image: "../../image.png";
+  		background-image: url("../img/image.png");
 	    -webkit-background-size: 200px 200px;
 	    -moz-background-size: 200px 200px;
 	    -o-background-size: 200px 200px;
@@ -950,7 +950,7 @@ Example
 
 	@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   		.element {
-    		background-image: "../../image-2x.png";
+    		background-image: url("../img/image-2x.png");
             -webkit-background-size: 200px 200px;
             -moz-background-size: 200px 200px;
             -o-background-size: 200px 200px;
@@ -995,14 +995,14 @@ Syntax
 Example
 ```html
 	.element {
-		@include insetBoxShadow(0, 0, 4px, #aaa);
+		@include insetBoxShadow(0, 2px, 10px, #444);
 	}
 
 	Output CSS - 
 	.element {
-	 	-webkit-box-shadow: inset 0 0 4px #aaa;
-        -moz-box-shadow: inset 0 0 4px #aaa;
-  		box-shadow: inset 0 0 4px #aaa;
+	 	-webkit-box-shadow: inset 0 2px 10px #444;
+        -moz-box-shadow: inset 0 2px 10px #444;
+  		box-shadow: inset 0 2px 10px #444;
 	}
 ```
 
@@ -1072,25 +1072,25 @@ Example
 ```html
 	.element {
 		@include placeholder {
-			color: #8a8a8a;
+			color: #E4204D;
 		}
 	}
 
 	Output CSS - 
 	.element::-webkit-input-placeholder {
-	 	color: #8a8a8a;
+	 	color: #E4204D;
 	}
 
 	.element:-moz-placeholder {
-	  	color: #8a8a8a;
+	  	color: #E4204D;
 	}
 
 	.element::-moz-placeholder {
-	  	color: #8a8a8a;
+	  	color: #E4204D;
 	}
 
 	.element:-ms-input-placeholder {
-	  	color: #8a8a8a;
+	  	color: #E4204D;
 	}
 ```
 
