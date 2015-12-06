@@ -89,6 +89,9 @@ Example
 #### backgroundOpacity
 > Add opacity to a background color. Converts a HEX value into its rgba() equivalent
 
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/backgrounds/bg-opacity.png"/>
+<br/>
+
 Syntax
 ```html
 	@include backgroundOpacity($color, $opacity);
@@ -106,11 +109,11 @@ Example
 	}
 ```
 
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/backgrounds/bg-opacity.png"/>
-<br/>
-
 #### backgroundSize
 > Set background size for a background image
+
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/backgrounds/bg-size.png"/>
+<br/>
 
 Syntax
 ```html
@@ -143,11 +146,11 @@ Example
 	}
 ```
 
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/backgrounds/bg-size.png"/>
-<br/>
-
 #### linearGradient
 > Add a linear gradient to any element's background
+
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/backgrounds/linear-gradient.png"/>
+<br/>
 
 Syntax
 ```html
@@ -168,9 +171,6 @@ Example
   		background: linear-gradient(to right, #00a0e3 5%, #50a4e2, #0a6da7);
 	}
 ```
-
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/backgrounds/linear-gradient.png"/>
-<br/>
 
 #### repeatingLinearGradient
 > Add a repeating linear gradient to any element's background
@@ -198,6 +198,9 @@ Example
 #### radialGradient
 > Add a radial gradient to any element's background
 
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/backgrounds/radial-gradient.png"/>
+<br/>
+
 Syntax
 ```html
 	@include radialGradient($gradientValues...);
@@ -217,9 +220,6 @@ Example
   		background: radial-gradient(#50a4e2, #0a6da7, #00a0e3);
 	}
 ```
-
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/backgrounds/radial-gradient.png"/>
-<br/>
 
 #### repeatingRadialGradient
 > Add a repeating radial gradient to any element's background
@@ -270,6 +270,9 @@ Example
 #### borderRadius
 > Add border radius to an element
 
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/borders/border-radius.png"/>
+<br/>
+
 Syntax
 ```html
 	@include borderRadius($radius);
@@ -289,11 +292,11 @@ Example
 	}
 ```
 
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/borders/border-radius.png"/>
-<br/>
-
 #### borderRadiusEdge
 > Add border radius to a specifix edge(left/right) of an element
+
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/borders/border-side.png"/>
+<br/>
 
 Syntax
 ```html
@@ -313,11 +316,11 @@ Example
 	}
 ```
 
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/borders/border-side.png"/>
-<br/>
-
 #### sideBorderAndRadius
 > Add border and a radius to any side(top/bottom/left/right) of an element
+
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/borders/border-side-radius.png"/>
+<br/>
 
 Syntax
 ```html
@@ -328,25 +331,12 @@ By default the $radius is set to 0.
 
 Example
 ```html
-	.element1 {
-		@include sideBorderAndRadius(top, 2px, solid, #333);
-	}
-	.element2 {
+	.element {
 		@include sideBorderAndRadius(bottom, 2px, solid, #3FCA5C, 10px);
 	}
 
 	Output CSS - 
-	.element1 {
-		border-top: 2px solid #333;
-  		border-bottom: none;
-  		border-left: none;
-  		border-right: none;
-  		-webkit-border-radius: 0;
-		moz-border-radius: 0;
-  		border-radius: 0;
-	}
-
-	.element2 {
+	.element {
 		border-bottom: 2px solid #3FCA5C;
   		border-left: none;
 	  	border-top: none;
@@ -357,11 +347,11 @@ Example
 	}
 ```
 
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/borders/border-side-radius.png"/>
-<br/>
-
 #### borderImage
 > Add a border image to any element
+
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/borders/border-image.png"/>
+<br/>
 
 Syntax
 ```html
@@ -385,9 +375,6 @@ Example
   		border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 round;
 	}
 ```
-
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/borders/border-image.png"/>
-<br/>
 
 <br/>
 ### Display
@@ -462,6 +449,9 @@ Example
 #### truncate
 > Truncate single line text
 
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/display/truncate.png"/>
+<br/>
+
 Syntax
 ```html
 	@include truncate;
@@ -481,14 +471,14 @@ Example
 	}
 ```
 
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/display/truncate.png"/>
-<br/>
-
 <br/>
 ### Filters
 
 #### blur
 > Blur an element
+
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/filters/blur.png"/>
+<br/>
 
 Syntax
 ```html
@@ -510,11 +500,11 @@ Example
 	}
 ```
 
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/filters/blur.png"/>
-<br/>
-
 #### grayscale
 > Add grayscale filter to an element
+
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/filters/grayscale.png"/>
+<br/>
 
 Syntax
 ```html
@@ -536,11 +526,11 @@ Example
 	}
 ```
 
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/filters/grayscale.png"/>
-<br/>
-
 #### sepia
 > Add sepia filter to an element
+
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/filters/sepia.png"/>
+<br/>
 
 Syntax
 ```html
@@ -562,11 +552,11 @@ Example
 	}
 ```
 
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/filters/sepia.png"/>
-<br/>
-
 #### saturate
 > Add saturation filter to an element
+
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/filters/saturate.png"/>
+<br/>
 
 Syntax
 ```html
@@ -588,11 +578,11 @@ Example
 	}
 ```
 
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/filters/saturate.png"/>
-<br/>
-
 #### hueRotate
 > Rotate hue of an element
+
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/filters/hue.png"/>
+<br/>
 
 Syntax
 ```html
@@ -614,11 +604,11 @@ Example
 	}
 ```
 
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/filters/hue.png"/>
-<br/>
-
 #### invert
 > Invert colors of an element
+
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/filters/invert.png"/>
+<br/>
 
 Syntax
 ```html
@@ -640,11 +630,11 @@ Example
 	}
 ```
 
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/filters/invert.png"/>
-<br/>
-
 #### opacity
 > Set opacity of an element
+
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/filters/opacity.png"/>
+<br/>
 
 Syntax
 ```html
@@ -666,11 +656,11 @@ Example
 	}
 ```
 
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/filters/opacity.png"/>
-<br/>
-
 #### brightness
 > Set brightness of an element
+
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/filters/brightness.png"/>
+<br/>
 
 Syntax
 ```html
@@ -692,11 +682,11 @@ Example
 	}
 ```
 
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/filters/brightness.png"/>
-<br/>
-
 #### contrast
 > Set contrast of an element
+
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/filters/contrast.png"/>
+<br/>
 
 Syntax
 ```html
@@ -718,11 +708,11 @@ Example
 	}
 ```
 
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/filters/contrast.png"/>
-<br/>
-
 #### dropShadow
 > Add drop shadow filter to an element
+
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/filters/dropshadow.png"/>
+<br/>
 
 Syntax
 ```html
@@ -741,9 +731,6 @@ Example
   		filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.45));
 	}
 ```
-
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/filters/dropshadow.png"/>
-<br/>
 
 #### url
 > Add an SVG filter via URL
@@ -772,6 +759,9 @@ Example
 #### fontFace
 > Load a web-safe font with fallbacks
 
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/fonts/fonts.png"/>
+<br/>
+
 Syntax
 ```html
 	@include fontFace($font);
@@ -797,9 +787,6 @@ Example
 	}
 ```
 
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/fonts/fonts.png"/>
-<br/>
-
 <br/>
 ### Media Queries
 
@@ -814,6 +801,9 @@ Pineapple Sass has 5 inbuilt breakpoint variables -
 ```
 
 These breakpoint variables are used with the media query mixins.  
+
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/responsive_design.png"/>
+<br/>
 
 #### media-l-screen
 > Detect large screens and apply css
@@ -974,6 +964,9 @@ Example
 #### retinizeBackground
 > Retinize a background image
 
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/media-queries/retinize.png"/>
+<br/>
+
 Syntax
 ```html
 	retinizeBackground($file, $postfix, $type, $width, $height, $location);
@@ -1019,14 +1012,14 @@ Example
 	}
 ```
 
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/media-queries/retinize.png"/>
-<br/>
-
 <br/>
 ### Shadows
 
 #### boxShadow
 > Add box shadow to any element
+
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/shadows/box-shadow.png"/>
+<br/>
 
 Syntax
 ```html
@@ -1047,11 +1040,11 @@ Example
 	}
 ```
 
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/shadows/box-shadow.png"/>
-<br/>
-
 #### insetBoxShadow
 > Add inset box shadow to any element
+
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/shadows/inset-shadow.png"/>
+<br/>
 
 Syntax
 ```html
@@ -1071,9 +1064,6 @@ Example
   		box-shadow: inset 0 2px 10px #444;
 	}
 ```
-
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/shadows/inset-shadow.png"/>
-<br/>
 
 <br/>
 ### Text
@@ -1103,6 +1093,9 @@ Example
 #### textSelection
 > Modify css for text selection
 
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/text/selection.png"/>
+<br/>
+
 Syntax
 ```html
 	@include textSelection {
@@ -1127,11 +1120,11 @@ Example
 	}
 ```
 
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/text/selection.png"/>
-<br/>
-
 #### placeholder
 > Style placeholders within input fields
+
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/text/placeholder.png"/>
+<br/>
 
 Syntax
 ```html
@@ -1166,14 +1159,14 @@ Example
 	}
 ```
 
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/text/placeholder.png"/>
-<br/>
-
 <br/>
 ### Transforms
 
 #### scale
 > Scale an element
+
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/transforms/scale.png"/>
+<br/>
 
 Syntax
 ```html
@@ -1198,11 +1191,11 @@ Example
 	}
 ```
 
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/transforms/scale.png"/>
-<br/>
-
 #### translate
 > Translate an element
+
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/transforms/translate.png"/>
+<br/>
 
 Syntax
 ```html
@@ -1227,11 +1220,11 @@ Example
 	}
 ```
 
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/transforms/translate.png"/>
-<br/>
-
 #### rotate
 > Rotate an element
+
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/transforms/rotate.png"/>
+<br/>
 
 Syntax
 ```html
@@ -1257,11 +1250,11 @@ Example
 	}
 ```
 
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/transforms/rotate.png"/>
-<br/>
-
 #### skew
 > Skew an element
+
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/transforms/skew.png"/>
+<br/>
 
 Syntax
 ```html
@@ -1286,11 +1279,11 @@ Example
 	}
 ```
 
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/transforms/skew.png"/>
-<br/>
-
 #### flip
 > Flip / mirror an element
+
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/transforms/flip.png"/>
+<br/>
 
 Syntax
 ```html
@@ -1313,9 +1306,6 @@ Example
         -ms-filter: "FlipH";
 	}
 ```
-
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/test/img/Snapshots/transforms/flip.png"/>
-<br/>
 
 <br/>
 ### Utilities
