@@ -13,7 +13,7 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body style="position: relative;">  
     <div class="wrapper">
       <header>
       <!--   <h1 class="header">Pineapple-sass</h1>
@@ -118,7 +118,7 @@
                         <a href="#saturate">saturate</a>
                     </li>
                     <li>
-                        <a href="#hueRotate">hueRotate</a>
+                        <a href="#huerotate">hueRotate</a>
                     </li>
                     <li>
                         <a href="#invert">invert</a>
@@ -1769,7 +1769,7 @@
           <script>
               $('document').ready(function() {
                 $('#showMobile').click(function() {
-                    $('.wrapper').animate({
+                    $('body').animate({
                         left: "180px"
                     }, 200);
                     $('.mixin-text-mobile').animate({
@@ -1782,7 +1782,7 @@
                     $('.mob2').show();
                 });
                 $('#showMobile2').click(function() {
-                    $('.wrapper').animate({
+                    $('body').animate({
                         left: "0px"
                     }, 200);
                     $('.mixin-text-mobile').animate({
