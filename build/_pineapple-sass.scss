@@ -190,7 +190,7 @@
 
 // Background linear gradient mixin
 // Add a linear gradient to any element's background
-@mixin linearGradient($gradientValues) {
+@mixin linearGradient($gradientValues...) {
 	background: -webkit-linear-gradient($gradientValues);
 	background: -moz-linear-gradient($gradientValues);
 	background: -o-linear-gradient($gradientValues);
@@ -198,7 +198,7 @@
 
 // Background repeating linear gradient mixin
 // Add a repeating linear gradient to any element's background
-@mixin repeatingLinearGradient($gradientValues) {
+@mixin repeatingLinearGradient($gradientValues...) {
 	background: -webkit-repeating-linear-gradient($gradientValues);
 	background: -moz-repeating-linear-gradient($gradientValues);
 	background: -o-repeating-linear-gradient($gradientValues);
