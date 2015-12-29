@@ -194,6 +194,7 @@
 	background: -webkit-linear-gradient($gradientValues);
 	background: -moz-linear-gradient($gradientValues);
 	background: -o-linear-gradient($gradientValues);
+	background: linear-gradient($gradientValues);
 }
 
 // Background repeating linear gradient mixin
@@ -202,6 +203,7 @@
 	background: -webkit-repeating-linear-gradient($gradientValues);
 	background: -moz-repeating-linear-gradient($gradientValues);
 	background: -o-repeating-linear-gradient($gradientValues);
+	background: repeating-linear-gradient($gradientValues);
 }
 
 // Background radial gradient mixin
