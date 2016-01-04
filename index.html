@@ -312,12 +312,12 @@
 
 <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include transition($type, $duration, $easing);</pre></div>
+<div class="highlight highlight-text-html-basic"><pre>    @include transition($animation...);</pre></div>
 
 <p>Example</p>
 
 <div class="highlight highlight-text-html-basic"><pre>    .element {
-        @include transition(opacity, .20s, ease-in);
+        @include transition(opacity .20s ease-in);
     }
 
     Output CSS - 
@@ -338,14 +338,14 @@
 
 <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include animation($animation, $duration, $iteration, $delay);</pre></div>
+<div class="highlight highlight-text-html-basic"><pre>    @include animation($animation...);</pre></div>
 
 <p>By default the $delay is set to 0.</p>
 
 <p>Example</p>
 
 <div class="highlight highlight-text-html-basic"><pre>    .element {
-        @include animation(test, 3s, infinte, 2s);
+        @include animation(test 3s infinte 2s);
     }
 
     Output CSS - 
