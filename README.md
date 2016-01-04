@@ -60,13 +60,13 @@ You can also use the individual mixin components present in the ``src`` folder -
 
 Syntax
 ```html
-	@include transition($type, $duration, $easing);
+	@include transition($transition...);
 ```
 
 Example
 ```html
 	.element {
-		@include transition(opacity, .20s, ease-in);
+		@include transition(opacity .2s ease-in);
 	}
 
 	Output CSS - 
@@ -84,15 +84,13 @@ Example
 
 Syntax
 ```html
-	@include animation($animation, $duration, $iteration, $delay);
+	@include animation($animation...);
 ```
-
-By default the $delay is set to 0.
 
 Example
 ```html
 	.element {
-		@include animation(test, 3s, infinte, 2s);
+		@include animation(test 3s infinte 2s);
 	}
 
 	Output CSS - 

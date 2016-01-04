@@ -7,10 +7,10 @@
 }
 
 .animation {
-  -webkit-animation: test 3s 2s infinite;
-  -moz-animation: test 3s 2s infinite;
-  -o-animation: test 3s 2s infinite;
-  animation: test 3s 2s infinite;
+  -webkit-animation: test 3s infinite 2s;
+  -moz-animation: test 3s infinite 2s;
+  -o-animation: test 3s infinite 2s;
+  animation: test 3s infinite 2s;
 }
 
 .bg-opacity {
@@ -28,14 +28,14 @@
   background: -webkit-linear-gradient(left, #00a0e3 5%, #50a4e2, #0a6da7);
   background: -moz-linear-gradient(left, #00a0e3 5%, #50a4e2, #0a6da7);
   background: -o-linear-gradient(left, #00a0e3 5%, #50a4e2, #0a6da7);
-  background: linear-gradient(to right, #00a0e3 5%, #50a4e2, #0a6da7);
+  background: linear-gradient(left, #00a0e3 5%, #50a4e2, #0a6da7);
 }
 
 .repeat-linear {
   background: -webkit-repeating-linear-gradient(left, #00a0e3, #50a4e2, #0a6da7);
   background: -moz-repeating-linear-gradient(left, #00a0e3, #50a4e2, #0a6da7);
   background: -o-repeating-linear-gradient(left, #00a0e3, #50a4e2, #0a6da7);
-  background: repeating-linear-gradient(to right, #00a0e3, #50a4e2, #0a6da7);
+  background: repeating-linear-gradient(left, #00a0e3, #50a4e2, #0a6da7);
 }
 
 .radial-gradient {

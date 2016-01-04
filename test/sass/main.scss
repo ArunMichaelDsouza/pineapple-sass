@@ -4,11 +4,11 @@
 
 // Animations
 .transition {
-	@include transition(opacity, .2s, ease-in);
+	@include transition(opacity .2s ease-in);
 }
 
 .animation {
-	@include animation(test, 3s, infinite, 2s);
+	@include animation(test 3s infinite 2s);
 }
 
 // Backgrounds

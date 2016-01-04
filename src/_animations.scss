@@ -6,19 +6,19 @@
 
 // Transition mixin
 // Add CSS transition to any element
-@mixin transition($type, $duration, $easing) {
-    -webkit-transition: $type $duration $easing;
-    -moz-transition: $type $duration $easing;
-    -o-transition: $type $duration $easing;
-    -ms-transition: $type $duration $easing;
-    transition: $type $duration $easing;
+@mixin transition($transition...) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    -ms-transition: $transition;
+    transition: $transition;
 }
 
 // Animation mixin
 // Animate an element
-@mixin animation($animation, $duration, $iteration, $delay: 0) {
-	-webkit-animation: $animation $duration $delay $iteration;
-	-moz-animation: $animation $duration $delay $iteration;
-	-o-animation: $animation $duration $delay $iteration;
-	animation: $animation $duration $delay $iteration;
+@mixin animation($animation...) {
+	-webkit-animation: $animation;
+	-moz-animation: $animation;
+	-o-animation: $animation;
+	animation: $animation;
 }
