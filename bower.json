@@ -6,6 +6,7 @@
     "Arun Michael Dsouza <amdsouza92@gmail.com>"
   ],
   "description": "A must-have Sass mixin library for all your Sassy needs",
+  "main": "build/_pineapple-sass.scss",
   "keywords": [
     "Sass",
     "mixin",
