@@ -26,7 +26,7 @@
 }
 
 .bg-size2 {
-	@include backgroundSize(100%, 50%);
+	@include backgroundSize(100% 50%);
 }
 
 .linear-gradient {
@@ -46,10 +46,6 @@
 }
 
 // Borders 
-.border {
-	@include border(1px, dotted, #000);
-}
-
 .border-radius {
 	@include borderRadius(20px);
 }

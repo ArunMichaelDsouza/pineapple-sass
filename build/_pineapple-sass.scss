@@ -178,19 +178,11 @@
 
 // Background Size mixin
 // Set background size for a background image
-@mixin backgroundSize($width: auto, $height: auto) {
-	@if $width == cover or $width == contain {
-		-webkit-background-size: $width;
-		-moz-background-size: $width;
-		-o-background-size: $width;
-		background-size: $width;
-	}
-	@else if ($width != cover and $height != cover) and ($width != contain and $height != contain) {
-		-webkit-background-size: $width $height;
-		-moz-background-size: $width $height;
-		-o-background-size: $width $height;
-		background-size: $width $height;
-	}
+@mixin backgroundSize($background-size...) {
+	-webkit-background-size: $background-size;
+	-moz-background-size: $background-size;
+	-o-background-size: $background-size;
+	background-size: $background-size;
 }
 
 // Background linear gradient mixin

@@ -91,10 +91,6 @@
   background: repeating-radial-gradient(#50a4e2, #00a0e3, #0a6da7);
 }
 
-.border {
-  border: 1px dotted #000;
-}
-
 .border-radius {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -245,19 +241,19 @@
 
 .retinize {
   background-image: url("../img/image.png");
-  -webkit-background-size: 200px 200px;
-  -moz-background-size: 200px 200px;
-  -o-background-size: 200px 200px;
-  background-size: 200px 200px;
+  -webkit-background-size: 200px, 200px;
+  -moz-background-size: 200px, 200px;
+  -o-background-size: 200px, 200px;
+  background-size: 200px, 200px;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .retinize {
     background-image: url("../img/image-2x.png");
-    -webkit-background-size: 200px 200px;
-    -moz-background-size: 200px 200px;
-    -o-background-size: 200px 200px;
-    background-size: 200px 200px;
+    -webkit-background-size: 200px, 200px;
+    -moz-background-size: 200px, 200px;
+    -o-background-size: 200px, 200px;
+    background-size: 200px, 200px;
   }
 }
 
