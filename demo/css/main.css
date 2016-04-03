@@ -6,11 +6,47 @@
   transition: opacity 0.2s ease-in;
 }
 
+@-webkit-keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .animation {
-  -webkit-animation: test 3s infinite 2s;
-  -moz-animation: test 3s infinite 2s;
-  -o-animation: test 3s infinite 2s;
-  animation: test 3s infinite 2s;
+  -webkit-animation: opacity 3s infinite 2s;
+  -moz-animation: opacity 3s infinite 2s;
+  -o-animation: opacity 3s infinite 2s;
+  animation: opacity 3s infinite 2s;
 }
 
 .bg-opacity {

@@ -9,7 +9,7 @@ module.exports = function(grunt) {
                 },
             },
             test: {
-                files: ['test/sass/main.scss'],
+                files: ['demo/sass/main.scss'],
                 tasks: ['sass'],
                 options: {
                     spawn: false,
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'test/css/main.css': 'test/sass/main.scss'
+                    'demo/css/main.css': 'demo/sass/main.scss'
                 }
             }
         }

@@ -1,5 +1,5 @@
 //
-//   pineapple-sass v0.1.0
+//   pineapple-sass v1.11.15
 //   Copyright (c) 2015 Arun Michael Dsouza (amdsouza92@gmail.com)
 //   Licence: MIT
 //
@@ -21,4 +21,21 @@
 	-moz-animation: $animation;
 	-o-animation: $animation;
 	animation: $animation;
+}
+
+// Add keyframes for animation
+// Set keyframe states for an animation
+@mixin keyframes($animation) {
+	@-webkit-keyframes #{$animation} {
+		@content;
+	}
+	@-moz-keyframes #{$animation} {
+		@content;
+	}
+	@-o-keyframes #{$animation} {
+		@content;
+	}
+	@keyframes #{$animation} {
+		@content;
+	}
 }
