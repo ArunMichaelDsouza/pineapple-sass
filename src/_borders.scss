@@ -1,9 +1,3 @@
-// Border mixin
-// Add a border to any element 
-@mixin border($width, $style, $color) {
-    border: $width $style $color;
-}
-
 // Border radius mixin
 // Add border radius to an element
 @mixin borderRadius($radius) {

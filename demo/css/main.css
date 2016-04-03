@@ -56,6 +56,13 @@
   background-size: cover;
 }
 
+.bg-size2 {
+  -webkit-background-size: 100% 50%;
+  -moz-background-size: 100% 50%;
+  -o-background-size: 100% 50%;
+  background-size: 100% 50%;
+}
+
 .linear-gradient {
   background: -webkit-linear-gradient(left, #00a0e3 5%, #50a4e2, #0a6da7);
   background: -moz-linear-gradient(left, #00a0e3 5%, #50a4e2, #0a6da7);

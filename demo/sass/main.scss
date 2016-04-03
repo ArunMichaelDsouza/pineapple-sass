@@ -25,6 +25,10 @@
 	@include backgroundSize(cover);
 }
 
+.bg-size2 {
+	@include backgroundSize(100%, 50%);
+}
+
 .linear-gradient {
 	@include linearGradient(left, #00a0e3 5%, #50a4e2, #0a6da7);
 }
