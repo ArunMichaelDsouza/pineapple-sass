@@ -103,13 +103,13 @@
 }
 
 .side-border-radius {
-  border-bottom: 2px solid #3FCA5C;
+  border-bottom: 10px;
   border-left: none;
   border-top: none;
   border-right: none;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 2px solid #3FCA5C;
+  -moz-border-radius: 2px solid #3FCA5C;
+  border-radius: 2px solid #3FCA5C;
 }
 
 .border-image {
@@ -241,19 +241,19 @@
 
 .retinize {
   background-image: url("../img/image.png");
-  -webkit-background-size: 200px, 200px;
-  -moz-background-size: 200px, 200px;
-  -o-background-size: 200px, 200px;
-  background-size: 200px, 200px;
+  -webkit-background-size: 200px 200px;
+  -moz-background-size: 200px 200px;
+  -o-background-size: 200px 200px;
+  background-size: 200px 200px;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .retinize {
     background-image: url("../img/image-2x.png");
-    -webkit-background-size: 200px, 200px;
-    -moz-background-size: 200px, 200px;
-    -o-background-size: 200px, 200px;
-    background-size: 200px, 200px;
+    -webkit-background-size: 200px 200px;
+    -moz-background-size: 200px 200px;
+    -o-background-size: 200px 200px;
+    background-size: 200px 200px;
   }
 }
 

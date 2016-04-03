@@ -6,7 +6,7 @@
 
 // Transition mixin
 // Add CSS transition to any element
-@mixin transition($transition...) {
+@mixin transition($transition) {
     -webkit-transition: $transition;
     -moz-transition: $transition;
     -o-transition: $transition;
@@ -16,7 +16,7 @@
 
 // Animation mixin
 // Animate an element
-@mixin animation($animation...) {
+@mixin animation($animation) {
 	-webkit-animation: $animation;
 	-moz-animation: $animation;
 	-o-animation: $animation;
@@ -25,17 +25,17 @@
 
 // Add keyframes for animation
 // Set keyframe states for an animation
-@mixin keyframes($animation) {
-	@-webkit-keyframes #{$animation} {
+@mixin keyframes($animationName) {
+	@-webkit-keyframes #{$animationName} {
 		@content;
 	}
-	@-moz-keyframes #{$animation} {
+	@-moz-keyframes #{$animationName} {
 		@content;
 	}
-	@-o-keyframes #{$animation} {
+	@-o-keyframes #{$animationName} {
 		@content;
 	}
-	@keyframes #{$animation} {
+	@keyframes #{$animationName} {
 		@content;
 	}
 }

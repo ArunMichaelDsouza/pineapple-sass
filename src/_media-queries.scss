@@ -71,9 +71,9 @@ $smallMobile: 320px;
 // Retinize a background image
 @mixin retinizeBackground($file, $postfix, $type, $width, $height, $location:'') {
 	background-image: url($location+$file+"."+$type);
-	@include backgroundSize($width, $height);
+	@include backgroundSize($width $height);
 	@include media-retina {
 		background-image: url($location+$file+$postfix+"."+$type);
-		@include backgroundSize($width, $height);
+		@include backgroundSize($width $height);
 	}
 }

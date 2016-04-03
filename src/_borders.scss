@@ -21,30 +21,30 @@
 
 // Border + Radius mixin
 // Add border and a radius to any side(top/bottom/left/right) of an element
-@mixin sideBorderAndRadius($side, $width, $type, $color, $radius: 0) {
+@mixin sideBorderAndRadius($side, $border, $radius: 0) {
     @if $side == 'top' {
-        border-top: $width $type $color;
+        border-top: $border;
         border-bottom: none;
         border-left: none;
         border-right: none;
         @include borderRadius($radius);
     }
     @else if $side == 'right' {
-        border-right: $width $type $color;
+        border-right: $border;
         border-bottom: none;
         border-left: none;
         border-top: none;
         @include borderRadius($radius);
     }
     @else if $side == 'bottom' {
-        border-bottom: $width $type $color;
+        border-bottom: $border;
         border-left: none;
         border-top: none;
         border-right: none;
         @include borderRadius($radius);
     }
     @else if $side == 'left' {
-        border-left: $width $type $color;
+        border-left: $border;
         border-top: none;
         border-right: none;
         border-bottom: none;

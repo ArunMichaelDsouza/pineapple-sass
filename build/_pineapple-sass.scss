@@ -6,7 +6,7 @@
 
 // Transition mixin
 // Add CSS transition to any element
-@mixin transition($transition...) {
+@mixin transition($transition) {
     -webkit-transition: $transition;
     -moz-transition: $transition;
     -o-transition: $transition;
@@ -16,7 +16,7 @@
 
 // Animation mixin
 // Animate an element
-@mixin animation($animation...) {
+@mixin animation($animation) {
 	-webkit-animation: $animation;
 	-moz-animation: $animation;
 	-o-animation: $animation;
@@ -25,17 +25,17 @@
 
 // Add keyframes for animation
 // Set keyframe states for an animation
-@mixin keyframes($animation) {
-	@-webkit-keyframes #{$animation} {
+@mixin keyframes($animationName) {
+	@-webkit-keyframes #{$animationName} {
 		@content;
 	}
-	@-moz-keyframes #{$animation} {
+	@-moz-keyframes #{$animationName} {
 		@content;
 	}
-	@-o-keyframes #{$animation} {
+	@-o-keyframes #{$animationName} {
 		@content;
 	}
-	@keyframes #{$animation} {
+	@keyframes #{$animationName} {
 		@content;
 	}
 }
@@ -79,30 +79,30 @@
 
 // Border + Radius mixin
 // Add border and a radius to any side(top/bottom/left/right) of an element
-@mixin sideBorderAndRadius($side, $width, $type, $color, $radius: 0) {
+@mixin sideBorderAndRadius($side, $border, $radius: 0) {
     @if $side == 'top' {
-        border-top: $width $type $color;
+        border-top: $border;
         border-bottom: none;
         border-left: none;
         border-right: none;
         @include borderRadius($radius);
     }
     @else if $side == 'right' {
-        border-right: $width $type $color;
+        border-right: $border;
         border-bottom: none;
         border-left: none;
         border-top: none;
         @include borderRadius($radius);
     }
     @else if $side == 'bottom' {
-        border-bottom: $width $type $color;
+        border-bottom: $border;
         border-left: none;
         border-top: none;
         border-right: none;
         @include borderRadius($radius);
     }
     @else if $side == 'left' {
-        border-left: $width $type $color;
+        border-left: $border;
         border-top: none;
         border-right: none;
         border-bottom: none;
@@ -178,11 +178,11 @@
 
 // Background Size mixin
 // Set background size for a background image
-@mixin backgroundSize($background-size...) {
-	-webkit-background-size: $background-size;
-	-moz-background-size: $background-size;
-	-o-background-size: $background-size;
-	background-size: $background-size;
+@mixin backgroundSize($backgroundSize) {
+	-webkit-background-size: $backgroundSize;
+	-moz-background-size: $backgroundSize;
+	-o-background-size: $backgroundSize;
+	background-size: $backgroundSize;
 }
 
 // Background linear gradient mixin
@@ -423,10 +423,10 @@ $smallMobile: 320px;
 // Retinize a background image
 @mixin retinizeBackground($file, $postfix, $type, $width, $height, $location:'') {
 	background-image: url($location+$file+"."+$type);
-	@include backgroundSize($width, $height);
+	@include backgroundSize($width $height);
 	@include media-retina {
 		background-image: url($location+$file+$postfix+"."+$type);
-		@include backgroundSize($width, $height);
+		@include backgroundSize($width $height);
 	}
 }
 
