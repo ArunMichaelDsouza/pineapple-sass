@@ -182,12 +182,6 @@
 	text-overflow: ellipsis;
 }
 
-// Background Opacity mixin
-// Add opacity to a background color
-@mixin backgroundOpacity($color, $opacity) {
-    background-color: rgba($color, $opacity);
-}
-
 // Background Size mixin
 // Set background size for a background image
 @mixin backgroundSize($width: auto, $height: auto) {

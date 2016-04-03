@@ -49,10 +49,6 @@
   animation: opacity 3s infinite 2s;
 }
 
-.bg-opacity {
-  background-color: rgba(80, 164, 226, 0.5);
-}
-
 .bg-size {
   -webkit-background-size: cover;
   -moz-background-size: cover;

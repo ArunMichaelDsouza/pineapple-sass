@@ -21,10 +21,6 @@
 }
 
 // Backgrounds
-.bg-opacity {
-	@include backgroundOpacity(#50a4e2, .5);
-}
-
 .bg-size {
 	@include backgroundSize(cover);
 }
