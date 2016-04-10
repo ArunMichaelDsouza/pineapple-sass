@@ -7,13 +7,61 @@
 	background-size: $backgroundSize;
 }
 
+@function slice($list, $start: 1, $end: length($list)) {
+  $result: null;
+              
+  @if type-of($start) != number or type-of($end) != number {
+    @warn "Either $start or $end are not a number for `slice`.";
+  }
+             
+  @else if $start > $end {
+    @warn "The start index has to be lesser than or equals to the end index for `slice`.";
+  }
+
+  @else if $start < 1 or $end < 1 {
+    @warn "List indexes must be non-zero integers for `slice`.";
+  }
+
+  @else if $start > length($list) {
+    @warn "List index is #{$start} but list is only #{length($list)} item long for `slice`.";
+  }
+             
+  @else if $end > length($list) {
+    @warn "List index is #{$end} but list is only #{length($list)} item long for `slice`.";
+  }
+  
+  @else {
+    $result: ();
+                
+    @for $i from $start through $end {
+      $result: append($result, nth($list, $i));
+    }
+  }
+
+  @return $result;
+}
+
 // Background linear gradient mixin
 // Add a linear gradient to any element's background
 @mixin linearGradient($gradientValues...) {
-	background: -webkit-linear-gradient($gradientValues);
-	background: -moz-linear-gradient($gradientValues);
-	background: -o-linear-gradient($gradientValues);
-	background: linear-gradient($gradientValues);
+	$firstValue: nth($gradientValues, 1);
+
+	$list: (left, right, top, bottom);
+
+	@each $side in $list {
+		@if $side == $firstValue {
+			$first: nth($gradientValues, 1);
+			$len: length($gradientValues);
+			$last: nth($gradientValues, $len);
+			$s: slice($gradientValues, 2, $len);
+			background: $s;
+		}
+	}
+
+	// background: -webkit-linear-gradient($gradientValues);
+	// background: -moz-linear-gradient($gradientValues);
+	// background: -o-linear-gradient($gradientValues);
+	// background: linear-gradient($gradientValues);
 }
 
 // Background repeating linear gradient mixin

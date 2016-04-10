@@ -64,10 +64,7 @@
 }
 
 .linear-gradient {
-  background: -webkit-linear-gradient(left, #00a0e3 5%, #50a4e2, #0a6da7);
-  background: -moz-linear-gradient(left, #00a0e3 5%, #50a4e2, #0a6da7);
-  background: -o-linear-gradient(left, #00a0e3 5%, #50a4e2, #0a6da7);
-  background: linear-gradient(left, #00a0e3 5%, #50a4e2, #0a6da7);
+  background: #00a0e3 5% #50a4e2 #0a6da7;
 }
 
 .repeat-linear {
