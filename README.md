@@ -1,10 +1,10 @@
+<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/pineapple-sass.png" width="160" height="auto" />
+
 # pineapple-sass [![npm version](https://badge.fury.io/js/pineapple-sass.svg)](https://badge.fury.io/js/pineapple-sass) [![NPM Downloads](https://img.shields.io/npm/dm/pineapple-sass.svg?style=flat-square)](https://www.npmjs.com/package/pineapple-sass) [![Latest Stable Version](https://img.shields.io/bower/v/pineapple-sass.svg?style=flat-square)](http://bower.io/search/?q=pineapple-sass)
 
 A must-have Sass mixin library for all your Sassy needs
 
 [http://arunmichaeldsouza.github.io/pineapple-sass/](http://arunmichaeldsouza.github.io/pineapple-sass/ )
-
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/pineapple-sass.png" width="160" height="auto" />
 
 * Easy to use
 * Comprehensive list of mixins
