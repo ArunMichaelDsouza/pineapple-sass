@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Pineapple-sass by ArunMichaelDsouza</title>
@@ -12,311 +13,354 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-  </head>
-  <body style="position: relative;">  
+</head>
+
+<body style="position: relative;">
     <div class="wrapper">
-      <header>
-      <!--   <h1 class="header">Pineapple-sass</h1>
+        <header>
+            <!--   <h1 class="header">Pineapple-sass</h1>
         <p class="header">A must-have Sass mixin library for all your Sassy needs</p> -->
 
-        <ul class="btns">
-          <li class="download"><a class="buttons" href="https://github.com/ArunMichaelDsouza/pineapple-sass/zipball/master">Download ZIP</a></li>
-          <!-- <li class="download"><a class="buttons" href="https://github.com/ArunMichaelDsouza/pineapple-sass/tarball/master">Download TAR</a></li> -->
-          <li><a class="buttons github" href="https://github.com/ArunMichaelDsouza/pineapple-sass">View On GitHub</a></li>
-        </ul>
+            <ul class="btns">
+                <li class="download"><a class="buttons"
+                        href="https://github.com/ArunMichaelDsouza/pineapple-sass/zipball/master">Download ZIP</a></li>
+                <!-- <li class="download"><a class="buttons" href="https://github.com/ArunMichaelDsouza/pineapple-sass/tarball/master">Download TAR</a></li> -->
+                <li><a class="buttons github" href="https://github.com/ArunMichaelDsouza/pineapple-sass">View On
+                        GitHub</a></li>
+            </ul>
 
-       <!--  <p class="header">This project is maintained by <a class="header name" href="https://github.com/ArunMichaelDsouza">ArunMichaelDsouza</a></p> -->
+            <!--  <p class="header">This project is maintained by <a class="header name" href="https://github.com/ArunMichaelDsouza">ArunMichaelDsouza</a></p> -->
 
-       <h1 class="header mixin-text">Mixins</h1>
-       <h1 class="header mixin-text-mobile"><span id="showMobile">Click</span> to view Mixin list</h1>
-       <h1 class="header mixin-text-mobile mob2"><span id="showMobile2">Close</span></h1>
-       <ul class="mixin-list">
-           <li>
-                <h2>Animations</h2>
-                <ul>
-                    <li>
-                        <a href="#transition">transition</a>
-                    </li>
-                    <li>
-                        <a href="#animation">animation</a>
-                    </li>
-                </ul>
-           </li>
-           <li>
-                <h2>Backgrounds</h2>
-                <ul>
-                    <li>
-                        <a href="#backgroundopacity">backgroundOpacity</a>
-                    </li>
-                    <li>
-                        <a href="#backgroundsize">backgroundSize</a>
-                    </li>
-                    <li>
-                        <a href="#lineargradient">linearGradient</a>
-                    </li>
-                    <li>
-                        <a href="#repeatinglineargradient">repeatingLinearGradient</a>
-                    </li>
-                    <li>
-                        <a href="#radialgradient">radialGradient</a>
-                    </li>
-                    <li>
-                        <a href="#repeatingradialgradient">repeatingRadialGradient</a>
-                    </li>
-                </ul>
-           </li>
-           <li>
-                <h2>Borders</h2>
-                <ul>
-                    <li>
-                        <a href="#border">border</a>
-                    </li>
-                    <li>
-                        <a href="#borderradius">borderRadius</a>
-                    </li>
-                    <li>
-                        <a href="#borderradiusedge">borderRadiusEdge</a>
-                    </li>
-                    <li>
-                        <a href="#sideborderandradius">sideBorderAndRadius</a>
-                    </li>
-                    <li>
-                        <a href="#borderimage">borderImage</a>
-                    </li>
-                </ul>
-           </li>
-           <li>
-                <h2>Display</h2>
-                <ul>
-                    <li>
-                        <a href="#clearfix">clearfix</a>
-                    </li>
-                    <li>
-                        <a href="#displayflex">displayFlex</a>
-                    </li>
-                    <li>
-                        <a href="#boxsizing">boxSizing</a>
-                    </li>
-                    <li>
-                        <a href="#truncate">truncate</a>
-                    </li>
-                </ul>
-           </li>
-            <li>
-                <h2>Filters</h2>
-                <ul>
-                    <li>
-                        <a href="#blur">blur</a>
-                    </li>
-                    <li>
-                        <a href="#grayscale">grayscale</a>
-                    </li>
-                    <li>
-                        <a href="#sepia">sepia</a>
-                    </li>
-                    <li>
-                        <a href="#saturate">saturate</a>
-                    </li>
-                    <li>
-                        <a href="#huerotate">hueRotate</a>
-                    </li>
-                    <li>
-                        <a href="#invert">invert</a>
-                    </li>
-                    <li>
-                        <a href="#opacity">opacity</a>
-                    </li>
-                    <li>
-                        <a href="#brightness">brightness</a>
-                    </li>
-                    <li>
-                        <a href="#contrast">contrast</a>
-                    </li>
-                    <li>
-                        <a href="#dropshadow">dropShadow</a>
-                    </li>
-                    <li>
-                        <a href="#url">url</a>
-                    </li>
-                </ul>
-           </li>
-           <li>
-                <h2>Fonts</h2>
-                <ul>
-                    <li>
-                        <a href="#fontface">fontFace</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h2>Media Queries</h2>
-                <ul>
-                    <li>
-                        <a href="#media-l-screen">media-l-screen</a>
-                    </li>
-                    <li>
-                        <a href="#media-m-screen">media-m-screen</a>
-                    </li>
-                    <li>
-                        <a href="#media-s-screen">media-s-screen</a>
-                    </li>
-                    <li>
-                        <a href="#media-xs-screen">media-xs-screen</a>
-                    </li>
-                    <li>
-                        <a href="#media-s-mobile">media-s-mobile</a>
-                    </li>
-                    <li>
-                        <a href="#media-retina">media-retina</a>
-                    </li>
-                    <li>
-                        <a href="#retinizebackground">retinizeBackground</a>
-                    </li>
-                </ul>
-           </li>
-            <li>
-                <h2>Shadows</h2>
-                <ul>
-                    <li>
-                        <a href="#boxshadow">boxShadow</a>
-                    </li>
-                    <li>
-                        <a href="#insetboxshadow">insetBoxShadow</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h2>Text</h2>
-                <ul>
-                    <li>
-                        <a href="#userselect">userSelect</a>
-                    </li>
-                    <li>
-                        <a href="#textselection">textSelection</a>
-                    </li>
-                    <li>
-                        <a href="#placeholder">placeholder</a>
-                    </li>
-                </ul>
-            </li>
-             <li>
-                <h2>Transforms</h2>
-                <ul>
-                    <li>
-                        <a href="#scale">scale</a>
-                    </li>
-                    <li>
-                        <a href="#translate">translate</a>
-                    </li>
-                    <li>
-                        <a href="#rotate">rotate</a>
-                    </li>
-                    <li>
-                        <a href="#skew">skew</a>
-                    </li>
-                    <li>
-                        <a href="#flip">flip</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h2>Utilities</h2>
-                <ul>
-                    <li>
-                        <a href="#cursorpointer">cursorPointer</a>
-                    </li>
-                    <li>
-                        <a href="#nofocus">noFocus</a>
-                    </li>
-                </ul>
-            </li>
-       </ul>
+            <h1 class="header mixin-text">Mixins</h1>
+            <h1 class="header mixin-text-mobile"><span id="showMobile">Click</span> to view Mixin list</h1>
+            <h1 class="header mixin-text-mobile mob2"><span id="showMobile2">Close</span></h1>
+            <ul class="mixin-list">
+                <li>
+                    <h2>Animations</h2>
+                    <ul>
+                        <li>
+                            <a href="#transition">transition</a>
+                        </li>
+                        <li>
+                            <a href="#animation">animation</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Backgrounds</h2>
+                    <ul>
+                        <li>
+                            <a href="#backgroundopacity">backgroundOpacity</a>
+                        </li>
+                        <li>
+                            <a href="#backgroundsize">backgroundSize</a>
+                        </li>
+                        <li>
+                            <a href="#lineargradient">linearGradient</a>
+                        </li>
+                        <li>
+                            <a href="#repeatinglineargradient">repeatingLinearGradient</a>
+                        </li>
+                        <li>
+                            <a href="#radialgradient">radialGradient</a>
+                        </li>
+                        <li>
+                            <a href="#repeatingradialgradient">repeatingRadialGradient</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Borders</h2>
+                    <ul>
+                        <li>
+                            <a href="#border">border</a>
+                        </li>
+                        <li>
+                            <a href="#borderradius">borderRadius</a>
+                        </li>
+                        <li>
+                            <a href="#borderradiusedge">borderRadiusEdge</a>
+                        </li>
+                        <li>
+                            <a href="#sideborderandradius">sideBorderAndRadius</a>
+                        </li>
+                        <li>
+                            <a href="#borderimage">borderImage</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Display</h2>
+                    <ul>
+                        <li>
+                            <a href="#clearfix">clearfix</a>
+                        </li>
+                        <li>
+                            <a href="#displayflex">displayFlex</a>
+                        </li>
+                        <li>
+                            <a href="#boxsizing">boxSizing</a>
+                        </li>
+                        <li>
+                            <a href="#truncate">truncate</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Filters</h2>
+                    <ul>
+                        <li>
+                            <a href="#blur">blur</a>
+                        </li>
+                        <li>
+                            <a href="#grayscale">grayscale</a>
+                        </li>
+                        <li>
+                            <a href="#sepia">sepia</a>
+                        </li>
+                        <li>
+                            <a href="#saturate">saturate</a>
+                        </li>
+                        <li>
+                            <a href="#huerotate">hueRotate</a>
+                        </li>
+                        <li>
+                            <a href="#invert">invert</a>
+                        </li>
+                        <li>
+                            <a href="#opacity">opacity</a>
+                        </li>
+                        <li>
+                            <a href="#brightness">brightness</a>
+                        </li>
+                        <li>
+                            <a href="#contrast">contrast</a>
+                        </li>
+                        <li>
+                            <a href="#dropshadow">dropShadow</a>
+                        </li>
+                        <li>
+                            <a href="#url">url</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Fonts</h2>
+                    <ul>
+                        <li>
+                            <a href="#fontface">fontFace</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Media Queries</h2>
+                    <ul>
+                        <li>
+                            <a href="#media-l-screen">media-l-screen</a>
+                        </li>
+                        <li>
+                            <a href="#media-m-screen">media-m-screen</a>
+                        </li>
+                        <li>
+                            <a href="#media-s-screen">media-s-screen</a>
+                        </li>
+                        <li>
+                            <a href="#media-xs-screen">media-xs-screen</a>
+                        </li>
+                        <li>
+                            <a href="#media-s-mobile">media-s-mobile</a>
+                        </li>
+                        <li>
+                            <a href="#media-retina">media-retina</a>
+                        </li>
+                        <li>
+                            <a href="#retinizebackground">retinizeBackground</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Shadows</h2>
+                    <ul>
+                        <li>
+                            <a href="#boxshadow">boxShadow</a>
+                        </li>
+                        <li>
+                            <a href="#insetboxshadow">insetBoxShadow</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Text</h2>
+                    <ul>
+                        <li>
+                            <a href="#userselect">userSelect</a>
+                        </li>
+                        <li>
+                            <a href="#textselection">textSelection</a>
+                        </li>
+                        <li>
+                            <a href="#placeholder">placeholder</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Transforms</h2>
+                    <ul>
+                        <li>
+                            <a href="#scale">scale</a>
+                        </li>
+                        <li>
+                            <a href="#translate">translate</a>
+                        </li>
+                        <li>
+                            <a href="#rotate">rotate</a>
+                        </li>
+                        <li>
+                            <a href="#skew">skew</a>
+                        </li>
+                        <li>
+                            <a href="#flip">flip</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Utilities</h2>
+                    <ul>
+                        <li>
+                            <a href="#cursorpointer">cursorPointer</a>
+                        </li>
+                        <li>
+                            <a href="#nofocus">noFocus</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
 
 
-      </header>
-      <section>
-        <h1>
-            <a id="pineapple-sass" class="anchor" href="#pineapple-sass" aria-hidden="true"><span class="octicon octicon-link"></span></a>pineapple-sass <span class="user">by <a href="https://github.com/ArunMichaelDsouza">Arun Michael Dsouza</a></span></h1>
+        </header>
+        <section>
+            <h1>
+                <a id="pineapple-sass" class="anchor" href="#pineapple-sass" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>pineapple-sass <span class="user">by <a
+                        href="https://github.com/ArunMichaelDsouza">Arun Michael Dsouza</a></span></h1>
 
-<p>A must-have Sass mixin library for all your Sassy needs</p>
+            <span class="badge-patreon"><a href="https://www.patreon.com/arunmichaeldsouza"
+                    title="Donate to this project using Patreon"><img
+                        src="https://img.shields.io/badge/patreon-donate-blue.svg" alt="Patreon donate button"
+                        style="border: none;" /></a></span>
 
-<p><a href="http://arunmichaeldsouza.github.io/pineapple-sass/">http://arunmichaeldsouza.github.io/pineapple-sass/</a></p>
+            <p>A must-have Sass mixin library for all your Sassy needs</p>
 
-<p><img class="logo" src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/pineapple-sass.png" width="160" height="auto"></p>
+            <p><a
+                    href="http://arunmichaeldsouza.github.io/pineapple-sass/">http://arunmichaeldsouza.github.io/pineapple-sass/</a>
+            </p>
 
-<ul>
-<li>Easy to use</li>
-<li>Comprehensive list of mixins</li>
-<li>Forget about all those vendor prefixes</li>
-<li>Support for CSS3 animations, transforms and transitions</li>
-<li>Support for CSS3 filters</li>
-<li>Bundled with media query mixins</li>
-</ul>
+            <p><img class="logo"
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/pineapple-sass.png"
+                    width="160" height="auto"></p>
 
-<p><br></p>
+            <ul>
+                <li>Easy to use</li>
+                <li>Comprehensive list of mixins</li>
+                <li>Forget about all those vendor prefixes</li>
+                <li>Support for CSS3 animations, transforms and transitions</li>
+                <li>Support for CSS3 filters</li>
+                <li>Bundled with media query mixins</li>
+            </ul>
 
-<h2>
-<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+            <p><br></p>
 
-<h4>
-<a id="via-bower" class="anchor" href="#via-bower" aria-hidden="true"><span class="octicon octicon-link"></span></a>via bower</h4>
+            <h2>
+                <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>Installation</h2>
 
-<p>You can install the package using bower. Make sure you have bower installed, then run : </p>
+            <h4>
+                <a id="via-bower" class="anchor" href="#via-bower" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>via bower</h4>
 
-<div class="highlight highlight-text-html-basic"><pre>bower install pineapple-sass</pre></div>
+            <p>You can install the package using bower. Make sure you have bower installed, then run : </p>
 
-<h4>
-<a id="via-npm" class="anchor" href="#via-npm" aria-hidden="true"><span class="octicon octicon-link"></span></a>via npm</h4>
+            <div class="highlight highlight-text-html-basic">
+                <pre>bower install pineapple-sass</pre>
+            </div>
 
-<div class="highlight highlight-text-html-basic"><pre>npm install pineapple-sass</pre></div>
+            <h4>
+                <a id="via-npm" class="anchor" href="#via-npm" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>via npm</h4>
 
-<p>Or <a href="https://github.com/ArunMichaelDsouza/pineapple-sass/releases">download</a> the latest release. </p>
+            <div class="highlight highlight-text-html-basic">
+                <pre>npm install pineapple-sass</pre>
+            </div>
 
-<p><br></p>
+            <p>Or <a href="https://github.com/ArunMichaelDsouza/pineapple-sass/releases">download</a> the latest
+                release. </p>
 
-<h2>
-<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+            <p><br></p>
 
-<p>The <a href="https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/build/_pineapple-sass.scss">_pineapple-sass.scss</a> build script is a Sass partial that can be included in your sass project. All pineapple sass mixins will be then readily avaialble for your use.</p>
+            <h2>
+                <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>Usage</h2>
 
-<p>You can also use the individual mixin components present in the <code>src</code> folder - </p>
+            <p>The <a
+                    href="https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/build/_pineapple-sass.scss">_pineapple-sass.scss</a>
+                build script is a Sass partial that can be included in your sass project. All pineapple sass mixins will
+                be then readily avaialble for your use.</p>
 
-<ul>
-<li><a href="https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/src/_animations.scss">Animations component</a></li>
-<li><a href="https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/src/_backgrounds.scss">Backgrounds component</a></li>
-<li><a href="https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/src/_borders.scss">Borders component</a></li>
-<li><a href="https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/src/_display.scss">Display component</a></li>
-<li><a href="https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/src/_filters.scss">Filters component</a></li>
-<li><a href="https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/src/_fonts.scss">Fonts component</a></li>
-<li><a href="https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/src/_media-queries.scss">Media Queries component</a></li>
-<li><a href="https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/src/_media-queries.scss">Shadows component</a></li>
-<li><a href="https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/src/_text.scss">Text component</a></li>
-<li><a href="https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/src/_transforms.scss">Transforms component</a></li>
-<li><a href="https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/src/_utilities.scss">Utilities component</a></li>
-</ul>
+            <p>You can also use the individual mixin components present in the <code>src</code> folder - </p>
 
-<p><br></p>
+            <ul>
+                <li><a href="https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/src/_animations.scss">Animations
+                        component</a></li>
+                <li><a href="https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/src/_backgrounds.scss">Backgrounds
+                        component</a></li>
+                <li><a href="https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/src/_borders.scss">Borders
+                        component</a></li>
+                <li><a href="https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/src/_display.scss">Display
+                        component</a></li>
+                <li><a href="https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/src/_filters.scss">Filters
+                        component</a></li>
+                <li><a href="https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/src/_fonts.scss">Fonts
+                        component</a></li>
+                <li><a href="https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/src/_media-queries.scss">Media
+                        Queries component</a></li>
+                <li><a href="https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/src/_media-queries.scss">Shadows
+                        component</a></li>
+                <li><a href="https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/src/_text.scss">Text
+                        component</a></li>
+                <li><a href="https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/src/_transforms.scss">Transforms
+                        component</a></li>
+                <li><a href="https://github.com/ArunMichaelDsouza/pineapple-sass/blob/master/src/_utilities.scss">Utilities
+                        component</a></li>
+            </ul>
 
-<h2>
-<a id="mixins" class="anchor" href="#mixins" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mixins</h2>
+            <p><br></p>
 
-<h3>
-<a id="animations" class="anchor" href="#animations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Animations</h3>
+            <h2>
+                <a id="mixins" class="anchor" href="#mixins" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>Mixins</h2>
 
-<h4>
-<a id="transition" class="anchor" href="#transition" aria-hidden="true"><span class="octicon octicon-link"></span></a>transition</h4>
+            <h3>
+                <a id="animations" class="anchor" href="#animations" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>Animations</h3>
 
-<blockquote>
-<p>Add CSS transition to any element</p>
-</blockquote>
+            <h4>
+                <a id="transition" class="anchor" href="#transition" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>transition</h4>
 
-<p>Syntax</p>
+            <blockquote>
+                <p>Add CSS transition to any element</p>
+            </blockquote>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include transition($transition...);</pre></div>
+            <p>Syntax</p>
 
-<p>Example</p>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include transition($transition...);</pre>
+            </div>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <p>Example</p>
+
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include transition(opacity .20s ease-in);
     }
 
@@ -327,24 +371,29 @@
         -o-transition: opacity 0.2s ease-in;
         -ms-transition: opacity 0.2s ease-in;
         transition: opacity 0.2s ease-in;
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="animation" class="anchor" href="#animation" aria-hidden="true"><span class="octicon octicon-link"></span></a>animation</h4>
+            <h4>
+                <a id="animation" class="anchor" href="#animation" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>animation</h4>
 
-<blockquote>
-<p>Animate an element</p>
-</blockquote>
+            <blockquote>
+                <p>Animate an element</p>
+            </blockquote>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include animation($animation...);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include animation($animation...);</pre>
+            </div>
 
-<p>By default the $delay is set to 0.</p>
+            <p>By default the $delay is set to 0.</p>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include animation(test 3s infinte 2s);
     }
 
@@ -354,55 +403,68 @@
         -moz-animation: test 3s 2s infinte;
         -o-animation: test 3s 2s infinte;
         animation: test 3s 2s infinte;
-    }</pre></div>
+    }</pre>
+            </div>
 
-<p><br></p>
+            <p><br></p>
 
-<h3>
-<a id="backgrounds" class="anchor" href="#backgrounds" aria-hidden="true"><span class="octicon octicon-link"></span></a>Backgrounds</h3>
+            <h3>
+                <a id="backgrounds" class="anchor" href="#backgrounds" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>Backgrounds</h3>
 
-<h4>
-<a id="backgroundopacity" class="anchor" href="#backgroundopacity" aria-hidden="true"><span class="octicon octicon-link"></span></a>backgroundOpacity</h4>
+            <h4>
+                <a id="backgroundopacity" class="anchor" href="#backgroundopacity" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>backgroundOpacity</h4>
 
-<blockquote>
-<p>Add opacity to a background color. Converts a HEX value into its rgba() equivalent</p>
-</blockquote>
+            <blockquote>
+                <p>Add opacity to a background color. Converts a HEX value into its rgba() equivalent</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/backgrounds/bg-opacity.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/backgrounds/bg-opacity.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include backgroundOpacity($color, $opacity);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include backgroundOpacity($color, $opacity);</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include backgroundOpacity(#50a4e2, .5);
     }
 
     Output CSS - 
     .element {
         background-color: rgba(80, 164, 226, 0.5);
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="backgroundsize" class="anchor" href="#backgroundsize" aria-hidden="true"><span class="octicon octicon-link"></span></a>backgroundSize</h4>
+            <h4>
+                <a id="backgroundsize" class="anchor" href="#backgroundsize" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>backgroundSize</h4>
 
-<blockquote>
-<p>Set background size for a background image</p>
-</blockquote>
+            <blockquote>
+                <p>Set background size for a background image</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/backgrounds/bg-size.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/backgrounds/bg-size.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include backgroundSize($size);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include backgroundSize($size);</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element1 {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element1 {
         @include backgroundSize(100%);
     }
 
@@ -423,25 +485,31 @@
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="lineargradient" class="anchor" href="#lineargradient" aria-hidden="true"><span class="octicon octicon-link"></span></a>linearGradient</h4>
+            <h4>
+                <a id="lineargradient" class="anchor" href="#lineargradient" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>linearGradient</h4>
 
-<blockquote>
-<p>Add a linear gradient to any element's background</p>
-</blockquote>
+            <blockquote>
+                <p>Add a linear gradient to any element's background</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/backgrounds/linear-gradient.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/backgrounds/linear-gradient.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include linearGradient($gradientValues...);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include linearGradient($gradientValues...);</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include linearGradient(left, #00a0e3 5%, #50a4e2, #0a6da7);
     }
 
@@ -451,22 +519,27 @@
         background: -moz-linear-gradient(left, #00a0e3 5%, #50a4e2, #0a6da7);
         background: -o-linear-gradient(left, #00a0e3 5%, #50a4e2, #0a6da7);
         background: linear-gradient(to right, #00a0e3 5%, #50a4e2, #0a6da7);
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="repeatinglineargradient" class="anchor" href="#repeatinglineargradient" aria-hidden="true"><span class="octicon octicon-link"></span></a>repeatingLinearGradient</h4>
+            <h4>
+                <a id="repeatinglineargradient" class="anchor" href="#repeatinglineargradient" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>repeatingLinearGradient</h4>
 
-<blockquote>
-<p>Add a repeating linear gradient to any element's background</p>
-</blockquote>
+            <blockquote>
+                <p>Add a repeating linear gradient to any element's background</p>
+            </blockquote>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include repeatingLinearGradient($gradientValues...)</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include repeatingLinearGradient($gradientValues...)</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include repeatingLinearGradient(left, #00a0e3, #50a4e2, #0a6da7);
     }
 
@@ -476,25 +549,31 @@
         background: -moz-repeating-linear-gradient(left, #00a0e3, #50a4e2, #0a6da7);
         background: -o-repeating-linear-gradient(left, #00a0e3, #50a4e2, #0a6da7);
         background: repeating-linear-gradient(to right, #00a0e3, #50a4e2, #0a6da7);
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="radialgradient" class="anchor" href="#radialgradient" aria-hidden="true"><span class="octicon octicon-link"></span></a>radialGradient</h4>
+            <h4>
+                <a id="radialgradient" class="anchor" href="#radialgradient" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>radialGradient</h4>
 
-<blockquote>
-<p>Add a radial gradient to any element's background</p>
-</blockquote>
+            <blockquote>
+                <p>Add a radial gradient to any element's background</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/backgrounds/radial-gradient.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/backgrounds/radial-gradient.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include radialGradient($gradientValues...);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include radialGradient($gradientValues...);</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include radialGradient(#50a4e2, #0a6da7, #00a0e3);
     }
 
@@ -504,22 +583,27 @@
         background: -o-radial-gradient(#50a4e2, #0a6da7, #00a0e3);
         background: -moz-radial-gradient(#50a4e2, #0a6da7, #00a0e3);
         background: radial-gradient(#50a4e2, #0a6da7, #00a0e3);
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="repeatingradialgradient" class="anchor" href="#repeatingradialgradient" aria-hidden="true"><span class="octicon octicon-link"></span></a>repeatingRadialGradient</h4>
+            <h4>
+                <a id="repeatingradialgradient" class="anchor" href="#repeatingradialgradient" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>repeatingRadialGradient</h4>
 
-<blockquote>
-<p>Add a repeating radial gradient to any element's background</p>
-</blockquote>
+            <blockquote>
+                <p>Add a repeating radial gradient to any element's background</p>
+            </blockquote>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include repeatingRadialGradient($gradientValues...);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include repeatingRadialGradient($gradientValues...);</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include repeatingRadialGradient(#50a4e2, #00a0e3, #0a6da7);
     }
 
@@ -529,52 +613,64 @@
         background: -o-repeating-radial-gradient(#50a4e2, #00a0e3, #0a6da7);
         background: -moz-repeating-radial-gradient(#50a4e2, #00a0e3, #0a6da7);
         background: repeating-radial-gradient(#50a4e2, #00a0e3, #0a6da7);
-    }</pre></div>
+    }</pre>
+            </div>
 
-<p><br></p>
+            <p><br></p>
 
-<h3>
-<a id="borders" class="anchor" href="#borders" aria-hidden="true"><span class="octicon octicon-link"></span></a>Borders</h3>
+            <h3>
+                <a id="borders" class="anchor" href="#borders" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>Borders</h3>
 
-<h4>
-<a id="border" class="anchor" href="#border" aria-hidden="true"><span class="octicon octicon-link"></span></a>border</h4>
+            <h4>
+                <a id="border" class="anchor" href="#border" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>border</h4>
 
-<blockquote>
-<p>Add a border to any element</p>
-</blockquote>
+            <blockquote>
+                <p>Add a border to any element</p>
+            </blockquote>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include border($width, $style, $color);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include border($width, $style, $color);</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include border(1px, dotted, #000);
     }
 
     Output CSS - 
     .element {
         border: 1px dotted #000;
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="borderradius" class="anchor" href="#borderradius" aria-hidden="true"><span class="octicon octicon-link"></span></a>borderRadius</h4>
+            <h4>
+                <a id="borderradius" class="anchor" href="#borderradius" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>borderRadius</h4>
 
-<blockquote>
-<p>Add border radius to an element</p>
-</blockquote>
+            <blockquote>
+                <p>Add border radius to an element</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/borders/border-radius.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/borders/border-radius.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include borderRadius($radius);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include borderRadius($radius);</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include borderRadius(5px);
     }
 
@@ -583,25 +679,31 @@
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         border-radius: 5px;
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="borderradiusedge" class="anchor" href="#borderradiusedge" aria-hidden="true"><span class="octicon octicon-link"></span></a>borderRadiusEdge</h4>
+            <h4>
+                <a id="borderradiusedge" class="anchor" href="#borderradiusedge" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>borderRadiusEdge</h4>
 
-<blockquote>
-<p>Add border radius to a specifix edge(left/right) of an element</p>
-</blockquote>
+            <blockquote>
+                <p>Add border radius to a specifix edge(left/right) of an element</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/borders/border-side.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/borders/border-side.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include borderRadiusEdge($edge, $radius);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include borderRadiusEdge($edge, $radius);</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include borderRadiusEdge(left, 20px);
     }
 
@@ -609,27 +711,33 @@
     .element {
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="sideborderandradius" class="anchor" href="#sideborderandradius" aria-hidden="true"><span class="octicon octicon-link"></span></a>sideBorderAndRadius</h4>
+            <h4>
+                <a id="sideborderandradius" class="anchor" href="#sideborderandradius" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>sideBorderAndRadius</h4>
 
-<blockquote>
-<p>Add border and a radius to any side(top/bottom/left/right) of an element</p>
-</blockquote>
+            <blockquote>
+                <p>Add border and a radius to any side(top/bottom/left/right) of an element</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/borders/border-side-radius.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/borders/border-side-radius.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include sideBorderAndRadius($side, $width, $type, $color, $radius);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include sideBorderAndRadius($side, $width, $type, $color, $radius);</pre>
+            </div>
 
-<p>By default the $radius is set to 0.</p>
+            <p>By default the $radius is set to 0.</p>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include sideBorderAndRadius(bottom, 2px, solid, #3FCA5C, 10px);
     }
 
@@ -642,27 +750,33 @@
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         border-radius: 10px;
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="borderimage" class="anchor" href="#borderimage" aria-hidden="true"><span class="octicon octicon-link"></span></a>borderImage</h4>
+            <h4>
+                <a id="borderimage" class="anchor" href="#borderimage" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>borderImage</h4>
 
-<blockquote>
-<p>Add a border image to any element</p>
-</blockquote>
+            <blockquote>
+                <p>Add a border image to any element</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/borders/border-image.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/borders/border-image.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include borderImage($borderWidth, $url, $mode, $sliceTop, $sliceRight, $sliceBottom, $sliceLeft)</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include borderImage($borderWidth, $url, $mode, $sliceTop, $sliceRight, $sliceBottom, $sliceLeft)</pre>
+            </div>
 
-<p>By default $sliceRight, $sliceBottom and $sliceLeft are set to 0.</p>
+            <p>By default $sliceRight, $sliceBottom and $sliceLeft are set to 0.</p>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include borderImage(10px, "https://mdn.mozillademos.org/files/4127/border.png", round, 30);
     }
 
@@ -673,27 +787,33 @@
         -moz-border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 round;
         -o-border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 round;
         border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30 round;
-    }</pre></div>
+    }</pre>
+            </div>
 
-<p><br></p>
+            <p><br></p>
 
-<h3>
-<a id="display" class="anchor" href="#display" aria-hidden="true"><span class="octicon octicon-link"></span></a>Display</h3>
+            <h3>
+                <a id="display" class="anchor" href="#display" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>Display</h3>
 
-<h4>
-<a id="clearfix" class="anchor" href="#clearfix" aria-hidden="true"><span class="octicon octicon-link"></span></a>clearfix</h4>
+            <h4>
+                <a id="clearfix" class="anchor" href="#clearfix" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>clearfix</h4>
 
-<blockquote>
-<p>Add clearfix hack - to contain floats within containers</p>
-</blockquote>
+            <blockquote>
+                <p>Add clearfix hack - to contain floats within containers</p>
+            </blockquote>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include clearfix;</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include clearfix;</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include clearfix;
     }
 
@@ -702,22 +822,27 @@
         content: "";
         clear: both;
         display: table;
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="displayflex" class="anchor" href="#displayflex" aria-hidden="true"><span class="octicon octicon-link"></span></a>displayFlex</h4>
+            <h4>
+                <a id="displayflex" class="anchor" href="#displayflex" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>displayFlex</h4>
 
-<blockquote>
-<p>Add flex display property to any element</p>
-</blockquote>
+            <blockquote>
+                <p>Add flex display property to any element</p>
+            </blockquote>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include displayFlex;</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include displayFlex;</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include displayFlex;
     }
 
@@ -727,22 +852,27 @@
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="boxsizing" class="anchor" href="#boxsizing" aria-hidden="true"><span class="octicon octicon-link"></span></a>boxSizing</h4>
+            <h4>
+                <a id="boxsizing" class="anchor" href="#boxsizing" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>boxSizing</h4>
 
-<blockquote>
-<p>Set box sizing for an element</p>
-</blockquote>
+            <blockquote>
+                <p>Set box sizing for an element</p>
+            </blockquote>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include boxSizing($sizing);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include boxSizing($sizing);</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include boxSizing(border-box);
     }
 
@@ -751,25 +881,31 @@
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="truncate" class="anchor" href="#truncate" aria-hidden="true"><span class="octicon octicon-link"></span></a>truncate</h4>
+            <h4>
+                <a id="truncate" class="anchor" href="#truncate" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>truncate</h4>
 
-<blockquote>
-<p>Truncate single line text</p>
-</blockquote>
+            <blockquote>
+                <p>Truncate single line text</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/display/truncate.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/display/truncate.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include truncate;</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include truncate;</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include truncate;
     }
 
@@ -778,32 +914,39 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-    }</pre></div>
+    }</pre>
+            </div>
 
-<p><br></p>
+            <p><br></p>
 
-<h3>
-<a id="filters" class="anchor" href="#filters" aria-hidden="true"><span class="octicon octicon-link"></span></a>Filters</h3>
+            <h3>
+                <a id="filters" class="anchor" href="#filters" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>Filters</h3>
 
-<h4>
-<a id="blur" class="anchor" href="#blur" aria-hidden="true"><span class="octicon octicon-link"></span></a>blur</h4>
+            <h4>
+                <a id="blur" class="anchor" href="#blur" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>blur</h4>
 
-<blockquote>
-<p>Blur an element</p>
-</blockquote>
+            <blockquote>
+                <p>Blur an element</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/filters/blur.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/filters/blur.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include blur($value);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include blur($value);</pre>
+            </div>
 
-<p>Where value is in px.</p>
+            <p>Where value is in px.</p>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include blur(5px);
     }
 
@@ -811,27 +954,33 @@
     .element {
         -webkit-filter: blur(5px);
         filter: blur(5px);
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="grayscale" class="anchor" href="#grayscale" aria-hidden="true"><span class="octicon octicon-link"></span></a>grayscale</h4>
+            <h4>
+                <a id="grayscale" class="anchor" href="#grayscale" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>grayscale</h4>
 
-<blockquote>
-<p>Add grayscale filter to an element</p>
-</blockquote>
+            <blockquote>
+                <p>Add grayscale filter to an element</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/filters/grayscale.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/filters/grayscale.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include grayscale($value);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include grayscale($value);</pre>
+            </div>
 
-<p>Where value is in %.</p>
+            <p>Where value is in %.</p>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include grayscale(80%);
     }
 
@@ -839,27 +988,33 @@
     .element {
         -webkit-filter: grayscale(80%);
         filter: grayscale(80%);
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="sepia" class="anchor" href="#sepia" aria-hidden="true"><span class="octicon octicon-link"></span></a>sepia</h4>
+            <h4>
+                <a id="sepia" class="anchor" href="#sepia" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>sepia</h4>
 
-<blockquote>
-<p>Add sepia filter to an element</p>
-</blockquote>
+            <blockquote>
+                <p>Add sepia filter to an element</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/filters/sepia.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/filters/sepia.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include sepia($value);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include sepia($value);</pre>
+            </div>
 
-<p>Where value is in %.</p>
+            <p>Where value is in %.</p>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include sepia(80%);
     }
 
@@ -867,27 +1022,33 @@
     .element {
         -webkit-filter: sepia(80%);
         filter: sepia(80%);
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="saturate" class="anchor" href="#saturate" aria-hidden="true"><span class="octicon octicon-link"></span></a>saturate</h4>
+            <h4>
+                <a id="saturate" class="anchor" href="#saturate" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>saturate</h4>
 
-<blockquote>
-<p>Add saturation filter to an element</p>
-</blockquote>
+            <blockquote>
+                <p>Add saturation filter to an element</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/filters/saturate.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/filters/saturate.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include saturate($value);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include saturate($value);</pre>
+            </div>
 
-<p>Where value is in % or is a number.</p>
+            <p>Where value is in % or is a number.</p>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include saturate(80);
     }
 
@@ -895,27 +1056,33 @@
     .element {
         -webkit-filter: saturate(80);
         filter: saturate(80);
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="huerotate" class="anchor" href="#huerotate" aria-hidden="true"><span class="octicon octicon-link"></span></a>hueRotate</h4>
+            <h4>
+                <a id="huerotate" class="anchor" href="#huerotate" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>hueRotate</h4>
 
-<blockquote>
-<p>Rotate hue of an element</p>
-</blockquote>
+            <blockquote>
+                <p>Rotate hue of an element</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/filters/hue.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/filters/hue.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include hueRotate($value);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include hueRotate($value);</pre>
+            </div>
 
-<p>Where value is in degrees.</p>
+            <p>Where value is in degrees.</p>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include hueRotate(80deg);
     }
 
@@ -923,27 +1090,33 @@
     .element {
         -webkit-filter: hue-rotate(80deg);
         filter: hue-rotate(80deg);
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="invert" class="anchor" href="#invert" aria-hidden="true"><span class="octicon octicon-link"></span></a>invert</h4>
+            <h4>
+                <a id="invert" class="anchor" href="#invert" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>invert</h4>
 
-<blockquote>
-<p>Invert colors of an element</p>
-</blockquote>
+            <blockquote>
+                <p>Invert colors of an element</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/filters/invert.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/filters/invert.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include invert($value);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include invert($value);</pre>
+            </div>
 
-<p>Where value is in %.</p>
+            <p>Where value is in %.</p>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include invert(80%);
     }
 
@@ -951,27 +1124,33 @@
     .element {
         -webkit-filter: invert(80%);
         filter: invert(80%);
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="opacity" class="anchor" href="#opacity" aria-hidden="true"><span class="octicon octicon-link"></span></a>opacity</h4>
+            <h4>
+                <a id="opacity" class="anchor" href="#opacity" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>opacity</h4>
 
-<blockquote>
-<p>Set opacity of an element</p>
-</blockquote>
+            <blockquote>
+                <p>Set opacity of an element</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/filters/opacity.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/filters/opacity.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include opacity($value);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include opacity($value);</pre>
+            </div>
 
-<p>Where value is in %.</p>
+            <p>Where value is in %.</p>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include opacity(30%);
     }
 
@@ -979,27 +1158,33 @@
     .element {
         -webkit-filter: opacity(30%);
         filter: opacity(30%);
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="brightness" class="anchor" href="#brightness" aria-hidden="true"><span class="octicon octicon-link"></span></a>brightness</h4>
+            <h4>
+                <a id="brightness" class="anchor" href="#brightness" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>brightness</h4>
 
-<blockquote>
-<p>Set brightness of an element</p>
-</blockquote>
+            <blockquote>
+                <p>Set brightness of an element</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/filters/brightness.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/filters/brightness.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include brightness($value);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include brightness($value);</pre>
+            </div>
 
-<p>Where value is in %.</p>
+            <p>Where value is in %.</p>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include brightness(80%);
     }
 
@@ -1007,27 +1192,33 @@
     .element {
          -webkit-filter: brightness(80%);
         filter: brightness(80%);
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="contrast" class="anchor" href="#contrast" aria-hidden="true"><span class="octicon octicon-link"></span></a>contrast</h4>
+            <h4>
+                <a id="contrast" class="anchor" href="#contrast" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>contrast</h4>
 
-<blockquote>
-<p>Set contrast of an element</p>
-</blockquote>
+            <blockquote>
+                <p>Set contrast of an element</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/filters/contrast.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/filters/contrast.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include contrast($value);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include contrast($value);</pre>
+            </div>
 
-<p>Where value is in %.</p>
+            <p>Where value is in %.</p>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include contrast(150%);
     }
 
@@ -1035,25 +1226,31 @@
     .element {
         -webkit-filter: contrast(150%);
         filter: contrast(150%);
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="dropshadow" class="anchor" href="#dropshadow" aria-hidden="true"><span class="octicon octicon-link"></span></a>dropShadow</h4>
+            <h4>
+                <a id="dropshadow" class="anchor" href="#dropshadow" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>dropShadow</h4>
 
-<blockquote>
-<p>Add drop shadow filter to an element</p>
-</blockquote>
+            <blockquote>
+                <p>Add drop shadow filter to an element</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/filters/dropshadow.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/filters/dropshadow.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include dropShadow($value);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include dropShadow($value);</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include dropShadow(1px 2px 3px rgba(0,0,0,.45));
     }
 
@@ -1061,22 +1258,27 @@
     .element {
         -webkit-filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.45));
         filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.45));
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="url" class="anchor" href="#url" aria-hidden="true"><span class="octicon octicon-link"></span></a>url</h4>
+            <h4>
+                <a id="url" class="anchor" href="#url" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>url</h4>
 
-<blockquote>
-<p>Add an SVG filter via URL</p>
-</blockquote>
+            <blockquote>
+                <p>Add an SVG filter via URL</p>
+            </blockquote>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include url($value);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include url($value);</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include url(#svg-blur);
     }
 
@@ -1084,30 +1286,37 @@
     .element {
         -webkit-filter: url(#svg-blur);
         filter: url(#svg-blur);
-    }</pre></div>
+    }</pre>
+            </div>
 
-<p><br></p>
+            <p><br></p>
 
-<h3>
-<a id="fonts" class="anchor" href="#fonts" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fonts</h3>
+            <h3>
+                <a id="fonts" class="anchor" href="#fonts" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>Fonts</h3>
 
-<h4>
-<a id="fontface" class="anchor" href="#fontface" aria-hidden="true"><span class="octicon octicon-link"></span></a>fontFace</h4>
+            <h4>
+                <a id="fontface" class="anchor" href="#fontface" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>fontFace</h4>
 
-<blockquote>
-<p>Load a web-safe font with fallbacks</p>
-</blockquote>
+            <blockquote>
+                <p>Load a web-safe font with fallbacks</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/fonts/fonts.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/fonts/fonts.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include fontFace($font);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include fontFace($font);</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element1 {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element1 {
         @include fontFace(Times);
     }
 
@@ -1122,42 +1331,51 @@
 
     .element2 {
         font-family: helvetica, sans-serif;
-    }</pre></div>
+    }</pre>
+            </div>
 
-<p><br></p>
+            <p><br></p>
 
-<h3>
-<a id="media-queries" class="anchor" href="#media-queries" aria-hidden="true"><span class="octicon octicon-link"></span></a>Media Queries</h3>
+            <h3>
+                <a id="media-queries" class="anchor" href="#media-queries" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>Media Queries</h3>
 
-<p>Pineapple Sass has 5 inbuilt breakpoint variables - </p>
+            <p>Pineapple Sass has 5 inbuilt breakpoint variables - </p>
 
-<div class="highlight highlight-text-html-basic"><pre>    $largeScreen: 1200px;
+            <div class="highlight highlight-text-html-basic">
+                <pre>    $largeScreen: 1200px;
     $mediumScreen: 992px;
     $smallScreen: 768px;
     $extraSmallScreen: 480px;
-    $smallMobile: 320px;</pre></div>
+    $smallMobile: 320px;</pre>
+            </div>
 
-<p>These breakpoint variables are used with the media query mixins.  </p>
+            <p>These breakpoint variables are used with the media query mixins. </p>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/responsive_design.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/responsive_design.png">
+                <br></p>
 
-<h4>
-<a id="media-l-screen" class="anchor" href="#media-l-screen" aria-hidden="true"><span class="octicon octicon-link"></span></a>media-l-screen</h4>
+            <h4>
+                <a id="media-l-screen" class="anchor" href="#media-l-screen" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>media-l-screen</h4>
 
-<blockquote>
-<p>Detect large screens and apply css</p>
-</blockquote>
+            <blockquote>
+                <p>Detect large screens and apply css</p>
+            </blockquote>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include media-l-screen {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include media-l-screen {
         ...
-    }</pre></div>
+    }</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include media-l-screen {
             background-color: #eee;
         }
@@ -1168,24 +1386,29 @@
         .element {
             background-color: #eee;
         }
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="media-m-screen" class="anchor" href="#media-m-screen" aria-hidden="true"><span class="octicon octicon-link"></span></a>media-m-screen</h4>
+            <h4>
+                <a id="media-m-screen" class="anchor" href="#media-m-screen" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>media-m-screen</h4>
 
-<blockquote>
-<p>Detect medium screens and apply css</p>
-</blockquote>
+            <blockquote>
+                <p>Detect medium screens and apply css</p>
+            </blockquote>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include media-m-screen {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include media-m-screen {
         ...
-    }</pre></div>
+    }</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include media-m-screen {
             background-color: #ddd;
         }
@@ -1196,24 +1419,29 @@
         .element {
             background-color: #ddd;
         }
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="media-s-screen" class="anchor" href="#media-s-screen" aria-hidden="true"><span class="octicon octicon-link"></span></a>media-s-screen</h4>
+            <h4>
+                <a id="media-s-screen" class="anchor" href="#media-s-screen" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>media-s-screen</h4>
 
-<blockquote>
-<p>Detect small screens and apply css</p>
-</blockquote>
+            <blockquote>
+                <p>Detect small screens and apply css</p>
+            </blockquote>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include media-s-screen {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include media-s-screen {
         ...
-    }</pre></div>
+    }</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include media-s-screen {
             background-color: #ccc;
         }
@@ -1224,24 +1452,29 @@
         .element {
             background-color: #ccc;
         }
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="media-xs-screen" class="anchor" href="#media-xs-screen" aria-hidden="true"><span class="octicon octicon-link"></span></a>media-xs-screen</h4>
+            <h4>
+                <a id="media-xs-screen" class="anchor" href="#media-xs-screen" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>media-xs-screen</h4>
 
-<blockquote>
-<p>Detect x-small screens and apply css</p>
-</blockquote>
+            <blockquote>
+                <p>Detect x-small screens and apply css</p>
+            </blockquote>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include media-xs-screen {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include media-xs-screen {
         ...
-    }</pre></div>
+    }</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include media-xs-screen {
             background-color: #bbb;
         }
@@ -1252,24 +1485,29 @@
         .element {
             background-color: #bbb;
         }
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="media-s-mobile" class="anchor" href="#media-s-mobile" aria-hidden="true"><span class="octicon octicon-link"></span></a>media-s-mobile</h4>
+            <h4>
+                <a id="media-s-mobile" class="anchor" href="#media-s-mobile" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>media-s-mobile</h4>
 
-<blockquote>
-<p>Detect small mobile screens and apply css</p>
-</blockquote>
+            <blockquote>
+                <p>Detect small mobile screens and apply css</p>
+            </blockquote>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include media-s-mobile {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include media-s-mobile {
         ...
-    }</pre></div>
+    }</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include media-s-mobile {
             background-color: #aaa;
         }
@@ -1280,24 +1518,29 @@
         .element {
             background-color: #aaa;
         }
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="media-retina" class="anchor" href="#media-retina" aria-hidden="true"><span class="octicon octicon-link"></span></a>media-retina</h4>
+            <h4>
+                <a id="media-retina" class="anchor" href="#media-retina" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>media-retina</h4>
 
-<blockquote>
-<p>Detect retina screen and apply css</p>
-</blockquote>
+            <blockquote>
+                <p>Detect retina screen and apply css</p>
+            </blockquote>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include media-retina {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include media-retina {
         ...
-    }</pre></div>
+    }</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include media-retina {
             background-color: #50a4e2;
         }
@@ -1308,39 +1551,47 @@
         .element {
             background-color: #50a4e2;
         }
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="retinizebackground" class="anchor" href="#retinizebackground" aria-hidden="true"><span class="octicon octicon-link"></span></a>retinizeBackground</h4>
+            <h4>
+                <a id="retinizebackground" class="anchor" href="#retinizebackground" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>retinizeBackground</h4>
 
-<blockquote>
-<p>Retinize a background image</p>
-</blockquote>
+            <blockquote>
+                <p>Retinize a background image</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/media-queries/retinize.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/media-queries/retinize.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    retinizeBackground($file, $postfix, $type, $width, $height, $location);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    retinizeBackground($file, $postfix, $type, $width, $height, $location);</pre>
+            </div>
 
-<p>Where,</p>
+            <p>Where,</p>
 
-<p><code>$file</code> is the file name</p>
+            <p><code>$file</code> is the file name</p>
 
-<p><code>$postfix</code> is the high-res image postfix. Eg - If you have <code>image.png</code> as your primary image, and <code>image-2x.png</code> as your postfixed high-res image (which will be used on retina screens), then <code>-2x</code> is the postfix.</p>
+            <p><code>$postfix</code> is the high-res image postfix. Eg - If you have <code>image.png</code> as your
+                primary image, and <code>image-2x.png</code> as your postfixed high-res image (which will be used on
+                retina screens), then <code>-2x</code> is the postfix.</p>
 
-<p><code>$type</code> is the file type of image</p>
+            <p><code>$type</code> is the file type of image</p>
 
-<p><code>$width</code> is the width of image</p>
+            <p><code>$width</code> is the width of image</p>
 
-<p><code>$height</code> is the height of image</p>
+            <p><code>$height</code> is the height of image</p>
 
-<p><code>$location</code> is the location of the files. By default it is set to empty string.</p>
+            <p><code>$location</code> is the location of the files. By default it is set to empty string.</p>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include retinizeBackground("image", "-2x", "png", 200px, 200px, "../img/");
     }
 
@@ -1361,30 +1612,37 @@
             -o-background-size: 200px 200px;
             background-size: 200px 200px;
         }
-    }</pre></div>
+    }</pre>
+            </div>
 
-<p><br></p>
+            <p><br></p>
 
-<h3>
-<a id="shadows" class="anchor" href="#shadows" aria-hidden="true"><span class="octicon octicon-link"></span></a>Shadows</h3>
+            <h3>
+                <a id="shadows" class="anchor" href="#shadows" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>Shadows</h3>
 
-<h4>
-<a id="boxshadow" class="anchor" href="#boxshadow" aria-hidden="true"><span class="octicon octicon-link"></span></a>boxShadow</h4>
+            <h4>
+                <a id="boxshadow" class="anchor" href="#boxshadow" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>boxShadow</h4>
 
-<blockquote>
-<p>Add box shadow to any element</p>
-</blockquote>
+            <blockquote>
+                <p>Add box shadow to any element</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/shadows/box-shadow.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/shadows/box-shadow.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include boxShadow($shadows...);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include boxShadow($shadows...);</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include boxShadow(0px 4px 5px #666, 2px 6px 10px #999);
     }
 
@@ -1393,25 +1651,31 @@
         -webkit-box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
         -moz-box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
         box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="insetboxshadow" class="anchor" href="#insetboxshadow" aria-hidden="true"><span class="octicon octicon-link"></span></a>insetBoxShadow</h4>
+            <h4>
+                <a id="insetboxshadow" class="anchor" href="#insetboxshadow" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>insetBoxShadow</h4>
 
-<blockquote>
-<p>Add inset box shadow to any element</p>
-</blockquote>
+            <blockquote>
+                <p>Add inset box shadow to any element</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/shadows/inset-shadow.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/shadows/inset-shadow.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include insetBoxShadow($x, $y, $blur, $color);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include insetBoxShadow($x, $y, $blur, $color);</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include insetBoxShadow(0, 2px, 10px, #444);
     }
 
@@ -1420,27 +1684,33 @@
         -webkit-box-shadow: inset 0 2px 10px #444;
         -moz-box-shadow: inset 0 2px 10px #444;
         box-shadow: inset 0 2px 10px #444;
-    }</pre></div>
+    }</pre>
+            </div>
 
-<p><br></p>
+            <p><br></p>
 
-<h3>
-<a id="text" class="anchor" href="#text" aria-hidden="true"><span class="octicon octicon-link"></span></a>Text</h3>
+            <h3>
+                <a id="text" class="anchor" href="#text" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>Text</h3>
 
-<h4>
-<a id="userselect" class="anchor" href="#userselect" aria-hidden="true"><span class="octicon octicon-link"></span></a>userSelect</h4>
+            <h4>
+                <a id="userselect" class="anchor" href="#userselect" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>userSelect</h4>
 
-<blockquote>
-<p>Set user select property for an element</p>
-</blockquote>
+            <blockquote>
+                <p>Set user select property for an element</p>
+            </blockquote>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include userSelect($value);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include userSelect($value);</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include userSelect(none);
     }
 
@@ -1449,27 +1719,33 @@
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="textselection" class="anchor" href="#textselection" aria-hidden="true"><span class="octicon octicon-link"></span></a>textSelection</h4>
+            <h4>
+                <a id="textselection" class="anchor" href="#textselection" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>textSelection</h4>
 
-<blockquote>
-<p>Modify css for text selection</p>
-</blockquote>
+            <blockquote>
+                <p>Modify css for text selection</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/text/selection.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/text/selection.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include textSelection {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include textSelection {
         ...
-    }</pre></div>
+    }</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include textSelection {
             color: #343434;
             background-color: #a0a0a0;
@@ -1481,27 +1757,33 @@
     .element::-moz-selection {
         color: #343434;
         background-color: #a0a0a0;
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="placeholder" class="anchor" href="#placeholder" aria-hidden="true"><span class="octicon octicon-link"></span></a>placeholder</h4>
+            <h4>
+                <a id="placeholder" class="anchor" href="#placeholder" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>placeholder</h4>
 
-<blockquote>
-<p>Style placeholders within input fields</p>
-</blockquote>
+            <blockquote>
+                <p>Style placeholders within input fields</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/text/placeholder.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/text/placeholder.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include placeholder {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include placeholder {
         ...
-    }</pre></div>
+    }</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include placeholder {
             color: #E4204D;
         }
@@ -1522,32 +1804,39 @@
 
     .element:-ms-input-placeholder {
         color: #E4204D;
-    }</pre></div>
+    }</pre>
+            </div>
 
-<p><br></p>
+            <p><br></p>
 
-<h3>
-<a id="transforms" class="anchor" href="#transforms" aria-hidden="true"><span class="octicon octicon-link"></span></a>Transforms</h3>
+            <h3>
+                <a id="transforms" class="anchor" href="#transforms" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>Transforms</h3>
 
-<h4>
-<a id="scale" class="anchor" href="#scale" aria-hidden="true"><span class="octicon octicon-link"></span></a>scale</h4>
+            <h4>
+                <a id="scale" class="anchor" href="#scale" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>scale</h4>
 
-<blockquote>
-<p>Scale an element</p>
-</blockquote>
+            <blockquote>
+                <p>Scale an element</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/transforms/scale.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/transforms/scale.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include scale($x, $y);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include scale($x, $y);</pre>
+            </div>
 
-<p>By default $y is set to 0.</p>
+            <p>By default $y is set to 0.</p>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include scale(2, 3);
     }
 
@@ -1558,27 +1847,33 @@
         -o-transform: scale(2, 3);
         -ms-transform: scale(2, 3);
         transform: scale(2, 3);
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="translate" class="anchor" href="#translate" aria-hidden="true"><span class="octicon octicon-link"></span></a>translate</h4>
+            <h4>
+                <a id="translate" class="anchor" href="#translate" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>translate</h4>
 
-<blockquote>
-<p>Translate an element</p>
-</blockquote>
+            <blockquote>
+                <p>Translate an element</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/transforms/translate.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/transforms/translate.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include translate($x, $y);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include translate($x, $y);</pre>
+            </div>
 
-<p>By default $y is set to 0.</p>
+            <p>By default $y is set to 0.</p>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include translate(10px, 30px);
     }
 
@@ -1589,27 +1884,33 @@
         -o-transform: translate(10px, 30px);
         -ms-transform: translate(10px, 30px);
         transform: translate(10px, 30px);
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="rotate" class="anchor" href="#rotate" aria-hidden="true"><span class="octicon octicon-link"></span></a>rotate</h4>
+            <h4>
+                <a id="rotate" class="anchor" href="#rotate" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>rotate</h4>
 
-<blockquote>
-<p>Rotate an element</p>
-</blockquote>
+            <blockquote>
+                <p>Rotate an element</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/transforms/rotate.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/transforms/rotate.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include rotate($deg);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include rotate($deg);</pre>
+            </div>
 
-<p>Where $deg is a number.</p>
+            <p>Where $deg is a number.</p>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include rotate(45);
     }
 
@@ -1621,27 +1922,33 @@
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
         -webkit-backface-visibility: hidden;
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="skew" class="anchor" href="#skew" aria-hidden="true"><span class="octicon octicon-link"></span></a>skew</h4>
+            <h4>
+                <a id="skew" class="anchor" href="#skew" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>skew</h4>
 
-<blockquote>
-<p>Skew an element</p>
-</blockquote>
+            <blockquote>
+                <p>Skew an element</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/transforms/skew.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/transforms/skew.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include skew($x, $y);</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include skew($x, $y);</pre>
+            </div>
 
-<p>Where $x and $y are numbers. By default $y is set to 0.</p>
+            <p>Where $x and $y are numbers. By default $y is set to 0.</p>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include skew(20);
     }
 
@@ -1653,25 +1960,31 @@
         -ms-transform: skew(20deg, 0deg);
         transform: skew(20deg, 0deg);
         -webkit-backface-visibility: hidden;
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="flip" class="anchor" href="#flip" aria-hidden="true"><span class="octicon octicon-link"></span></a>flip</h4>
+            <h4>
+                <a id="flip" class="anchor" href="#flip" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>flip</h4>
 
-<blockquote>
-<p>Flip / mirror an element</p>
-</blockquote>
+            <blockquote>
+                <p>Flip / mirror an element</p>
+            </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/transforms/flip.png">
-<br></p>
+            <p><img
+                    src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/demo/img/Snapshots/transforms/flip.png">
+                <br></p>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include flip;</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include flip;</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include flip;
     }
 
@@ -1683,49 +1996,60 @@
         transform: scaleX(-1);
         filter: FlipH;
         -ms-filter: "FlipH";
-    }</pre></div>
+    }</pre>
+            </div>
 
-<p><br></p>
+            <p><br></p>
 
-<h3>
-<a id="utilities" class="anchor" href="#utilities" aria-hidden="true"><span class="octicon octicon-link"></span></a>Utilities</h3>
+            <h3>
+                <a id="utilities" class="anchor" href="#utilities" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>Utilities</h3>
 
-<h4>
-<a id="cursorpointer" class="anchor" href="#cursorpointer" aria-hidden="true"><span class="octicon octicon-link"></span></a>cursorPointer</h4>
+            <h4>
+                <a id="cursorpointer" class="anchor" href="#cursorpointer" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>cursorPointer</h4>
 
-<blockquote>
-<p>Add a pointer cursor to the hover state of an element</p>
-</blockquote>
+            <blockquote>
+                <p>Add a pointer cursor to the hover state of an element</p>
+            </blockquote>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include cursorPointer;</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include cursorPointer;</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include cursorPointer;
     }
 
     Output CSS - 
     .element:hover {
         cursor: pointer;
-    }</pre></div>
+    }</pre>
+            </div>
 
-<h4>
-<a id="nofocus" class="anchor" href="#nofocus" aria-hidden="true"><span class="octicon octicon-link"></span></a>noFocus</h4>
+            <h4>
+                <a id="nofocus" class="anchor" href="#nofocus" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>noFocus</h4>
 
-<blockquote>
-<p>Remove focus from a button or input field while in focused state</p>
-</blockquote>
+            <blockquote>
+                <p>Remove focus from a button or input field while in focused state</p>
+            </blockquote>
 
-<p>Syntax</p>
+            <p>Syntax</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    @include noFocus;</pre></div>
+            <div class="highlight highlight-text-html-basic">
+                <pre>    @include noFocus;</pre>
+            </div>
 
-<p>Example</p>
+            <p>Example</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    .element {
+            <div class="highlight highlight-text-html-basic">
+                <pre>    .element {
         @include noFocus;
     }
 
@@ -1733,68 +2057,95 @@
     .element:focus {
         outline: none;
         box-shadow: none;
-    }</pre></div>
+    }</pre>
+            </div>
 
-<p><br></p>
+            <p><br></p>
 
-<h2>
-<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+            <h2>
+                <a id="support" class="anchor" href="#support" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>Support</h2>
 
-<p>MIT Licensed</p>
+            <p>
+                If you'd like to help support the development of the project, please consider backing me on Patreon -
+                <br /><br />
+                <a href="https://www.patreon.com/bePatron?u=8841116">
+                    <img src="https://arunmichaeldsouza.com/img/patreon.png" width="180px;" />
+                </a>
+            </p>
 
-<p>Copyright (c) 2015 Arun Michael Dsouza (<a href="mailto:amdsouza92@gmail.com">amdsouza92@gmail.com</a>)</p>
+            <p><br></p>
 
-<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+            <h2>
+                <a id="license" class="anchor" href="#license" aria-hidden="true"><span
+                        class="octicon octicon-link"></span></a>License</h2>
 
-<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+            <p>MIT Licensed</p>
 
-<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
-      </section>
-      <footer>
-        
-      </footer>
+            <p>Copyright (c) 2015 Arun Michael Dsouza (<a href="mailto:amdsouza92@gmail.com">amdsouza92@gmail.com</a>)
+            </p>
+
+            <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+                associated documentation files (the "Software"), to deal in the Software without restriction, including
+                without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the
+                following conditions:</p>
+
+            <p>The above copyright notice and this permission notice shall be included in all copies or substantial
+                portions of the Software.</p>
+
+            <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+                LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+                NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+                WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+                SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+        </section>
+        <footer>
+
+        </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		          <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-57642069-2");
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-57642069-2");
             pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-          <script>
-              $('document').ready(function() {
-                $('#showMobile').click(function() {
-                    $('body').animate({
-                        left: "180px"
-                    }, 200);
-                    $('.mixin-text-mobile').animate({
-                        left: "180px"
-                    }, 200);
-                    $('.mixin-list').animate({
-                        left: "0"
-                    }, 200); 
-                    $('.mixin-text-mobile').hide();
-                    $('.mob2').show();
-                });
-                $('#showMobile2').click(function() {
-                    $('body').animate({
-                        left: "0px"
-                    }, 200);
-                    $('.mixin-text-mobile').animate({
-                        left: "0px"
-                    }, 200);
-                    $('.mixin-list').animate({
-                        left: "-180px"
-                    }, 200); 
-                    $('.mixin-text-mobile').show();
-                    $('.mob2').hide();
-                });
-              });
-          </script>
-  </body>
+        } catch (err) { }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $('document').ready(function () {
+            $('#showMobile').click(function () {
+                $('body').animate({
+                    left: "180px"
+                }, 200);
+                $('.mixin-text-mobile').animate({
+                    left: "180px"
+                }, 200);
+                $('.mixin-list').animate({
+                    left: "0"
+                }, 200);
+                $('.mixin-text-mobile').hide();
+                $('.mob2').show();
+            });
+            $('#showMobile2').click(function () {
+                $('body').animate({
+                    left: "0px"
+                }, 200);
+                $('.mixin-text-mobile').animate({
+                    left: "0px"
+                }, 200);
+                $('.mixin-list').animate({
+                    left: "-180px"
+                }, 200);
+                $('.mixin-text-mobile').show();
+                $('.mob2').hide();
+            });
+        });
+    </script>
+</body>
+
 </html>
