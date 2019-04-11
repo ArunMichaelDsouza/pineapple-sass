@@ -1,6 +1,6 @@
 <img src="https://raw.githubusercontent.com/ArunMichaelDsouza/pineapple-sass/master/pineapple-sass.png" width="250" height="auto" />
 
-# pineapple-sass [![npm version](https://badge.fury.io/js/pineapple-sass.svg)](https://badge.fury.io/js/pineapple-sass) [![NPM Downloads](https://img.shields.io/npm/dm/pineapple-sass.svg?style=flat-square)](https://www.npmjs.com/package/pineapple-sass) [![Latest Stable Version](https://img.shields.io/bower/v/pineapple-sass.svg?style=flat-square)](http://bower.io/search/?q=pineapple-sass)
+# pineapple-sass [![npm version](https://badge.fury.io/js/pineapple-sass.svg)](https://badge.fury.io/js/pineapple-sass) [![NPM Downloads](https://img.shields.io/npm/dm/pineapple-sass.svg?style=flat-square)](https://www.npmjs.com/package/pineapple-sass) [![Latest Stable Version](https://img.shields.io/bower/v/pineapple-sass.svg?style=flat-square)](http://bower.io/search/?q=pineapple-sass) <span class="badge-patreon"><a href="https://www.patreon.com/arunmichaeldsouza" title="Donate to this project using Patreon"><img src="https://img.shields.io/badge/patreon-donate-blue.svg" alt="Patreon donate button" /></a></span>
 
 A must-have Sass mixin library for all your Sassy needs
 
@@ -1372,6 +1372,15 @@ Example
 ```
 
 <br/>
+
+## Support
+
+If you'd like to help support the development of the project, please consider backing me on Patreon -
+
+[<img src="https://arunmichaeldsouza.com/img/patreon.png" width="180px;"/>](https://www.patreon.com/bePatron?u=8841116)
+
+<br/>
+
 ## License
 
 MIT Licensed
